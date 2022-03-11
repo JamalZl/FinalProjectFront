@@ -1,0 +1,917 @@
+@font-face {
+    font-family: JostLight;
+    src: url(../fonts/Jost-Light.ttf)
+}
+
+@font-face {
+    font-family: JostMedium;
+    src: url(../fonts/Jost-Medium.ttf);
+}
+
+@font-face {
+    font-family: JostBold;
+    src: url(../fonts/Jost-Bold.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: JostLight;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+.row {
+    z-index: 500;
+    width: 100%;
+    height: 80px !important;
+    align-items: center;
+    margin: 0 !important;
+
+
+    .links-logo-icons {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        z-index: 6;
+
+        .nav-links {
+            height: 100%;
+
+            .navLinkElements {
+                position: relative;
+                top: 30px;
+                display: flex;
+                justify-content: space-around;
+                list-style: none;
+                height: 50px;
+
+                li {
+                    a {
+                        color: white;
+                        transition-duration: 0.3s;
+                        font-family: JostMedium;
+
+                        &:hover {
+                            color: rgb(186, 5, 29);
+                        }
+                    }
+
+                }
+
+                .shopLi {
+                    position: relative;
+
+                    .shop {
+                        display: none;
+                        transition: 0.4s;
+
+                        .shopElements {
+                            list-style: none;
+
+                            li {
+                                margin-top: 9px;
+
+                                a {
+                                    font-family: JostLight;
+
+                                }
+
+                            }
+                        }
+                    }
+
+                    &:hover .shop {
+                        display: block;
+                        width: 150px;
+                        max-height: 400px;
+                        padding: 19px 0 19px 18px;
+                        background-color: white;
+                        position: absolute;
+                        top: 50px;
+
+                        .shopElements {
+                            li {
+                                a {
+                                    color: rgb(145, 145, 145);
+                                }
+
+                                &:hover a {
+                                    color: black;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .productsLi {
+                    position: relative;
+
+                    .products {
+                        display: none;
+
+                        .productElements {
+                            list-style: none;
+
+                            li {
+                                margin-top: 9px;
+
+                                a {
+                                    font-family: JostLight;
+                                }
+                            }
+                        }
+                    }
+
+                    &:hover .products {
+                        display: block;
+                        width: 150px;
+                        max-height: 400px;
+                        padding: 19px 0 19px 18px;
+                        background-color: white;
+                        position: absolute;
+                        top: 50px;
+
+                        .productElements {
+                            li {
+                                a {
+                                    color: rgb(145, 145, 145);
+                                }
+
+                                &:hover a {
+                                    color: black;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                a {
+                    text-decoration: none;
+                    display: inline-block;
+                    height: 100%;
+                }
+            }
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .icons {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+
+            a {
+                margin-right: 20px;
+                text-decoration: none;
+
+                i {
+                    font-size: 22px;
+                    color: white;
+                }
+
+                .nav-user {
+                    font-size: 26px;
+                }
+            }
+
+            .wishlist {
+                .wishlistCount {
+                    display: inline-block;
+                    width: 18px;
+                    height: 18px;
+                    border-radius: 50%;
+                    background-color: white;
+                    font-size: 12px;
+                    text-align: center;
+                }
+            }
+
+            .basket {
+                .basketCount {
+                    display: inline-block;
+                    width: 18px;
+                    height: 18px;
+                    border-radius: 50%;
+                    background-color: white;
+                    font-size: 12px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+.myOwl {
+    position: relative;
+    top: -80px;
+    left: -1px;
+    z-index: 5;
+
+
+    .owl-prev,
+    .owl-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #fff !important;
+        font-size: 35px !important;
+        font-weight: bolder !important;
+        background: none !important;
+        // display: none !important;
+    }
+
+    .owl-prev {
+        left: 1%;
+
+    }
+
+    .owl-next {
+        right: 1%;
+
+    }
+
+    .image-text {
+        position: relative;
+        justify-content: center;
+        align-items: center;
+
+        .textDiv {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .text {
+                position: absolute;
+                top: 39%;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+                line-height: 1;
+
+                .discount {
+                    font-size: 26px;
+                    letter-spacing: 0.5px;
+                    text-align: center;
+                    color: white;
+                }
+
+                .title {
+                    font-size: 70px;
+                    letter-spacing: 1px;
+                    font-family: JostBold;
+
+                    p {
+                        color: white;
+                    }
+                }
+
+                .mybtnDiv {
+                    display: flex;
+                    justify-content: center;
+
+                    .myButton {
+                        width: 174px;
+                        height: 42px;
+                        background-color: rgb(203, 3, 29);
+                        text-decoration: none;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: white;
+                        transition: 0.1s;
+                        font-size: 13px;
+
+                        &:hover {
+                            opacity: 0.9;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+
+
+
+}
+
+#handpickedItems {
+    padding: 0 20px;
+    position: relative;
+    height: 854px;
+
+    .itemsTitle {
+        .title {
+            display: flex;
+            justify-content: space-between;
+
+            .itemsText {
+                p {
+                    font-size: 30px;
+                    font-weight: 600;
+                    letter-spacing: 0.2px;
+                }
+            }
+
+            .allproductsText {
+                a {
+                    text-decoration: none;
+                    color: black;
+                    border-bottom: 2px solid black;
+                    transition: 0.3s;
+                    font-weight: 600;
+
+                    &:hover {
+                        color: red;
+                    }
+                }
+
+
+            }
+        }
+    }
+
+    .products {
+        display: flex;
+        border: 1px solid rgb(253, 246, 246);
+
+        .bigImage {
+            position: relative;
+
+            .image {
+                background-image: url(https://cdn.shopify.com/s/files/1/1385/4931/files/Product-Banner-1_720x.jpg?v=1604995599);
+                background-position: center;
+                width: 585px;
+                height: 791px;
+            }
+
+            .content {
+                position: absolute;
+                bottom: 15%;
+                right: 30%;
+
+                .discount {
+                    font-size: 26px;
+                    letter-spacing: 0.5px;
+                    text-align: center;
+                    color: white;
+                }
+
+                .saleStatus {
+                    font-size: 70px;
+                    font-weight: 900;
+                    letter-spacing: 0.5px;
+                    font-family: JostBold;
+                    text-align: center;
+                    color: white;
+                }
+
+                .goToProducts {
+                    width: 152px;
+                    max-height: 42px;
+                    background-color: rgb(203, 3, 29);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 10px;
+                    position: absolute;
+                    left: 26%;
+                    text-decoration: none;
+                    color: white;
+                    font-size: 13px;
+                    font-weight: 400;
+                    letter-spacing: 1px;
+                    transition: 0.3s;
+
+                    &:hover {
+                        background-color: rgb(186, 14, 28);
+                    }
+                }
+            }
+        }
+
+        .smallImages {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
+            .smallImage {
+                position: relative;
+                margin: 10px;
+
+
+                .image {
+                    position: relative;
+                    overflow: hidden;
+                    transition: 0.3s;
+
+                    .secondImage {
+                        overflow: hidden;
+                        transition: 0.7s;
+
+                        img {
+                            position: relative;
+                            top: 0;
+                            z-index: -1;
+                            width: 261px;
+                            height: 261px;
+                            transition: 0.9s;
+                            transition-timing-function: cubic-bezier(.015, .013, .010, .005);
+                        }
+
+                    }
+
+                    .icons {
+                        width: 36px;
+                        height: 60px;
+                        background-color: white;
+                        position: absolute;
+                        top: 10px;
+                        right: 10px;
+                        text-align: center;
+                        display: flex;
+                        flex-direction: column;
+                        opacity: 0;
+                        transition: 0.3s;
+
+                        a {
+                            color: black;
+                            transition: 0.3s;
+
+                            &:hover {
+                                color: red;
+                            }
+                        }
+
+                        .view {
+                            margin-top: 7px;
+                        }
+                    }
+
+                    .mainImage {
+                        transition: 0.7s;
+                        position: relative;
+
+                        img {
+                            position: absolute;
+                            width: 261px;
+                            height: 261px;
+                            opacity: 1;
+                        }
+
+
+                    }
+
+                    .addToCard {
+                        position: absolute;
+                        bottom: 0;
+                        display: flex;
+                        width: 100%;
+                        opacity: 0;
+                        transition: 0.3s;
+                        overflow: hidden;
+                        height: 0;
+                        letter-spacing: 0.3px;
+
+                        .increase-number-decrease {
+                            width: 80px;
+                            height: 40px;
+                            background-color: rgb(206, 37, 60);
+
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            transition: 0.8s;
+
+                            a {
+                                text-decoration: none;
+                            }
+
+                            .minus {
+                                border-right: 1px rgba(207, 117, 117, 0.781) solid;
+                                display: inline-block;
+                                height: 100%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 33%;
+                                text-align: center;
+                                color: white;
+                                font-size: 8px;
+
+                            }
+
+                            .plus {
+                                border-left: 1px rgba(207, 117, 117, 0.781) solid;
+                                border-right: 1px rgba(207, 117, 117, 0.781) solid;
+                                display: inline-block;
+                                height: 100%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 33%;
+                                text-align: center;
+                                font-size: 8px;
+                                color: white;
+                            }
+
+                            #inputNumber {
+                                width: 34%;
+                                text-align: center;
+                                color: white;
+                                font-size: 15px;
+                            }
+
+                        }
+
+                        .toCard {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 100%;
+                            background-color: rgb(206, 37, 59);
+                            color: white;
+                            font-size: 600;
+                            text-decoration: none;
+                            font-family: JostMedium;
+                            font-size: 14px;
+                        }
+
+                        &:hover {
+                            .toCard {
+                                background-color: rgb(190, 16, 16);
+                            }
+
+                            .increase-number-decrease {
+                                background-color: rgb(190, 16, 16);
+                            }
+
+
+                        }
+                    }
+
+
+                }
+
+                .name-price {
+                    position: absolute;
+
+                    .name {
+                        margin-top: 20px;
+
+                        a {
+                            text-decoration: none;
+                            font-weight: 600;
+                            letter-spacing: 1.2px;
+                            color: black;
+                            transition: 0.3s;
+
+                            &:hover {
+                                color: rgb(203, 3, 102);
+                            }
+                        }
+
+                    }
+
+                    .price {
+                        font-weight: 600;
+                        margin-top: 4px;
+                        color: rgb(203, 3, 102);
+                    }
+                }
+
+                &:hover {
+                    .mainImage {
+                        opacity: 0;
+                    }
+
+                    .icons {
+                        opacity: 1;
+                    }
+
+                    .addToCard {
+                        opacity: 1;
+                        transition-timing-function: cubic-bezier(.23, .68, .37, .87);
+                        height: 40px;
+                    }
+
+                    .secondImage {
+
+                        img {
+                            transform: scale(1.12);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#newArrival {
+    margin-top: 100px;
+    height: 930px;
+
+    .image-content {
+        margin-left: -12px;
+        position: relative;
+
+        .image {
+            background-image: url(https://cdn.shopify.com/s/files/1/1385/4931/files/Sub-Banner_0bbcd124-38e5-4d3e-b1dc-27f636a375cf_1950x.jpg?v=1604993439);
+            width: 1519.2px;
+            height: 930px;
+            background-position: center;
+
+        }
+
+        .content {
+            position: absolute;
+            bottom: 14%;
+            right: 33%;
+
+            .collectionNo {
+                font-size: 26px;
+                letter-spacing: 0.5px;
+                text-align: center;
+                color: white;
+                margin-bottom: -24px;
+            }
+
+            .arrivalStatus {
+                font-size: 70px;
+                font-weight: 900;
+                letter-spacing: 0.5px;
+                font-family: JostBold;
+                text-align: center;
+                color: white;
+                margin: -9px 0;
+            }
+
+            .collection {
+                width: 171px;
+                min-height: 42px;
+                background-color: rgb(203, 3, 29);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 11px;
+                position: absolute;
+                left: 33%;
+                text-decoration: none;
+                color: white;
+                font-size: 13px;
+                font-weight: 400;
+                letter-spacing: 1px;
+                transition: 0.3s;
+                font-family: JostLight;
+
+                &:hover {
+                    background-color: rgb(186, 14, 28);
+                }
+            }
+        }
+    }
+}
+
+#featuredProducts {
+    margin-top: 150px;
+
+    .featuredOwl {
+            .smallImage {
+                position: relative;
+                margin: 10px;
+                width: 261px;
+
+                .image {
+                    position: relative;
+                    overflow: hidden;
+                    transition: 0.3s;
+
+                    .secondImage {
+                        overflow: hidden;
+                        transition: 0.7s;
+
+                        img {
+                            position: relative;
+                            top: 0;
+                            z-index: -1;
+                            width: 261px;
+                            height: 261px;
+                            transition: 0.9s;
+                            transition-timing-function: cubic-bezier(.015, .013, .010, .005);
+                        }
+
+                    }
+
+                    .icons {
+                        width: 36px;
+                        height: 60px;
+                        background-color: white;
+                        position: absolute;
+                        top: 10px;
+                        right: 10px;
+                        text-align: center;
+                        display: flex;
+                        flex-direction: column;
+                        opacity: 0;
+                        transition: 0.3s;
+
+                        a {
+                            color: black;
+                            transition: 0.3s;
+
+                            &:hover {
+                                color: red;
+                            }
+                        }
+
+                        .view {
+                            margin-top: 7px;
+                        }
+                    }
+
+                    .mainImage {
+                        transition: 0.7s;
+                        position: relative;
+
+                        img {
+                            position: absolute;
+                            width: 261px;
+                            height: 261px;
+                            opacity: 1;
+                        }
+
+
+                    }
+
+                    .addToCard {
+                        position: absolute;
+                        bottom: 0;
+                        display: flex;
+                        width: 100%;
+                        opacity: 0;
+                        transition: 0.3s;
+                        overflow: hidden;
+                        height: 0;
+                        letter-spacing: 0.3px;
+
+                        .increase-number-decrease {
+                            width: 80px;
+                            height: 40px;
+                            background-color: rgb(206, 37, 60);
+
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            transition: 0.8s;
+
+                            a {
+                                text-decoration: none;
+                            }
+
+                            .minus {
+                                border-right: 1px rgba(207, 117, 117, 0.781) solid;
+                                display: inline-block;
+                                height: 100%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 33%;
+                                text-align: center;
+                                color: white;
+                                font-size: 8px;
+
+                            }
+
+                            .plus {
+                                border-left: 1px rgba(207, 117, 117, 0.781) solid;
+                                border-right: 1px rgba(207, 117, 117, 0.781) solid;
+                                display: inline-block;
+                                height: 100%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 33%;
+                                text-align: center;
+                                font-size: 8px;
+                                color: white;
+                            }
+
+                            #inputNumber {
+                                width: 34%;
+                                text-align: center;
+                                color: white;
+                                font-size: 15px;
+                            }
+
+                        }
+
+                        .toCard {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 100%;
+                            background-color: rgb(206, 37, 59);
+                            color: white;
+                            font-size: 600;
+                            text-decoration: none;
+                            font-family: JostMedium;
+                            font-size: 14px;
+                        }
+
+                        &:hover {
+                            .toCard {
+                                background-color: rgb(190, 16, 16);
+                            }
+
+                            .increase-number-decrease {
+                                background-color: rgb(190, 16, 16);
+                            }
+
+
+                        }
+                    }
+
+
+                }
+
+                .name-price {
+                    position: absolute;
+
+                    .name {
+                        margin-top: 20px;
+
+                        a {
+                            text-decoration: none;
+                            font-weight: 600;
+                            letter-spacing: 1.2px;
+                            color: black;
+                            transition: 0.3s;
+
+                            &:hover {
+                                color: rgb(203, 3, 102);
+                            }
+                        }
+
+                    }
+
+                    .price {
+                        font-weight: 600;
+                        margin-top: 4px;
+                        color: rgb(203, 3, 102);
+                    }
+                }
+
+                &:hover {
+                    .mainImage {
+                        opacity: 0;
+                    }
+
+                    .icons {
+                        opacity: 1;
+                    }
+
+                    .addToCard {
+                        opacity: 1;
+                        transition-timing-function: cubic-bezier(.23, .68, .37, .87);
+                        height: 40px;
+                    }
+
+                    .secondImage {
+
+                        img {
+                            transform: scale(1.12);
+                        }
+                    }
+                }
+            }
+    }
+}
+
+
+// .sliderBoxes {
+//     .leftBox {
+//         width: 50px;
+//         height: 50px;
+//         background-color: black;
+//         position: absolute;
+//         top: 50%;
+//         right: 1%;
+//         z-index: 10;
+//     }
+
+//     .rightBox {
+//         width: 50px;
+//         height: 50px;
+//         background-color: black;
+//     }
+// } 
