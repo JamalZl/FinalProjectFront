@@ -13,6 +13,11 @@
     src: url(../fonts/Jost-Bold.ttf);
 }
 
+@font-face {
+    font-family: JostRegular;
+    src: url(../fonts/Jost-Regular.ttf);
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -314,6 +319,9 @@ ul {
         .title {
             display: flex;
             justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            font-size: 14px;
 
             .itemsText {
                 p {
@@ -683,13 +691,461 @@ ul {
 }
 
 #featuredProducts {
-    margin-top: 150px;
+    margin-top: 100px;
+    height: 475px;
 
-    .featuredOwl {
+    .content-products {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .title {
+            margin: 10px;
+
+            p {
+                font-size: 30px;
+                letter-spacing: 0.2px;
+                line-height: 1.428;
+                font-family: JostBold;
+            }
+        }
+
+        .seeAllProducts {
+            margin-right: 3%;
+
+            a {
+                text-decoration: none;
+                color: black;
+                border-bottom: 2px solid black;
+                transition: 0.3s;
+                font-family: JostRegular;
+                font-size: 14px;
+                letter-spacing: 0.2px;
+
+                &:hover {
+                    color: red;
+                }
+            }
+        }
+    }
+
+    .slider {
+
+        .featured {
             .smallImage {
                 position: relative;
                 margin: 10px;
                 width: 261px;
+                height: 375px;
+
+                .image {
+                    position: relative;
+                    overflow: hidden;
+                    transition: 0.3s;
+                    width: 261px;
+                    height: 261px;
+
+                    .secondImage {
+                        overflow: hidden;
+                        transition: 0.7s;
+
+                        img {
+                            position: relative;
+                            top: 0;
+                            z-index: -1;
+                            width: 261px;
+                            height: 261px;
+                            transition: 0.9s;
+                            transition-timing-function: cubic-bezier(.015, .013, .010, .005);
+                        }
+
+                    }
+
+                    .icons {
+                        width: 36px;
+                        height: 60px;
+                        background-color: white;
+                        position: absolute;
+                        top: 10px;
+                        right: 10px;
+                        text-align: center;
+                        display: flex;
+                        flex-direction: column;
+                        opacity: 0;
+                        transition: 0.3s;
+
+                        a {
+                            color: black;
+                            transition: 0.3s;
+
+                            &:hover {
+                                color: red;
+                            }
+                        }
+
+                        .view {
+                            margin-top: 7px;
+                        }
+                    }
+
+                    .mainImage {
+                        transition: 0.7s;
+                        position: relative;
+
+                        img {
+                            position: absolute;
+                            width: 261px;
+                            height: 261px;
+                            opacity: 1;
+                        }
+
+
+                    }
+
+                    .addToCard {
+                        position: absolute;
+                        bottom: 0;
+                        display: flex;
+                        width: 100%;
+                        opacity: 0;
+                        transition: 0.3s;
+                        overflow: hidden;
+                        height: 0;
+                        letter-spacing: 0.3px;
+
+                        .increase-number-decrease {
+                            width: 80px;
+                            height: 40px;
+                            background-color: rgb(206, 37, 60);
+
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            transition: 0.8s;
+
+                            a {
+                                text-decoration: none;
+                            }
+
+                            .minus {
+                                border-right: 1px rgba(207, 117, 117, 0.781) solid;
+                                display: inline-block;
+                                height: 100%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 33%;
+                                text-align: center;
+                                color: white;
+                                font-size: 8px;
+
+                            }
+
+                            .plus {
+                                border-left: 1px rgba(207, 117, 117, 0.781) solid;
+                                border-right: 1px rgba(207, 117, 117, 0.781) solid;
+                                display: inline-block;
+                                height: 100%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 33%;
+                                text-align: center;
+                                font-size: 8px;
+                                color: white;
+                            }
+
+                            #inputNumber {
+                                width: 34%;
+                                text-align: center;
+                                color: white;
+                                font-size: 15px;
+                            }
+
+                        }
+
+                        .toCard {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 100%;
+                            background-color: rgb(206, 37, 59);
+                            color: white;
+                            font-size: 600;
+                            text-decoration: none;
+                            font-family: JostMedium;
+                            font-size: 14px;
+                        }
+
+                        &:hover {
+                            .toCard {
+                                background-color: rgb(190, 16, 16);
+                            }
+
+                            .increase-number-decrease {
+                                background-color: rgb(190, 16, 16);
+                            }
+
+
+                        }
+                    }
+
+
+                }
+
+                .name-price {
+                    position: absolute;
+
+                    .name {
+                        margin-top: 20px;
+
+                        a {
+                            text-decoration: none;
+                            font-weight: 600;
+                            letter-spacing: 1.2px;
+                            color: black;
+                            transition: 0.3s;
+
+                            &:hover {
+                                color: rgb(203, 3, 102);
+                            }
+                        }
+
+                    }
+
+                    .price {
+                        font-weight: 600;
+                        margin-top: 4px;
+                        color: rgb(203, 3, 102);
+                    }
+                }
+
+                &:hover {
+                    .mainImage {
+                        opacity: 0;
+                    }
+
+                    .icons {
+                        opacity: 1;
+                    }
+
+                    .addToCard {
+                        opacity: 1;
+                        transition-timing-function: cubic-bezier(.23, .68, .37, .87);
+                        height: 40px;
+                    }
+
+                    .secondImage {
+
+                        img {
+                            transform: scale(1.12);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#shopBrands {
+    margin-top: 70px;
+    height: 180px;
+
+    .title-brands {
+        .title {
+            p {
+                font-size: 30px;
+                font-family: JostBold;
+            }
+        }
+
+        .brands {
+            display: flex;
+            justify-content: space-around;
+
+            .brand {
+                &:hover {
+                    animation: 1.25s cubic-bezier(.26, .54, .32, 1) forwards fade-In;
+                }
+            }
+        }
+    }
+}
+
+#exploreMore {
+    margin-top: 80px;
+    height: 950px;
+
+    .image-content {
+        margin-left: -12px;
+        position: relative;
+
+        .image {
+            background-image: url(../images/exploreMore.webp);
+            width: 1519.2px;
+            height: 930px;
+            background-position: 25% 30%;
+
+        }
+
+        .content {
+            position: absolute;
+            bottom: 40%;
+            right: 33%;
+
+            .title {
+                font-size: 26px;
+                letter-spacing: 0.5px;
+                text-align: center;
+                color: white;
+                margin-bottom: -24px;
+            }
+
+            .desc {
+                font-size: 70px;
+                font-weight: 900;
+                letter-spacing: 0.5px;
+                font-family: JostBold;
+                text-align: center;
+                color: white;
+                margin: -9px 0;
+            }
+
+            .myButton {
+                width: 171px;
+                min-height: 42px;
+                background-color: rgb(203, 3, 29);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 11px;
+                position: absolute;
+                left: 33%;
+                text-decoration: none;
+                color: white;
+                font-size: 13px;
+                font-weight: 400;
+                letter-spacing: 1px;
+                transition: 0.3s;
+                font-family: JostLight;
+
+                &:hover {
+                    background-color: rgb(186, 14, 28);
+                }
+            }
+        }
+    }
+}
+
+#bestSeller {
+    margin-top: 50px;
+    height: 900px;
+
+    .itemsTitle {
+        .title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            font-size: 14px;
+
+            .itemsText {
+                p {
+                    font-size: 30px;
+                    font-weight: 600;
+                    letter-spacing: 0.2px;
+                }
+            }
+
+            .allproductsText {
+                a {
+                    text-decoration: none;
+                    color: black;
+                    border-bottom: 2px solid black;
+                    transition: 0.3s;
+                    font-weight: 600;
+
+                    &:hover {
+                        color: red;
+                    }
+                }
+
+
+            }
+        }
+    }
+
+    .products {
+        display: flex;
+        border: 1px solid rgb(253, 246, 246);
+
+        .bigImage {
+            position: relative;
+            display: flex;
+            justify-content: end;
+
+            .image {
+                background-image: url(https://cdn.shopify.com/s/files/1/1385/4931/files/Product-Banner-2_720x.jpg?v=1604997520);
+                background-position: center;
+                width: 585px;
+                height: 791px;
+            }
+
+            .content {
+                position: absolute;
+                bottom: 15%;
+                right: 16%;
+
+                .discount {
+                    font-size: 26px;
+                    letter-spacing: 0.5px;
+                    text-align: center;
+                    color: white;
+                }
+
+                .saleStatus {
+                    font-size: 70px;
+                    font-weight: 900;
+                    letter-spacing: 0.5px;
+                    font-family: JostBold;
+                    text-align: center;
+                    color: white;
+                    letter-spacing: 0.5px;
+                }
+
+                .goToProducts {
+                    width: 164px;
+                    max-height: 42px;
+                    background-color: rgb(203, 3, 29);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 10px;
+                    position: absolute;
+                    left: 26%;
+                    text-decoration: none;
+                    color: white;
+                    font-size: 13px;
+                    font-weight: 400;
+                    letter-spacing: 1px;
+                    transition: 0.3s;
+
+                    &:hover {
+                        background-color: rgb(186, 14, 28);
+                    }
+                }
+            }
+        }
+
+        .smallImages {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
+            .smallImage {
+                position: relative;
+                margin: 10px;
+
 
                 .image {
                     position: relative;
@@ -894,9 +1350,208 @@ ul {
                     }
                 }
             }
+        }
     }
 }
 
+#subscribe {
+    margin-top: 100px;
+    height: 815px;
+
+    .image-content {
+        margin-left: -12px;
+        position: relative;
+
+        .image {
+            background-image: url(https://cdn.shopify.com/s/files/1/1385/4931/files/Newsletter-Parallex-2_1950x.jpg?v=1604993859);
+            width: 1519.2px;
+            height: 930px;
+            background-position: left center;
+            background-repeat: no-repeat;
+        }
+
+        .content {
+            position: absolute;
+            bottom: 47%;
+            right: 34%;
+
+            .text {
+                font-size: 40px;
+                letter-spacing: 0.5px;
+                text-align: center;
+                color: white;
+                margin-bottom: -24px;
+                margin-bottom: 30px;
+            }
+
+            .form {
+                display: flex;
+                justify-content: center;
+                border: 1px solid grey;
+
+                input {
+                    width: 320px;
+                    height: 50px;
+                    font-size: 13px;
+                    font-family: JostRegular;
+                    outline: 1px solid white;
+                    outline-offset: -5px;
+                    padding: 10px;
+                }
+
+                .myBtn {
+                    width: 200px;
+                    height: 50px;
+                    font-size: 16px;
+                    font-family: JostRegular;
+                    background-color: black;
+                    color: white;
+                    border: solid black 1px;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    #topFooter {
+        background-color: rgb(203, 3, 29);
+        height: 400px;
+        margin-top: 50px;
+
+        .info-links {
+            margin-top: 60px;
+
+            .info {
+
+                .logo {
+                    margin: 20px 0;
+                    color: white;
+                }
+
+                .location {
+                    display: flex;
+                    margin: 28px 0 15px 0;
+                    color: white;
+
+                    i {
+                        color: white;
+                        font-size: 16px;
+                    }
+
+                    span {
+                        margin-left: 15px;
+
+                    }
+
+                }
+
+                .mail {
+                    margin: 15px 0;
+                    color: white;
+
+                    a {
+                        color: white;
+                        text-decoration: none;
+                        margin-left: 8px;
+
+                    }
+                }
+
+                .number {
+                    margin: 15px 0;
+                    color: white;
+
+                    i {}
+
+                    span {
+                        margin-left: 8px;
+
+                    }
+                }
+
+                .socials {
+                    margin: 30px 0 0 0;
+                    color: white;
+
+
+                    .fb {
+                        color: white;
+                        transition: 0.3s;
+
+                        &:hover {
+                            transform: translateY(-5px);
+                            color: rgb(14, 142, 242);
+                        }
+
+                    }
+
+                    .tw {
+                        color: white;
+                        transition: 0.3s;
+                        margin-left: 22px;
+
+
+                        &:hover {
+                            transform: translateY(-5px);
+                            color: rgb(29, 155, 240);
+                        }
+
+                    }
+
+                    .ig {
+                        color: white;
+                        transition: 0.3s;
+                        margin-left: 22px;
+
+
+
+                        &:hover {
+                            transform: translateY(-5px);
+                            color: blueviolet;
+                        }
+
+                    }
+
+                    .yt {
+                        color: white;
+                        transition: 0.3s;
+                        margin-left: 22px;
+
+
+                        &:hover {
+                            transform: translateY(-5px);
+                            color: rgb(255, 0, 0);
+                        }
+
+                    }
+
+
+                }
+            }
+        }
+    }
+}
+
+@keyframes fade-In {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+// @keyframes movingbox {
+//     0% {
+//         transform: scale(1.07);
+//     }
+
+//     100% {
+//         transform: scale(1.12);
+//     }
+// }
 
 // .sliderBoxes {
 //     .leftBox {
