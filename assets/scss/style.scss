@@ -29,192 +29,194 @@ ul {
     padding: 0;
 }
 
+header {
+    .row {
+        z-index: 500;
+        width: 100%;
+        // height: 80px !important;
+        // align-items: center;
+        // margin: 0 !important;
 
-.row {
-    z-index: 500;
-    width: 100%;
-    height: 80px !important;
-    align-items: center;
-    margin: 0 !important;
 
+        .links-logo-icons {
+            display: flex;
+            align-items: center;
+            height: 80px;
+            z-index: 6;
 
-    .links-logo-icons {
-        display: flex;
-        align-items: center;
-        height: 100%;
-        z-index: 6;
+            .nav-links {
+                height: 100%;
 
-        .nav-links {
-            height: 100%;
+                .navLinkElements {
+                    position: relative;
+                    top: 30px;
+                    display: flex;
+                    justify-content: space-around;
+                    list-style: none;
+                    height: 50px;
 
-            .navLinkElements {
-                position: relative;
-                top: 30px;
-                display: flex;
-                justify-content: space-around;
-                list-style: none;
-                height: 50px;
+                    li {
+                        a {
+                            color: white;
+                            transition-duration: 0.3s;
+                            font-family: JostMedium;
 
-                li {
+                            &:hover {
+                                color: rgb(186, 5, 29);
+                            }
+                        }
+
+                    }
+
+                    .shopLi {
+                        position: relative;
+
+                        .shop {
+                            display: none;
+                            transition: 0.4s;
+
+                            .shopElements {
+                                list-style: none;
+
+                                li {
+                                    margin-top: 9px;
+
+                                    a {
+                                        font-family: JostLight;
+
+                                    }
+
+                                }
+                            }
+                        }
+
+                        &:hover .shop {
+                            display: block;
+                            width: 150px;
+                            max-height: 400px;
+                            padding: 19px 0 19px 18px;
+                            background-color: white;
+                            position: absolute;
+                            top: 50px;
+
+                            .shopElements {
+                                li {
+                                    a {
+                                        color: rgb(145, 145, 145);
+                                    }
+
+                                    &:hover a {
+                                        color: black;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .productsLi {
+                        position: relative;
+
+                        .products {
+                            display: none;
+
+                            .productElements {
+                                list-style: none;
+
+                                li {
+                                    margin-top: 9px;
+
+                                    a {
+                                        font-family: JostLight;
+                                    }
+                                }
+                            }
+                        }
+
+                        &:hover .products {
+                            display: block;
+                            width: 150px;
+                            max-height: 400px;
+                            padding: 19px 0 19px 18px;
+                            background-color: white;
+                            position: absolute;
+                            top: 50px;
+
+                            .productElements {
+                                li {
+                                    a {
+                                        color: rgb(145, 145, 145);
+                                    }
+
+                                    &:hover a {
+                                        color: black;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
                     a {
-                        color: white;
-                        transition-duration: 0.3s;
-                        font-family: JostMedium;
-
-                        &:hover {
-                            color: rgb(186, 5, 29);
-                        }
-                    }
-
-                }
-
-                .shopLi {
-                    position: relative;
-
-                    .shop {
-                        display: none;
-                        transition: 0.4s;
-
-                        .shopElements {
-                            list-style: none;
-
-                            li {
-                                margin-top: 9px;
-
-                                a {
-                                    font-family: JostLight;
-
-                                }
-
-                            }
-                        }
-                    }
-
-                    &:hover .shop {
-                        display: block;
-                        width: 150px;
-                        max-height: 400px;
-                        padding: 19px 0 19px 18px;
-                        background-color: white;
-                        position: absolute;
-                        top: 50px;
-
-                        .shopElements {
-                            li {
-                                a {
-                                    color: rgb(145, 145, 145);
-                                }
-
-                                &:hover a {
-                                    color: black;
-                                }
-                            }
-                        }
+                        text-decoration: none;
+                        display: inline-block;
+                        height: 100%;
                     }
                 }
+            }
 
-                .productsLi {
-                    position: relative;
+            .logo {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
 
-                    .products {
-                        display: none;
-
-                        .productElements {
-                            list-style: none;
-
-                            li {
-                                margin-top: 9px;
-
-                                a {
-                                    font-family: JostLight;
-                                }
-                            }
-                        }
-                    }
-
-                    &:hover .products {
-                        display: block;
-                        width: 150px;
-                        max-height: 400px;
-                        padding: 19px 0 19px 18px;
-                        background-color: white;
-                        position: absolute;
-                        top: 50px;
-
-                        .productElements {
-                            li {
-                                a {
-                                    color: rgb(145, 145, 145);
-                                }
-
-                                &:hover a {
-                                    color: black;
-                                }
-                            }
-                        }
-                    }
-                }
+            .icons {
+                display: flex;
+                justify-content: end;
+                align-items: center;
 
                 a {
+                    margin-right: 20px;
                     text-decoration: none;
-                    display: inline-block;
-                    height: 100%;
-                }
-            }
-        }
 
-        .logo {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+                    i {
+                        font-size: 22px;
+                        color: white;
+                    }
 
-        .icons {
-            display: flex;
-            justify-content: end;
-            align-items: center;
-
-            a {
-                margin-right: 20px;
-                text-decoration: none;
-
-                i {
-                    font-size: 22px;
-                    color: white;
+                    .nav-user {
+                        font-size: 26px;
+                    }
                 }
 
-                .nav-user {
-                    font-size: 26px;
+                .wishlist {
+                    .wishlistCount {
+                        display: inline-block;
+                        width: 18px;
+                        height: 18px;
+                        border-radius: 50%;
+                        background-color: white;
+                        font-size: 12px;
+                        text-align: center;
+                    }
                 }
-            }
 
-            .wishlist {
-                .wishlistCount {
-                    display: inline-block;
-                    width: 18px;
-                    height: 18px;
-                    border-radius: 50%;
-                    background-color: white;
-                    font-size: 12px;
-                    text-align: center;
-                }
-            }
-
-            .basket {
-                .basketCount {
-                    display: inline-block;
-                    width: 18px;
-                    height: 18px;
-                    border-radius: 50%;
-                    background-color: white;
-                    font-size: 12px;
-                    text-align: center;
+                .basket {
+                    .basketCount {
+                        display: inline-block;
+                        width: 18px;
+                        height: 18px;
+                        border-radius: 50%;
+                        background-color: white;
+                        font-size: 12px;
+                        text-align: center;
+                    }
                 }
             }
         }
     }
 }
 
+//HomeStart
 .myOwl {
     position: relative;
     top: -80px;
@@ -312,378 +314,387 @@ ul {
 
 #handpickedItems {
     padding: 0 20px;
-    position: relative;
-    height: 854px;
+    // position: relative;
 
-    .itemsTitle {
-        .title {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 30px;
-            font-size: 14px;
+    .row {
+        .itemsTitle {
+            .title {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 30px;
+                font-size: 14px;
 
-            .itemsText {
-                p {
-                    font-size: 30px;
-                    font-weight: 600;
-                    letter-spacing: 0.2px;
-                }
-            }
-
-            .allproductsText {
-                a {
-                    text-decoration: none;
-                    color: black;
-                    border-bottom: 2px solid black;
-                    transition: 0.3s;
-                    font-weight: 600;
-
-                    &:hover {
-                        color: red;
+                .itemsText {
+                    p {
+                        font-size: 30px;
+                        font-weight: 600;
+                        letter-spacing: 0.2px;
                     }
                 }
 
+                .allproductsText {
+                    a {
+                        text-decoration: none;
+                        color: black;
+                        border-bottom: 2px solid black;
+                        transition: 0.3s;
+                        font-weight: 600;
 
+                        &:hover {
+                            color: red;
+                        }
+                    }
+
+
+                }
+            }
+
+            .products {
+                display: flex;
+                border: 1px solid rgb(253, 246, 246);
+
+                .bigImage {
+                    position: relative;
+
+                    .image {
+                        background-image: url(https://cdn.shopify.com/s/files/1/1385/4931/files/Product-Banner-1_720x.jpg?v=1604995599);
+                        background-position: center;
+                        width: 100%;
+                        height: 791px;
+                    }
+
+                    .content {
+                        position: absolute;
+                        bottom: 15%;
+                        right: 24%;
+                        z-index: 100;
+
+                        .discount {
+                            font-size: 26px;
+                            letter-spacing: 0.5px;
+                            text-align: center;
+                            color: white;
+                        }
+
+                        .saleStatus {
+                            font-size: 70px;
+                            font-weight: 900;
+                            letter-spacing: 0.5px;
+                            font-family: JostBold;
+                            text-align: center;
+                            color: white;
+                        }
+
+                        .goToProducts {
+                            width: 152px;
+                            max-height: 42px;
+                            background-color: rgb(203, 3, 29);
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 10px;
+                            position: absolute;
+                            left: 26%;
+                            text-decoration: none;
+                            color: white;
+                            font-size: 13px;
+                            font-weight: 400;
+                            letter-spacing: 1px;
+                            transition: 0.3s;
+
+                            &:hover {
+                                background-color: rgb(186, 14, 28);
+                            }
+                        }
+                    }
+                }
+
+                .smallImages {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-evenly;
+
+                    .smallImage {
+                        position: relative;
+                        margin: 10px;
+
+
+                        .image {
+                            position: relative;
+                            overflow: hidden;
+                            transition: 0.3s;
+
+                            .secondImage {
+                                overflow: hidden;
+                                transition: 0.7s;
+
+                                img {
+                                    position: relative;
+                                    top: 0;
+                                    z-index: -1;
+                                    width: 100%;
+                                    height: 100%;
+                                    transition: 0.9s;
+                                    transition-timing-function: cubic-bezier(.015, .013, .010, .005);
+                                }
+
+                            }
+
+                            .icons {
+                                width: 36px;
+                                height: 60px;
+                                background-color: white;
+                                position: absolute;
+                                top: 10px;
+                                right: 10px;
+                                text-align: center;
+                                display: flex;
+                                flex-direction: column;
+                                opacity: 0;
+                                transition: 0.3s;
+
+                                a {
+                                    color: black;
+                                    transition: 0.3s;
+
+                                    &:hover {
+                                        color: red;
+                                    }
+                                }
+
+                                .view {
+                                    margin-top: 7px;
+                                }
+                            }
+
+                            .mainImage {
+                                transition: 0.7s;
+                                position: absolute;
+                                width: 100%;
+                                height: 100%;
+
+                                img {
+                                    position: absolute;
+                                    opacity: 1;
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+
+                            .addToCard {
+                                position: absolute;
+                                bottom: 0;
+                                display: flex;
+                                width: 100%;
+                                opacity: 0;
+                                transition: 0.3s;
+                                overflow: hidden;
+                                height: 0;
+                                letter-spacing: 0.3px;
+
+                                .increase-number-decrease {
+                                    width: 80px;
+                                    height: 40px;
+                                    background-color: rgb(206, 37, 60);
+
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    transition: 0.8s;
+
+                                    a {
+                                        text-decoration: none;
+                                    }
+
+                                    .minus {
+                                        border-right: 1px rgba(207, 117, 117, 0.781) solid;
+                                        display: inline-block;
+                                        height: 100%;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        width: 33%;
+                                        text-align: center;
+                                        color: white;
+                                        font-size: 8px;
+
+                                    }
+
+                                    .plus {
+                                        border-left: 1px rgba(207, 117, 117, 0.781) solid;
+                                        border-right: 1px rgba(207, 117, 117, 0.781) solid;
+                                        display: inline-block;
+                                        height: 100%;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        width: 33%;
+                                        text-align: center;
+                                        font-size: 8px;
+                                        color: white;
+                                    }
+
+                                    #inputNumber {
+                                        width: 34%;
+                                        text-align: center;
+                                        color: white;
+                                        font-size: 15px;
+                                    }
+
+                                }
+
+                                .toCard {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    width: 100%;
+                                    background-color: rgb(206, 37, 59);
+                                    color: white;
+                                    font-size: 600;
+                                    text-decoration: none;
+                                    font-family: JostMedium;
+                                    font-size: 14px;
+                                }
+
+                                &:hover {
+                                    .toCard {
+                                        background-color: rgb(190, 16, 16);
+                                    }
+
+                                    .increase-number-decrease {
+                                        background-color: rgb(190, 16, 16);
+                                    }
+
+
+                                }
+                            }
+
+
+                        }
+
+                        .name-price {
+                            position: absolute;
+
+                            .name {
+                                margin-top: 20px;
+
+                                a {
+                                    text-decoration: none;
+                                    font-weight: 600;
+                                    letter-spacing: 1.2px;
+                                    color: black;
+                                    transition: 0.3s;
+
+                                    &:hover {
+                                        color: rgb(203, 3, 102);
+                                    }
+                                }
+
+                            }
+
+                            .price {
+                                font-weight: 600;
+                                margin-top: 4px;
+                                color: rgb(203, 3, 102);
+                            }
+                        }
+
+                        &:hover {
+                            .mainImage {
+                                opacity: 0;
+                            }
+
+                            .icons {
+                                opacity: 1;
+                            }
+
+                            .addToCard {
+                                opacity: 1;
+                                transition-timing-function: cubic-bezier(.23, .68, .37, .87);
+                                height: 40px;
+                            }
+
+                            .secondImage {
+
+                                img {
+                                    transform: scale(1.12);
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
 
-    .products {
-        display: flex;
-        border: 1px solid rgb(253, 246, 246);
 
-        .bigImage {
+}
+
+#newArrival {
+    margin-top: 100px;
+
+    .row {
+        margin: 0 !important;
+
+        .image-content {
             position: relative;
+            padding: 0 !important;
 
             .image {
-                background-image: url(https://cdn.shopify.com/s/files/1/1385/4931/files/Product-Banner-1_720x.jpg?v=1604995599);
+                width: 100%;
+                height: 930px;
                 background-position: center;
-                width: 585px;
-                height: 791px;
+
             }
 
             .content {
                 position: absolute;
-                bottom: 15%;
-                right: 30%;
+                bottom: 14%;
+                right: 33%;
 
-                .discount {
+                .collectionNo {
                     font-size: 26px;
                     letter-spacing: 0.5px;
                     text-align: center;
                     color: white;
+                    margin-bottom: -24px;
                 }
 
-                .saleStatus {
+                .arrivalStatus {
                     font-size: 70px;
                     font-weight: 900;
                     letter-spacing: 0.5px;
                     font-family: JostBold;
                     text-align: center;
                     color: white;
+                    margin: -9px 0;
                 }
 
-                .goToProducts {
-                    width: 152px;
-                    max-height: 42px;
-                    background-color: rgb(203, 3, 29);
+                .buttonDiv {
                     display: flex;
                     justify-content: center;
-                    align-items: center;
-                    padding: 10px;
-                    position: absolute;
-                    left: 26%;
-                    text-decoration: none;
-                    color: white;
-                    font-size: 13px;
-                    font-weight: 400;
-                    letter-spacing: 1px;
-                    transition: 0.3s;
 
-                    &:hover {
-                        background-color: rgb(186, 14, 28);
-                    }
-                }
-            }
-        }
-
-        .smallImages {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-
-            .smallImage {
-                position: relative;
-                margin: 10px;
-
-
-                .image {
-                    position: relative;
-                    overflow: hidden;
-                    transition: 0.3s;
-
-                    .secondImage {
-                        overflow: hidden;
-                        transition: 0.7s;
-
-                        img {
-                            position: relative;
-                            top: 0;
-                            z-index: -1;
-                            width: 261px;
-                            height: 261px;
-                            transition: 0.9s;
-                            transition-timing-function: cubic-bezier(.015, .013, .010, .005);
-                        }
-
-                    }
-
-                    .icons {
-                        width: 36px;
-                        height: 60px;
-                        background-color: white;
-                        position: absolute;
-                        top: 10px;
-                        right: 10px;
-                        text-align: center;
+                    .collection {
+                        width: 171px;
+                        min-height: 42px;
+                        background-color: rgb(203, 3, 29);
                         display: flex;
-                        flex-direction: column;
-                        opacity: 0;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 11px;
+                        text-decoration: none;
+                        color: white;
+                        font-size: 13px;
+                        font-weight: 400;
+                        letter-spacing: 1px;
                         transition: 0.3s;
-
-                        a {
-                            color: black;
-                            transition: 0.3s;
-
-                            &:hover {
-                                color: red;
-                            }
-                        }
-
-                        .view {
-                            margin-top: 7px;
-                        }
-                    }
-
-                    .mainImage {
-                        transition: 0.7s;
-                        position: relative;
-
-                        img {
-                            position: absolute;
-                            width: 261px;
-                            height: 261px;
-                            opacity: 1;
-                        }
-
-
-                    }
-
-                    .addToCard {
-                        position: absolute;
-                        bottom: 0;
-                        display: flex;
-                        width: 100%;
-                        opacity: 0;
-                        transition: 0.3s;
-                        overflow: hidden;
-                        height: 0;
-                        letter-spacing: 0.3px;
-
-                        .increase-number-decrease {
-                            width: 80px;
-                            height: 40px;
-                            background-color: rgb(206, 37, 60);
-
-                            display: flex;
-                            justify-content: space-between;
-                            align-items: center;
-                            transition: 0.8s;
-
-                            a {
-                                text-decoration: none;
-                            }
-
-                            .minus {
-                                border-right: 1px rgba(207, 117, 117, 0.781) solid;
-                                display: inline-block;
-                                height: 100%;
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
-                                width: 33%;
-                                text-align: center;
-                                color: white;
-                                font-size: 8px;
-
-                            }
-
-                            .plus {
-                                border-left: 1px rgba(207, 117, 117, 0.781) solid;
-                                border-right: 1px rgba(207, 117, 117, 0.781) solid;
-                                display: inline-block;
-                                height: 100%;
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
-                                width: 33%;
-                                text-align: center;
-                                font-size: 8px;
-                                color: white;
-                            }
-
-                            #inputNumber {
-                                width: 34%;
-                                text-align: center;
-                                color: white;
-                                font-size: 15px;
-                            }
-
-                        }
-
-                        .toCard {
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            width: 100%;
-                            background-color: rgb(206, 37, 59);
-                            color: white;
-                            font-size: 600;
-                            text-decoration: none;
-                            font-family: JostMedium;
-                            font-size: 14px;
-                        }
+                        font-family: JostLight;
 
                         &:hover {
-                            .toCard {
-                                background-color: rgb(190, 16, 16);
-                            }
-
-                            .increase-number-decrease {
-                                background-color: rgb(190, 16, 16);
-                            }
-
-
+                            background-color: rgb(186, 14, 28);
                         }
                     }
-
-
-                }
-
-                .name-price {
-                    position: absolute;
-
-                    .name {
-                        margin-top: 20px;
-
-                        a {
-                            text-decoration: none;
-                            font-weight: 600;
-                            letter-spacing: 1.2px;
-                            color: black;
-                            transition: 0.3s;
-
-                            &:hover {
-                                color: rgb(203, 3, 102);
-                            }
-                        }
-
-                    }
-
-                    .price {
-                        font-weight: 600;
-                        margin-top: 4px;
-                        color: rgb(203, 3, 102);
-                    }
-                }
-
-                &:hover {
-                    .mainImage {
-                        opacity: 0;
-                    }
-
-                    .icons {
-                        opacity: 1;
-                    }
-
-                    .addToCard {
-                        opacity: 1;
-                        transition-timing-function: cubic-bezier(.23, .68, .37, .87);
-                        height: 40px;
-                    }
-
-                    .secondImage {
-
-                        img {
-                            transform: scale(1.12);
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-#newArrival {
-    margin-top: 100px;
-    height: 930px;
-
-    .image-content {
-        margin-left: -12px;
-        position: relative;
-
-        .image {
-            background-image: url(https://cdn.shopify.com/s/files/1/1385/4931/files/Sub-Banner_0bbcd124-38e5-4d3e-b1dc-27f636a375cf_1950x.jpg?v=1604993439);
-            width: 1519.2px;
-            height: 930px;
-            background-position: center;
-
-        }
-
-        .content {
-            position: absolute;
-            bottom: 14%;
-            right: 33%;
-
-            .collectionNo {
-                font-size: 26px;
-                letter-spacing: 0.5px;
-                text-align: center;
-                color: white;
-                margin-bottom: -24px;
-            }
-
-            .arrivalStatus {
-                font-size: 70px;
-                font-weight: 900;
-                letter-spacing: 0.5px;
-                font-family: JostBold;
-                text-align: center;
-                color: white;
-                margin: -9px 0;
-            }
-
-            .collection {
-                width: 171px;
-                min-height: 42px;
-                background-color: rgb(203, 3, 29);
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                padding: 11px;
-                position: absolute;
-                left: 33%;
-                text-decoration: none;
-                color: white;
-                font-size: 13px;
-                font-weight: 400;
-                letter-spacing: 1px;
-                transition: 0.3s;
-                font-family: JostLight;
-
-                &:hover {
-                    background-color: rgb(186, 14, 28);
                 }
             }
         }
@@ -692,7 +703,6 @@ ul {
 
 #featuredProducts {
     margin-top: 100px;
-    height: 475px;
 
     .content-products {
         display: flex;
@@ -949,88 +959,84 @@ ul {
 
 #shopBrands {
     margin-top: 70px;
-    height: 180px;
 
-    .title-brands {
-        .title {
-            p {
-                font-size: 30px;
-                font-family: JostBold;
-            }
+    .title {
+        p {
+            font-size: 30px;
+            font-family: JostBold;
         }
+    }
 
-        .brands {
-            display: flex;
-            justify-content: space-around;
 
-            .brand {
-                &:hover {
-                    animation: 1.25s cubic-bezier(.26, .54, .32, 1) forwards fade-In;
-                }
-            }
+    .brand {
+        &:hover {
+            animation: 1.25s cubic-bezier(.26, .54, .32, 1) forwards fade-In;
         }
     }
 }
 
 #exploreMore {
     margin-top: 80px;
-    height: 950px;
 
-    .image-content {
-        margin-left: -12px;
-        position: relative;
+    .row {
+        margin: 0 !important;
 
-        .image {
-            background-image: url(../images/exploreMore.webp);
-            width: 1519.2px;
-            height: 930px;
-            background-position: 25% 30%;
+        .image-content {
+            position: relative;
+            padding: 0 !important;
 
-        }
+            .image {
+                background-image: url(../images/exploreMore.webp);
+                width: 100%;
+                height: 930px;
+                background-position: 25% 30%;
 
-        .content {
-            position: absolute;
-            bottom: 40%;
-            right: 33%;
-
-            .title {
-                font-size: 26px;
-                letter-spacing: 0.5px;
-                text-align: center;
-                color: white;
-                margin-bottom: -24px;
             }
 
-            .desc {
-                font-size: 70px;
-                font-weight: 900;
-                letter-spacing: 0.5px;
-                font-family: JostBold;
-                text-align: center;
-                color: white;
-                margin: -9px 0;
-            }
-
-            .myButton {
-                width: 171px;
-                min-height: 42px;
-                background-color: rgb(203, 3, 29);
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                padding: 11px;
+            .content {
                 position: absolute;
-                left: 33%;
-                text-decoration: none;
-                color: white;
-                font-size: 13px;
-                font-weight: 400;
-                letter-spacing: 1px;
-                transition: 0.3s;
-                font-family: JostLight;
+                bottom: 40%;
+                right: 33%;
 
-                &:hover {
-                    background-color: rgb(186, 14, 28);
+                .title {
+                    font-size: 26px;
+                    letter-spacing: 0.5px;
+                    text-align: center;
+                    color: white;
+                    margin-bottom: -24px;
+                }
+
+                .desc {
+                    font-size: 70px;
+                    font-weight: 900;
+                    letter-spacing: 0.5px;
+                    font-family: JostBold;
+                    text-align: center;
+                    color: white;
+                    margin: -9px 0;
+                }
+
+                .myButton {
+                    width: 171px;
+                    min-height: 42px;
+                    background-color: rgb(203, 3, 29);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 11px;
+                    position: absolute;
+                    left: 33%;
+                    text-decoration: none;
+                    color: white;
+                    font-size: 13px;
+                    font-weight: 400;
+                    letter-spacing: 1px;
+                    transition: 0.3s;
+                    font-family: JostLight;
+
+                    &:hover {
+                        background-color: rgb(186, 14, 28);
+                    }
                 }
             }
         }
@@ -1039,7 +1045,6 @@ ul {
 
 #bestSeller {
     margin-top: 50px;
-    height: 900px;
 
     .itemsTitle {
         .title {
@@ -1356,57 +1361,60 @@ ul {
 
 #subscribe {
     margin-top: 100px;
-    height: 815px;
 
-    .image-content {
-        margin-left: -12px;
-        position: relative;
+    .row {
+        margin: 0 !important;
 
-        .image {
-            background-image: url(https://cdn.shopify.com/s/files/1/1385/4931/files/Newsletter-Parallex-2_1950x.jpg?v=1604993859);
-            width: 1519.2px;
-            height: 930px;
-            background-position: left center;
-            background-repeat: no-repeat;
-        }
+        .image-content {
+            position: relative;
+            padding: 0 !important;
 
-        .content {
-            position: absolute;
-            bottom: 47%;
-            right: 34%;
-
-            .text {
-                font-size: 40px;
-                letter-spacing: 0.5px;
-                text-align: center;
-                color: white;
-                margin-bottom: -24px;
-                margin-bottom: 30px;
+            .image {
+                background-image: url(https://cdn.shopify.com/s/files/1/1385/4931/files/Newsletter-Parallex-2_1950x.jpg?v=1604993859);
+                width: 100%;
+                height: 930px;
+                background-position: left center;
+                background-repeat: no-repeat;
             }
 
-            .form {
-                display: flex;
-                justify-content: center;
-                border: 1px solid grey;
+            .content {
+                position: absolute;
+                bottom: 47%;
+                right: 34%;
 
-                input {
-                    width: 320px;
-                    height: 50px;
-                    font-size: 13px;
-                    font-family: JostRegular;
-                    outline: 1px solid white;
-                    outline-offset: -5px;
-                    padding: 10px;
+                .text {
+                    font-size: 40px;
+                    letter-spacing: 0.5px;
+                    text-align: center;
+                    color: white;
+                    margin-bottom: -24px;
+                    margin-bottom: 30px;
                 }
 
-                .myBtn {
-                    width: 200px;
-                    height: 50px;
-                    font-size: 16px;
-                    font-family: JostRegular;
-                    background-color: black;
-                    color: white;
-                    border: solid black 1px;
+                .form {
+                    display: flex;
+                    justify-content: center;
+                    border: 1px solid grey;
+
+                    input {
+                        width: 320px;
+                        height: 50px;
+                        font-size: 13px;
+                        font-family: JostRegular;
+                        outline: 1px solid white;
+                        outline-offset: -5px;
+                        padding: 10px;
+                    }
+
+                    .myBtn {
+                        width: 200px;
+                        height: 50px;
+                        font-size: 16px;
+                        font-family: JostRegular;
+                        background-color: black;
+                        color: white;
+                        border: solid black 1px;
+                    }
                 }
             }
         }
@@ -1415,12 +1423,14 @@ ul {
 
 footer {
     #topFooter {
+        height: 400px;
         background-color: rgb(203, 3, 29);
         height: 400px;
         margin-top: 50px;
 
         .info-links {
             margin-top: 60px;
+            display: flex;
 
             .info {
 
@@ -1529,6 +1539,672 @@ footer {
 
                 }
             }
+
+            .links {
+                margin-top: 20px;
+
+                .linkUl {
+                    display: flex;
+                    justify-content: space-evenly;
+                    list-style: none;
+
+                    .footerBrands {
+                        margin-bottom: 20px;
+
+                        p {
+                            text-decoration: none;
+                            font-family: JostMedium;
+                            color: white;
+                            font-size: 16px;
+                            letter-spacing: 1.2px;
+                        }
+
+                        ul {
+                            margin-top: 25px;
+                            list-style: none;
+
+                            li {
+                                list-style: none;
+                                transition: 0.3s;
+                                margin-bottom: 7px;
+
+                                a {
+                                    font-family: JostRegular;
+                                    font-size: 14px;
+                                    color: white;
+                                    transition: 0.5s;
+                                    text-decoration: none;
+                                }
+
+                                &:hover a {
+                                    color: rgb(29, 155, 240);
+                                }
+                            }
+                        }
+
+                    }
+
+                    .footerProducts {
+                        p {
+                            text-decoration: none;
+                            color: white;
+                            font-size: 16px;
+                            letter-spacing: 1.2px;
+                            font-family: JostMedium;
+                        }
+
+                        ul {
+                            list-style: none;
+                            margin-top: 25px;
+
+                            li {
+                                margin-bottom: 7px;
+
+                                a {
+                                    font-family: JostRegular;
+                                    font-size: 14px;
+                                    color: white;
+                                    transition: 0.5s;
+                                    text-decoration: none;
+                                }
+
+                                &:hover a {
+                                    color: rgb(29, 155, 240);
+                                }
+                            }
+                        }
+                    }
+
+                    .footerInformaton {
+                        p {
+                            font-family: JostMedium;
+                            color: white;
+                            letter-spacing: 1.2px;
+                            font-size: 16px;
+                        }
+
+                        ul {
+                            list-style: none;
+                            margin-top: 25px;
+
+                            li {
+                                margin-bottom: 7px;
+
+                                a {
+
+                                    font-size: 14px;
+                                    font-family: JostRegular;
+                                    color: white;
+                                    text-decoration: none;
+                                    transition: 0.5s;
+
+                                }
+
+                                &:hover a {
+                                    color: rgb(29, 155, 240);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #bottomFooter {
+        background-color: rgb(155, 11, 30);
+
+        .copyright {
+            color: white;
+            font-family: JostRegular;
+            font-size: 14px;
+
+            a {
+                text-decoration: none;
+                color: white;
+                transition: 0.5s;
+                font-size: 14px;
+
+                &:hover {
+                    color: rgb(29, 155, 240);
+                }
+            }
+        }
+
+        .payment {
+            display: flex;
+            justify-content: end;
+        }
+    }
+}
+
+//HomeEnd
+
+//ProductsStart
+#productsNavBar {
+    .row {
+        margin: 0 !important;
+
+        .links-logo-icons {
+            display: flex;
+            align-items: center;
+            height: 80px;
+            z-index: 6;
+            background-color: black;
+
+            .nav-links {
+                height: 100%;
+
+                .navLinkElements {
+                    position: relative;
+                    top: 30px;
+                    display: flex;
+                    justify-content: space-around;
+                    list-style: none;
+                    height: 50px;
+
+                    li {
+                        a {
+                            color: white;
+                            transition-duration: 0.3s;
+                            font-family: JostMedium;
+
+                            &:hover {
+                                color: rgb(186, 5, 29);
+                            }
+                        }
+
+                    }
+
+                    .shopLi {
+                        position: relative;
+
+                        .shop {
+                            display: none;
+                            transition: 0.4s;
+
+                            .shopElements {
+                                list-style: none;
+
+                                li {
+                                    margin-top: 9px;
+
+                                    a {
+                                        font-family: JostLight;
+
+                                    }
+
+                                }
+                            }
+                        }
+
+                        &:hover .shop {
+                            display: block;
+                            width: 150px;
+                            max-height: 400px;
+                            padding: 19px 0 19px 18px;
+                            background-color: white;
+                            position: absolute;
+                            top: 50px;
+
+                            .shopElements {
+                                li {
+                                    a {
+                                        color: rgb(145, 145, 145);
+                                    }
+
+                                    &:hover a {
+                                        color: black;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .productsLi {
+                        position: relative;
+
+                        .products {
+                            display: none;
+
+                            .productElements {
+                                list-style: none;
+
+                                li {
+                                    margin-top: 9px;
+
+                                    a {
+                                        font-family: JostLight;
+                                    }
+                                }
+                            }
+                        }
+
+                        &:hover .products {
+                            display: block;
+                            width: 150px;
+                            max-height: 400px;
+                            padding: 19px 0 19px 18px;
+                            background-color: white;
+                            position: absolute;
+                            top: 50px;
+
+                            .productElements {
+                                li {
+                                    a {
+                                        color: rgb(145, 145, 145);
+                                    }
+
+                                    &:hover a {
+                                        color: black;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    a {
+                        text-decoration: none;
+                        display: inline-block;
+                        height: 100%;
+                    }
+                }
+            }
+
+            .logo {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .icons {
+                display: flex;
+                justify-content: end;
+                align-items: center;
+
+                a {
+                    margin-right: 20px;
+                    text-decoration: none;
+
+                    i {
+                        font-size: 22px;
+                        color: white;
+                    }
+
+                    .nav-user {
+                        font-size: 26px;
+                    }
+                }
+
+                .wishlist {
+                    .wishlistCount {
+                        display: inline-block;
+                        width: 18px;
+                        height: 18px;
+                        border-radius: 50%;
+                        background-color: white;
+                        font-size: 12px;
+                        text-align: center;
+                    }
+                }
+
+                .basket {
+                    .basketCount {
+                        display: inline-block;
+                        width: 18px;
+                        height: 18px;
+                        border-radius: 50%;
+                        background-color: white;
+                        font-size: 12px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#filter {
+    margin-top: 30px;
+
+    #filterIcon {
+        text-decoration: none;
+        font-size: 16px;
+        color: grey;
+        margin-bottom: 25px;
+
+        i {
+            font-size: 16px;
+            margin-right: 10px;
+            color: grey;
+        }
+    }
+
+    .filterOptions {
+        display: none;
+        height: 270px;
+        overflow-y: scroll;
+        justify-content: space-around;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        border-radius: 5px;
+        padding-top: 20px;
+
+        .byTitle {
+            display: block;
+
+            .title {
+                span {
+                    font-family: JostMedium;
+                    border-bottom: 2px solid black;
+                    display: inline-block;
+                }
+            }
+
+            display: block;
+
+            .search {
+                border-radius: 3px;
+                width: 254px;
+                height: 40px;
+                font-size: 12px;
+                padding: 5px 10px;
+                margin-top: 20px;
+                font-family: JostRegular;
+
+                &::placeholder {
+                    color: black;
+
+                }
+            }
+
+            .searchSubmitBtn {
+                width: 100px;
+                height: 40px;
+                border: solid 1px black;
+                background-color: white;
+                padding: 12px;
+                color: black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 13px;
+                font-family: JostMedium;
+                transition: 0.3s;
+                letter-spacing: 0.9px;
+
+                &:hover {
+                    background-color: rgb(203, 3, 29);
+                    color: white;
+                    border: rgb(203, 3, 29) 1px solid;
+                }
+            }
+
+        }
+
+        .bySize {
+            .titleSize {
+                span {
+                    font-family: JostMedium;
+                    border-bottom: 2px solid black;
+                    display: inline-block;
+                }
+            }
+
+            .sizeUl {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+
+
+
+                li {
+                    margin: 8px;
+
+                    a {
+                        text-decoration: none;
+                        color: black;
+                        transition: 0.3s;
+                    }
+
+                    &:hover a {
+                        color: red;
+                    }
+                }
+
+                li:nth-child(1) {
+                    margin-top: 20px;
+                }
+            }
+        }
+
+    }
+}
+
+
+#Entrance {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    background-color: rgb(118, 118, 118);
+    border-top: white solid 1px;
+
+    h1 {
+        font-size: 20px;
+        padding: 48px 0;
+        margin-bottom: 5px;
+        font-family: JostMedium;
+        letter-spacing: 1.1px;
+        color: white;
+    }
+}
+
+#products {
+    .smallImage {
+        position: relative;
+        margin: 45px 0;
+
+
+        .image {
+            position: relative;
+            overflow: hidden;
+            transition: 0.3s;
+
+            .secondImage {
+                overflow: hidden;
+                transition: 0.7s;
+
+                img {
+                    position: relative;
+                    top: 0;
+                    z-index: -1;
+                    width: 100%;
+                    height: 100%;
+                    transition: 0.9s;
+                    transition-timing-function: cubic-bezier(.015, .013, .010, .005);
+                }
+
+            }
+
+            .icons {
+                width: 36px;
+                height: 60px;
+                background-color: white;
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                opacity: 0;
+                transition: 0.3s;
+
+                a {
+                    color: black;
+                    transition: 0.3s;
+
+                    &:hover {
+                        color: red;
+                    }
+                }
+
+                .view {
+                    margin-top: 7px;
+                }
+            }
+
+            .mainImage {
+                transition: 0.7s;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+
+                img {
+                    position: absolute;
+                    opacity: 1;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .addToCard {
+                position: absolute;
+                bottom: 0;
+                display: flex;
+                width: 100%;
+                opacity: 0;
+                transition: 0.3s;
+                overflow: hidden;
+                height: 0;
+                letter-spacing: 0.3px;
+
+                .increase-number-decrease {
+                    width: 80px;
+                    height: 40px;
+                    background-color: rgb(206, 37, 60);
+
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    transition: 0.8s;
+
+                    a {
+                        text-decoration: none;
+                    }
+
+                    .minus {
+                        border-right: 1px rgba(207, 117, 117, 0.781) solid;
+                        display: inline-block;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 33%;
+                        text-align: center;
+                        color: white;
+                        font-size: 8px;
+
+                    }
+
+                    .plus {
+                        border-left: 1px rgba(207, 117, 117, 0.781) solid;
+                        border-right: 1px rgba(207, 117, 117, 0.781) solid;
+                        display: inline-block;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 33%;
+                        text-align: center;
+                        font-size: 8px;
+                        color: white;
+                    }
+
+                    #inputNumber {
+                        width: 34%;
+                        text-align: center;
+                        color: white;
+                        font-size: 15px;
+                    }
+
+                }
+
+                .toCard {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    background-color: rgb(206, 37, 59);
+                    color: white;
+                    font-size: 600;
+                    text-decoration: none;
+                    font-family: JostMedium;
+                    font-size: 14px;
+                }
+
+                &:hover {
+                    .toCard {
+                        background-color: rgb(190, 16, 16);
+                    }
+
+                    .increase-number-decrease {
+                        background-color: rgb(190, 16, 16);
+                    }
+
+
+                }
+            }
+
+
+        }
+
+        .name-price {
+            position: absolute;
+
+            .name {
+                margin-top: 20px;
+
+                a {
+                    text-decoration: none;
+                    font-weight: 600;
+                    letter-spacing: 1.2px;
+                    color: black;
+                    transition: 0.3s;
+
+                    &:hover {
+                        color: rgb(203, 3, 102);
+                    }
+                }
+
+            }
+
+            .price {
+                font-weight: 600;
+                margin-top: 4px;
+                color: rgb(203, 3, 102);
+            }
+        }
+
+        &:hover {
+            .mainImage {
+                opacity: 0;
+            }
+
+            .icons {
+                opacity: 1;
+            }
+
+            .addToCard {
+                opacity: 1;
+                transition-timing-function: cubic-bezier(.23, .68, .37, .87);
+                height: 40px;
+            }
+
+            .secondImage {
+
+                img {
+                    transform: scale(1.12);
+                }
+            }
         }
     }
 }
@@ -1542,6 +2218,259 @@ footer {
         opacity: 1;
     }
 }
+
+//Media queries
+@media screen and (max-width:1401px) {
+    #handpickedItems {
+        .itemsTitle {
+            .products {
+                .bigImage {
+                    .image {
+                        img {}
+                    }
+
+                    .content {
+                        position: absolute;
+                        bottom: 41%;
+                        right: 21%;
+                    }
+                }
+
+                .smallImages {
+                    .smallImage {
+                        width: 235px;
+                        height: 235px;
+
+                        .image {
+                            .mainImage {
+                                img {
+                                    max-height: 235px;
+                                    max-width: 235px;
+                                }
+                            }
+
+                            .secondImage {
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #bestSeller {
+        .itemsTitle {
+            .products {
+                .bigImage {
+
+                    .content {
+                        position: absolute;
+                        bottom: 41%;
+                        right: 21%;
+                    }
+                }
+
+                .smallImages {
+                    .smallImage {
+                        width: 235px;
+                        height: 235px;
+
+                        .image {
+                            .mainImage {
+                                img {
+                                    height: 235px;
+                                    width: 235px;
+                                }
+                            }
+
+                            .secondImage {
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width:1200px) {
+    #handpickedItems {
+        .itemsTitle {
+            .products {
+                .bigImage {
+                    .image {
+                        img {}
+                    }
+
+                    .content {
+                        position: absolute;
+                        bottom: 41%;
+                        right: 15%;
+                    }
+                }
+
+                .smallImages {
+                    .smallImage {
+                        width: 200px;
+                        height: 200px;
+
+                        .image {
+                            .mainImage {
+                                img {
+                                    max-height: 200px;
+                                    max-width: 200px;
+                                }
+                            }
+
+                            .secondImage {
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+    #bestSeller {
+        .itemsTitle {
+            .products {
+                .bigImage {
+                    .content {
+                        position: absolute;
+                        bottom: 41%;
+                        right: 15%;
+                    }
+                }
+
+                .smallImages {
+                    .smallImage {
+                        width: 207px;
+                        height: 207px;
+
+                        .image {
+                            .mainImage {
+                                img {
+                                    height: 207px;
+                                    width: 207px;
+                                }
+                            }
+
+                            .secondImage {
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width:992px) {
+    #handpickedItems {
+        margin-bottom: 50px;
+
+        .container {
+            .row {
+                .itemsTitle {
+                    .products {
+                        width: 100%;
+                        display: block;
+
+                        .bigImage {
+                            height: 500px;
+                            width: 100%;
+
+                            .image {
+                                width: 100%;
+                                height: 500px;
+                                background-size: cover;
+                            }
+
+                            .content {
+                                position: absolute;
+                                bottom: 20%;
+                                right: 26%;
+                            }
+                        }
+
+                        .smallImages {
+                            justify-content: space-between;
+                            width: 100%;
+
+                            .smallImage {
+                                width: 22%;
+                                height: 22%;
+
+                                .image {
+                                    .mainImage {
+                                        img {
+                                            max-width: 150px;
+                                            max-height: 150px;
+                                        }
+
+                                        .secondImage {
+                                            img {
+                                                max-width: 150px;
+                                                max-height: 150px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #newArrival {
+        .row {
+            height: 700px;
+
+            .image-content {
+                height: 100%;
+
+                .image {
+                    height: 100%;
+
+                    a {
+
+                        img {
+                            width: fit-content;
+                        }
+                    }
+                }
+
+                .content {
+                    position: relative;
+                    bottom: 31%;
+                    right: 0%;
+                }
+            }
+        }
+    }
+}
+
 
 // @keyframes movingbox {
 //     0% {
