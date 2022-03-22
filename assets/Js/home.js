@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $('.myOwl').owlCarousel({
         loop: true,
-        margin: 10,
+        // margin: 10,
         nav: true,
         dots: false,
         responsive: {
@@ -25,12 +25,19 @@ $(document).ready(function () {
             0: {
                 items: 1
             },
-            600: {
+            550: {
                 items: 2
             },
-            1000: {
+            820: {
+                items: 3
+            },
+            1200: {
                 items: 4
             }
         }
     })
+
+    if ($(".featured .owl-item").hasClass("active")) {
+        $(".featured .owl-item").siblings().addClass("d-flex justify-content-center")
+    }
 })
