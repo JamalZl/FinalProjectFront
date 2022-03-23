@@ -49,7 +49,7 @@ ul {
             width: 340px;
             background-color: white;
             padding: 0 !important;
-            position:fixed;
+            position: fixed;
             left: 0;
             top: 0;
             z-index: 55;
@@ -70,7 +70,7 @@ ul {
                     font-size: 12px;
                     font-family: JostRegular;
                     border-right: 1px solid rgb(212, 208, 208);
-                    background-color: rgb(233,233,233);
+                    background-color: rgb(233, 233, 233);
                 }
 
                 .closeIcon {
@@ -79,7 +79,8 @@ ul {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    i{
+
+                    i {
                         font-size: 28px;
                     }
                 }
@@ -87,6 +88,7 @@ ul {
 
             .menuLinks {
                 list-style: none;
+
                 li {
                     margin-bottom: 5px;
                     padding-left: 21px;
@@ -100,7 +102,8 @@ ul {
                         color: black;
                         font-size: 14px;
                         font-family: JostRegular;
-                        span{
+
+                        span {
                             margin-left: 5px;
                         }
                     }
@@ -109,42 +112,50 @@ ul {
                         list-style: none;
                     }
                 }
-                .menuShopLi{
+
+                .menuShopLi {
                     width: 100%;
-                    display: block!important; 
+                    display: block !important;
+
                     .menuShopUl {
                         display: none;
                         margin-bottom: 5px;
                         width: 100%;
+
                         li {
                             margin-left: 10px;
                             margin-bottom: 0;
                             padding-left: 10px;
-                            display: block!important;
+                            display: block !important;
                             width: 50%;
-                            min-height: 5px!important;
-                            border-bottom: none!important;
+                            min-height: 5px !important;
+                            border-bottom: none !important;
+
                             a {
                                 font-size: 12px;
                             }
                         }
                     }
                 }
-                .menuProductsLi{
+
+                .menuProductsLi {
                     width: 100%;
-                    display: block!important; 
-                    .menuProductsUl{
+                    display: block !important;
+
+                    .menuProductsUl {
                         display: none;
                         width: 100%;
                         margin-bottom: 5px;
+
                         li {
                             margin-left: 10px;
                             margin-bottom: 0;
                             padding-left: 10px;
-                            display: block!important;
+                            display: block !important;
                             width: 50%;
-                            min-height: 5px!important;
-                            border-bottom: none!important;
+                            min-height: 5px !important;
+                            border-bottom: none !important;
+
                             a {
                                 font-size: 12px;
                             }
@@ -1911,7 +1922,7 @@ footer {
     overflow: hidden;
 
     &:hover {
-        background-color: rgb(274 ,8 ,38);
+        background-color: rgb(274, 8, 38);
     }
 
     &:hover .icon1 {
@@ -1934,6 +1945,7 @@ footer {
 
     }
 }
+
 //GoUpButtonEnd
 
 //HomeEnd
@@ -3701,6 +3713,156 @@ footer {
 }
 
 //DetailsEnd
+
+//ContactUsStart
+
+#contactEntrance {
+    .contactRow {
+        margin: 0 !important;
+
+        .contactImage-Content {
+            position: relative;
+            padding: 0;
+
+            .contactImage {
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+
+                &::before {
+                    content: '';
+                    opacity: .5;
+                    position: absolute;
+                    background: #000;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    z-index: 1;
+                    pointer-events: none;
+                }
+
+                img {
+                    height: 125px;
+                }
+            }
+
+            .contactContent {
+                position: absolute;
+                z-index: 2;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+
+                span {
+                    font-size: 20px;
+                    color: white;
+                    font-family: JostMedium;
+                    letter-spacing: 3px;
+                }
+            }
+        }
+    }
+
+}
+
+#contactUs {
+    margin-top: 5%;
+
+    .message-infoRow {
+        justify-content: center;
+        margin-bottom: 2%;
+        .messageRow {
+            .title {
+                font-size: 23px;
+                font-family: JostRegular;
+                color: black;
+                letter-spacing: 3px;
+                margin: 10px 0 20px;
+            }
+
+            .contactForm {
+                width: 100%;
+
+                label {
+                    width: 100%;
+                    color: rgb(153, 153, 179);
+                    font-size: 14px;
+                    transition: 0.5s;
+                    font-family: JostRegular;
+                }
+
+                input {
+                    width: 100%;
+                    height: 40px;
+
+                    &:focus {
+                        outline: 0.5px solid black;
+                    }
+                }
+
+                textarea {
+                    width: 100%;
+
+                    &:focus {
+                        outline: 0.5px solid black;
+                    }
+
+                    max-height:190px;
+                }
+
+                .contactButton {
+                    width: 100%;
+                    height: 40px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: black;
+                    font-family: JostMedium;
+                    transition: 0.3s;
+                    background-color: white;
+                    border: black 1px solid;
+
+                    &:hover {
+                        background-color: rgb(203, 3, 29);
+                        border: solid 1px rgb(203, 3, 29);
+                        color: white;
+                    }
+                }
+            }
+        }
+
+        .contactInfoRow {
+            flex-direction: column;
+
+            .contactInfoTitle {
+                display: flex;
+                height: 80px;
+                width: 100%;
+                p {
+                    font-size: 23px;
+                    font-family: JostRegular;
+                    color: black;
+                    letter-spacing: 3px;
+                    margin: 10px 0 20px;
+                }
+
+            }
+
+            .contactWrapper {
+                width: 100%;
+                p{
+                    color: rgb(153, 153, 179);
+                    font-size: 14px;
+                    font-family: JostRegular;
+                    margin-bottom: 5%;
+                }
+            }
+        }
+    }
+}
+
+//ContactUsEnd
 @keyframes fade-In {
     0% {
         opacity: 0;
@@ -3921,8 +4083,6 @@ footer {
             justify-content: center !important;
 
             .itemsTitle {
-                .bestSellerTitleRow {}
-
                 .imagesRow {
                     justify-content: center !important;
 
@@ -4021,6 +4181,11 @@ footer {
                     height: 821px !important;
                 }
             }
+        }
+    }
+    #contactUs{
+        .contactInfoRow{
+            margin-top: 2%;
         }
     }
 }

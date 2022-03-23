@@ -99,7 +99,6 @@ $(document).ready(function () {
         } else {
             alert("Number of the products can't be lower than zero")
         }
-
     })
 
     $(".smallImages .image img").click(function () {
