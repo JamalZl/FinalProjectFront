@@ -3,7 +3,6 @@ $(document).ready(function () {
         e.preventDefault()
         $(".myRow").slideToggle()
         $(".myRow").toggleClass("d-flex")
-
     });
 
 
