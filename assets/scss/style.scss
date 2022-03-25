@@ -33,30 +33,22 @@ body {
     padding: 0;
     font-family: JostLight;
 }
-body::-webkit-scrollbar {
-    width: 1em;
-  }
-   
-  body::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  }
-   
-  body::-webkit-scrollbar-thumb {
-    background-color: darkgrey;
-    outline: 1px solid slategrey;
-  }
 
 ul {
     margin: 0;
     padding: 0;
 }
+#StickyNavBar{
+    display: none;
+}
 .menu {
     height: 100vh;
-    overflow: scroll;
+    overflow-y: scroll;
     width: 340px;
     background-color: white;
     padding: 0 !important;
     position: fixed;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     left: 0;
     top: 0;
     z-index: 55;
@@ -170,7 +162,6 @@ ul {
             }
         }
     }
-
 }
 .searchArea{
     height: 100vh;
@@ -179,10 +170,21 @@ ul {
     background-color: white;
     padding: 0 !important;
     position: fixed;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     right: 0;
     top: 0;
     z-index: 55555555555555;
     display: none;
+    &::-webkit-scrollbar {
+        width: 2px;
+        border-radius: 50%;
+      }
+       
+      &::-webkit-scrollbar-thumb {
+        border-radius: 7px;
+        background-color: rgb(197, 192, 192);
+        outline: 1px solid rgb(197, 192, 192);
+      }
     .searchTxt-closeIcon{
         display: flex;
         justify-content: space-between;
@@ -195,14 +197,15 @@ ul {
         }
         .searchCloseIcon{
             color: black;
-            font-size: 28px;
-            cursor: pointer;
+                font-size: 26px;
+                cursor: pointer;
         }
     }
     .searchInputArea{
         padding:30px 20px;
-        border-bottom: 1px solid rgb(118, 118, 118);
-        border-top:1px solid rgb(118, 118, 118) ;
+        border-bottom: 1px solid rgb(238, 233, 233);
+        border-top:1px solid rgb(238, 233, 233) ;  
+
         
         .searchInput{
             width: 260px;
@@ -210,6 +213,10 @@ ul {
             padding: 7px;
             font-family: JostRegular;
             outline: 1px white solid;
+            font-size: 13px;
+            color: rgb(118, 118, 118);
+            font-family: JostRegular;
+            border: 1px solid rgb(206, 202, 202);
             &::placeholder{
                 font-size: 13px;
                 color: rgb(118, 118, 118);
@@ -274,11 +281,446 @@ ul {
         }
     }
 }
+.login-register{
+    height: 100vh;
+    width: 340px;
+    background-color: white;
+    padding: 0 !important;
+    position: fixed;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    right: 0;
+    top: 0;
+    z-index: 55555555555552225;
+    display: none;
+    overflow-y: scroll;
+    overflow-x: hidden;
+        &::-webkit-scrollbar {
+            width: 2px;
+            border-radius: 50%;
+          }
+           
+          &::-webkit-scrollbar-thumb {
+            border-radius: 7px;
+            background-color: rgb(197, 192, 192);
+            outline: 1px solid rgb(197, 192, 192);
+          }
+    .login{
+        position: absolute;
+        .loginTxt-closeIcon{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding:15px 15px;
+            .loginTxt{
+                font-family: JostMedium;
+                letter-spacing: 1.3px;
+                color: black;
+            }
+            .login-reg-pwCloseIcon{
+                color: black;
+                font-size: 26px;
+                cursor: pointer;
+            }
+        }
+        .loginInputArea{
+            padding:30px 20px;
+            border-top:1px solid rgb(238, 233, 233);  
+            input{
+                width: 300px;
+                height: 40px;
+                padding: 7px;
+                font-family: JostRegular;
+                font-size: 13px;
+                color: rgb(118, 118, 118);
+                font-family: JostRegular;
+                border: 1px solid rgb(206, 202, 202);
+                &:focus{
+                    outline: 1px solid white;
+                    border: 1px solid black;
+                }
+            }
+            label{
+                font-size: 14px;
+                color: rgb(118, 118, 118);
+                font-family: JostRegular;
+                margin-bottom: 8px;
+                span{
+                    color: rgb(186, 14, 28);
+                }
+            }
+            button{
+                width: 300px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: rgb(203,3,29);
+                border: 1px solid rgb(203,3,29);
+                font-family: JostMedium;
+                color: white;
+                transition: 0.2s;
+                font-size: 14px;
+                &:hover{
+                border: 1px solid rgb(213,53,74);
+                background-color: rgb(213,53,74);
+                }
+            }
+        }
+        .log-regP{
+            font-size: 14px;
+            font-family: JostRegular;
+            padding:5px 20px;
+            color: rgb(118, 118, 118);
+            a{
+                font-size: 14px;
+                color: black;
+                text-decoration: none;
+                transition: 0.4s;
+                &:hover{
+                    color: rgb(203, 3, 29);
+                }
+            }
+        }
+    }
+    .register{
+        display: none;
+        position: absolute;
+        .registerTxt-closeIcon{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding:15px 15px;
+            .registerTxt{
+                font-family: JostMedium;
+                letter-spacing: 1.3px;
+                color: black;
+            }
+            .login-reg-pwCloseIcon{
+                color: black;
+                font-size: 26px;
+                cursor: pointer;
+            }
+        }
+        .registerInputArea{
+            padding:30px 20px;
+            border-top:1px solid rgb(238, 233, 233) ;  
+            input{
+                width: 300px;
+                height: 40px;
+                padding: 7px;
+                font-family: JostRegular;
+                font-size: 13px;
+                color: rgb(118, 118, 118);
+                font-family: JostRegular; 
+                border: 1px solid rgb(206, 202, 202);
+                &:focus{
+                    outline: 1px solid white;
+                    border: 1px solid black;
+                }
+            }
+            label{
+                font-size: 14px;
+                color: rgb(118, 118, 118);
+                font-family: JostRegular;
+                margin-bottom: 8px;
+                span{
+                    color: rgb(186, 14, 28);
+                }
+            }
+            button{
+                width: 300px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: rgb(203,3,29);
+                border: 1px solid rgb(203,3,29);
+                font-family: JostMedium;
+                color: white;
+                transition: 0.2s;
+                font-size: 14px;
+                &:hover{
+                border: 1px solid rgb(213,53,74);
+                background-color: rgb(213,53,74);
+                }
+            }
+        }
+        .logP{
+            font-size: 14px;
+            font-family: JostRegular;
+            padding:5px 20px;
+            color: rgb(118, 118, 118);
+            a{
+                font-size: 14px;
+                color: black;
+                text-decoration: none;
+                transition: 0.4s;
+                &:hover{
+                    color: rgb(203, 3, 29);
+                }
+            }
+        }
+    }
+    .recoverPassword{
+        position: absolute;
+        display: none;
+        .recoverPwTxt-closeIcon{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding:15px 15px;
+            .recoverPwTxt{
+                font-family: JostMedium;
+                letter-spacing: 1.3px;
+                color: black;
+            }
+            .login-reg-pwCloseIcon{
+                color: black;
+                font-size: 26px;
+                cursor: pointer;
+            }
+        }
+        .recoverPwInputArea{
+            padding:30px 20px;
+            border-top:1px solid rgb(238, 233, 233) ;  
+            input{
+                width: 300px;
+                height: 40px;
+                padding: 7px;
+                font-family: JostRegular;
+                font-size: 13px;
+                color: rgb(118, 118, 118);
+                font-family: JostRegular;
+                border: 1px solid rgb(206, 202, 202);
+                &:focus{
+                    outline: 1px solid white;
+                    border: 1px solid black;
+                }
+            }
+            label{
+                font-size: 14px;
+                color: rgb(118, 118, 118);
+                font-family: JostRegular;
+                margin-bottom: 8px;
+            }
+            button{
+                width: 300px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: rgb(203,3,29);
+                border: 1px solid rgb(203,3,29);
+                font-family: JostMedium;
+                color: white;
+                transition: 0.2s;
+                font-size: 14px;
+                &:hover{
+                border: 1px solid rgb(213,53,74);
+                background-color: rgb(213,53,74);
+                }
+            }
+        }
+        .recoverPwP{
+            font-size: 14px;
+            font-family: JostRegular;
+            padding:5px 20px;
+            color: rgb(118, 118, 118);
+            a{
+                font-size: 14px;
+                color: black;
+                text-decoration: none;
+                transition: 0.4s;
+                &:hover{
+                    color: rgb(203, 3, 29);
+                }
+            }
+        }
+    }
+}
+.basketArea{
+    height: 100vh;
+    width: 340px;
+    background-color: white;
+    padding: 0 !important;
+    position: fixed;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    right: 0;
+    top: 0;
+    z-index: 55555555555555;
+    display: none;
+    .basketTxt-closeIcon{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:15px 21px;
+        border-bottom:1px solid rgb(238, 233, 233);  
+
+        .basketTxt{
+            font-family: JostMedium;
+            letter-spacing: 1.2px;
+            color: black;
+        }
+        .basketCloseIcon{
+            color: black;
+                font-size: 26px;
+                cursor: pointer;
+        }
+    }
+    .emptyBasket{
+        border-top:1px solid rgb(238, 233, 233);  
+        // padding:30px 20px;
+        .emptybasketIcon{
+            text-align: center;
+            margin-top: 10px;
+            i{
+                font-size: 55px;
+                color: rgb(118, 118, 118);
+            }
+        }
+        p{
+            text-align: center;
+            margin-top: 10px;
+            color:rgb(118, 118, 118);
+            font-size: 14px;
+        }
+        .returnBtn{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+            .basketToShopBtn{
+                text-decoration: none;
+                width: 180px;
+                height: 40px;
+                font-size: 14px;
+                color: white;
+                background-color: rgb(203,3,29);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: JostMedium;
+                transition: 0.3s;
+                &:hover{
+                    background-color: rgb(213,53,74);
+                }
+            }
+        }
+        
+    }
+    
+    .basketProductsArea{
+            overflow-y: scroll;
+            max-height: 400px;
+        .products{      
+        .basketProduct{
+            display: flex;
+            padding: 21px;
+            border-bottom:1px solid rgb(238, 233, 233);  
+            .basketProductImage{
+                img{
+                    width: 120px;
+                    height: 120px;
+                }
+            }
+            .basketContent{
+                margin: 10px 0 10px 10px;
+                .productName{
+                    a{
+                        text-decoration: none;
+                        color: black;
+                        transition: 0.3s;
+                        font-family: JostRegular;   
+                        font-size: 14px;
+                        &:hover{
+                            color:rgb(205,11,36);
+                        }
+                    }
+                }
+                .productPrice{
+                    color:rgb(205,11,36);
+                    font-family: JostRegular;
+                    font-size: 14px;
+                    margin-top: 7px;
+                    display: inline-block;
+                }
+                .removeItem{
+                    margin-top: 7px;
+                    font-size: 17px;
+                    transition: 0.3s;
+                    cursor: pointer;
+                    &:hover{
+                        color:rgb(205,11,36) ;
+                    }
+                }
+            }
+        }
+        }
+        .subtotal{
+            background-color: white;
+            position: fixed;
+            bottom: 0;
+            .title{
+                display: flex;
+                justify-content: space-between;
+                margin: 0 21px;
+                margin-bottom: 10px;
+                .subtotalTitle{
+                    font-size: 18px;
+                    font-family: JostMedium;
+                }
+                .subtotalPrice{
+                    font-family: JostRegular;
+                    font-size: 18px;
+                }
+            }
+            .desc{
+                margin: 0 21px;
+                color: grey;
+                font-size: 13px;
+                font-family: JostRegular;
+            }
+            .checkoutBtn{
+                display: flex;
+                justify-content: center;
+                margin-bottom:20px ;
+                .mycheckoutBtn{
+                    width: 300px;
+                    height: 40px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: rgb(203,3,29);
+                    border: 1px solid rgb(203,3,29);
+                    font-family: JostMedium;
+                    color: white;
+                    transition: 0.2s;
+                    text-decoration: none;
+                    font-size: 12px;
+                    letter-spacing:2px;
+                    &:hover{
+                    border: 1px solid rgb(213,53,74);
+                    background-color: rgb(213,53,74);
+                    }
+                }
+            }
+        }
+        &::-webkit-scrollbar {
+            width: 2px;
+            border-radius: 50%;
+          }
+           
+          &::-webkit-scrollbar-thumb {
+            border-radius: 7px;
+            background-color: rgb(197, 192, 192);
+            outline: 1px solid rgb(197, 192, 192);
+          }
+    }
+    
+}
 
 #homeNavBar {
     .row {
         margin: 0 !important;
-
         .links-logo-icons {
             margin: 0 !important;
             padding: 0 !important;
@@ -2064,201 +2506,203 @@ footer {
 
 //HomeEnd
 
-//ProductsStart
-#NavBar {
-    .row {
+
+//NavbarStart
+.navBarRow {
+    margin: 0 !important;
+
+    .links-logo-icons {
         margin: 0 !important;
 
-        .links-logo-icons {
-            margin: 0 !important;
+        display: flex;
+        align-items: center;
+        height: 80px;
+        z-index: 6;
+        background-color: black;
 
-            display: flex;
-            align-items: center;
-            height: 80px;
-            z-index: 6;
-            background-color: black;
+        .nav-links {
+            height: 100%;
 
-            .nav-links {
-                height: 100%;
+            .menuIcon {
+                font-size: 28px;
+                color: white;
+                position: relative;
+                top: 27px;
+                display: none;
+            }
 
-                .menuIcon {
-                    font-size: 28px;
-                    color: white;
-                    position: relative;
-                    top: 27px;
-                    display: none;
-                }
-
-                .navLinkElements {
-                    position: relative;
-                    top: 30px;
-                    display: flex;
-                    justify-content: space-around;
-                    list-style: none;
-                    height: 50px;
+            .navLinkElements {
+                position: relative;
+                top: 30px;
+                display: flex;
+                justify-content: space-around;
+                list-style: none;
+                height: 50px;
 
 
-                    li {
-                        a {
-                            color: white;
-                            transition-duration: 0.3s;
-                            font-family: JostMedium;
-
-                            &:hover {
-                                color: rgb(186, 5, 29);
-                            }
-                        }
-                    }
-
-                    .shopLi {
-                        position: relative;
-
-                        .shop {
-                            display: none;
-                            transition: 0.4s;
-
-                            .shopElements {
-                                list-style: none;
-
-                                li {
-                                    margin-top: 9px;
-
-                                    a {
-                                        font-family: JostLight;
-                                    }
-
-                                }
-                            }
-                        }
-
-                        &:hover .shop {
-                            display: block;
-                            width: 150px;
-                            max-height: 400px;
-                            padding: 19px 0 19px 18px;
-                            background-color: white;
-                            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-                            position: absolute;
-                            top: 50px;
-
-                            .shopElements {
-                                li {
-                                    a {
-                                        color: rgb(145, 145, 145);
-                                    }
-
-                                    &:hover a {
-                                        color: black;
-                                    }
-                                }
-                            }
-                        }
-                    }
-
-                    .productsLi {
-                        position: relative;
-
-                        .products {
-                            display: none;
-
-                            .productElements {
-                                list-style: none;
-
-                                li {
-                                    margin-top: 9px;
-
-                                    a {
-                                        font-family: JostLight;
-                                    }
-                                }
-                            }
-                        }
-
-                        &:hover .products {
-                            display: block;
-                            width: 150px;
-                            max-height: 400px;
-                            padding: 19px 0 19px 18px;
-                            background-color: white;
-                            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-                            position: absolute;
-                            top: 50px;
-
-                            .productElements {
-                                li {
-                                    a {
-                                        color: rgb(145, 145, 145);
-                                    }
-
-                                    &:hover a {
-                                        color: black;
-                                    }
-                                }
-                            }
-                        }
-                    }
-
+                li {
                     a {
-                        text-decoration: none;
-                        display: inline-block;
-                        height: 100%;
+                        color: white;
+                        transition-duration: 0.3s;
+                        font-family: JostMedium;
+
+                        &:hover {
+                            color: rgb(186, 5, 29);
+                        }
                     }
                 }
-            }
 
-            .logo {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
+                .shopLi {
+                    position: relative;
 
-            .icons {
-                display: flex;
-                justify-content: end;
-                align-items: center;
+                    .shop {
+                        display: none;
+                        transition: 0.4s;
+
+                        .shopElements {
+                            list-style: none;
+
+                            li {
+                                margin-top: 9px;
+
+                                a {
+                                    font-family: JostLight;
+                                }
+
+                            }
+                        }
+                    }
+
+                    &:hover .shop {
+                        display: block;
+                        width: 150px;
+                        max-height: 400px;
+                        padding: 19px 0 19px 18px;
+                        background-color: white;
+                        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                        position: absolute;
+                        top: 50px;
+
+                        .shopElements {
+                            li {
+                                a {
+                                    color: rgb(145, 145, 145);
+                                }
+
+                                &:hover a {
+                                    color: black;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .productsLi {
+                    position: relative;
+
+                    .products {
+                        display: none;
+
+                        .productElements {
+                            list-style: none;
+
+                            li {
+                                margin-top: 9px;
+
+                                a {
+                                    font-family: JostLight;
+                                }
+                            }
+                        }
+                    }
+
+                    &:hover .products {
+                        display: block;
+                        width: 150px;
+                        max-height: 400px;
+                        padding: 19px 0 19px 18px;
+                        background-color: white;
+                        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                        position: absolute;
+                        top: 50px;
+
+                        .productElements {
+                            li {
+                                a {
+                                    color: rgb(145, 145, 145);
+                                }
+
+                                &:hover a {
+                                    color: black;
+                                }
+                            }
+                        }
+                    }
+                }
 
                 a {
-                    // margin-right: 20px;
                     text-decoration: none;
-                    margin-right: 10px;
+                    display: inline-block;
+                    height: 100%;
+                }
+            }
+        }
 
-                    i {
-                        font-size: 22px;
-                        color: white;
-                    }
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-                    .nav-user {
-                        font-size: 26px;
-                    }
+        .icons {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+
+            a {
+                // margin-right: 20px;
+                text-decoration: none;
+                margin-right: 10px;
+
+                i {
+                    font-size: 22px;
+                    color: white;
                 }
 
-                .wishlist {
-                    .wishlistCount {
-                        display: inline-block;
-                        width: 18px;
-                        height: 18px;
-                        border-radius: 50%;
-                        background-color: white;
-                        font-size: 12px;
-                        text-align: center;
-                    }
+                .nav-user {
+                    font-size: 26px;
                 }
+            }
 
-                .basket {
-                    .basketCount {
-                        display: inline-block;
-                        width: 18px;
-                        height: 18px;
-                        border-radius: 50%;
-                        background-color: white;
-                        font-size: 12px;
-                        text-align: center;
-                    }
+            .wishlist {
+                .wishlistCount {
+                    display: inline-block;
+                    width: 18px;
+                    height: 18px;
+                    border-radius: 50%;
+                    background-color: white;
+                    font-size: 12px;
+                    text-align: center;
+                }
+            }
+
+            .basket {
+                .basketCount {
+                    display: inline-block;
+                    width: 18px;
+                    height: 18px;
+                    border-radius: 50%;
+                    background-color: white;
+                    font-size: 12px;
+                    text-align: center;
                 }
             }
         }
     }
 }
+//NavBarEnd
+
+//ProductsStart
 
 #filter {
     margin-top: 30px;
@@ -4064,15 +4508,15 @@ footer {
 
 
 //WhishlistEnd
-// @keyframes fade-In {
-//     0% {
-//         opacity: 0;
-//     }
+@keyframes fade-In {
+    0% {
+        opacity: 0;
+    }
 
-//     100% {
-//         opacity: 1;
-//     }
-// }
+    100% {
+        opacity: 1;
+    }
+}
 
 @keyframes HeartScale {
     0% {
@@ -4105,6 +4549,24 @@ footer {
     }
 
     #NavBar {
+        nav {
+            .links-logo-icons {
+                width: 100%;
+
+                .menuIcon {
+                    display: flex !important;
+                }
+
+                .nav-links {
+                    .navLinkElements {
+                        display: none !important;
+                    }
+                }
+
+            }
+        }
+    }
+    #StickyNavBar{
         nav {
             .links-logo-icons {
                 width: 100%;
@@ -4844,6 +5306,16 @@ footer {
     }
 
     #NavBar {
+        .links-logo-icons {
+            display: flex;
+            justify-content: space-between;
+
+            .icons {
+                display: none !important;
+            }
+        }
+    }
+    #StickyNavBar{
         .links-logo-icons {
             display: flex;
             justify-content: space-between;

@@ -40,4 +40,9 @@ $(document).ready(function () {
     if ($(".featured .owl-item").hasClass("active")) {
         $(".featured .owl-item").siblings().addClass("d-flex justify-content-center")
     }
+
+    // $(".brandImagesRow .brand").hover(function(){
+    //     $(this).addClass("animate__bounceIn")
+        
+    // })
 })
