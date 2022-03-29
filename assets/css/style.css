@@ -32,6 +32,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: JostLight;
+  overflow-x: hidden;
 }
 
 ul {
@@ -5139,6 +5140,16 @@ footer #bottomFooter .row .payment {
     display: -ms-flexbox !important;
     display: flex !important;
     margin: 4% 0 6% 0;
+  }
+  #description .descContentRow {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  #description .descContentRow .descImage {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
   }
   #bestSeller .bestSellerRow {
     -webkit-box-pack: center !important;

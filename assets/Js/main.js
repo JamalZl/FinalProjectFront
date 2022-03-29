@@ -151,24 +151,43 @@ $(document).ready(function () {
         $(".basketArea").removeClass("animate__slideInRight")
     })
 
-    // $("#StickyNavBar").hide()
+    // $(".generalNavBar").hide()
     $(window).scroll(function () {
         if (window.scrollY >= 80) {
-            // $("#StickyNavBar").show()
-            $("#StickyNavBar").css("display","block")
-            $("#StickyNavBar").addClass("animate__slideInDown")
-            $("#StickyNavBar").css({
+            $(".generalNavBar").show()
+            // $("#NavBar").css("display","block")
+            // $("#NavBar").addClass("animate__slideInDown")
+            $(".generalNavBar").css({
                 "position": "sticky",
                 "top": "0px",
                 "z-index": "1000000000",
                 "background-color": "black"
             })
         }
-        console.log(window.scrollY);
         if (window.scrollY <= 100) {
-            $("#StickyNavBar").css("display","none")
+            // $("#NavBar").css("display","none")
+            $(".generalNavBar").css("position","relative")
         }
     })
 
-
+    $(window).scroll(function () {
+        if (window.scrollY >= 80) {
+            $(".homeStickyNav").show()
+            // $("#NavBar").css("display","block")
+            // $("#NavBar").addClass("animate__slideInDown")
+            $(".homeStickyNav").css({
+                "position": "sticky",
+                "top": "0px",
+                "z-index": "1000000000",
+                "background-color": "black"
+            })
+        }
+        if (window.scrollY <= 100) {
+            // $("#NavBar").css("display","none")
+            $(".homeStickyNav").css({
+                "position":"relative",
+                 "background-color":"transparent"
+            })
+        }
+    })
 })

@@ -32,6 +32,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: JostLight;
+    overflow-x: hidden;
 }
 
 ul {
@@ -4655,18 +4656,13 @@ footer {
                 margin: 4% 0 6% 0;
             }
         }
-    }
-
-    .myOwl {
-        .image-text {
-            .image {
-                img {
-                    // height: 800px !important;
-                }
+        .descContentRow{
+            justify-content: center!important;
+            .descImage{
+                justify-content: center!important;
             }
         }
     }
-
     #bestSeller {
         .bestSellerRow {
             justify-content: center !important;
@@ -4678,7 +4674,6 @@ footer {
                     .smallImageRow {
                         justify-content: center !important;
 
-                        // margin-bottom: 5%;
                         .smallImage {
                             width: 25%;
                             height: 71%;
@@ -4703,16 +4698,12 @@ footer {
                         justify-content: center !important;
 
                         .bigImage {
-
-                            // position: relative!important;
-                            // text-align: center;
                             .image {
                                 height: 500px;
                                 background-repeat: no-repeat;
                                 background-size: cover;
                                 background-position: center;
 
-                                // background-position: center center;
                                 img {
                                     height: 100%;
                                 }
@@ -4993,12 +4984,6 @@ footer {
 
     .myOwl {
         .image-text {
-            .image {
-                img {
-                    // max-height: 600px !important;
-                }
-            }
-
             .textDiv {
                 .text {
                     .discount {
@@ -5057,8 +5042,6 @@ footer {
             justify-content: center !important;
 
             .itemsTitle {
-                .bestSellerTitleRow {}
-
                 .imagesRow {
                     justify-content: center !important;
 
@@ -5106,12 +5089,6 @@ footer {
                                 position: absolute;
                                 top: 50%;
                                 left: 50%;
-
-                                .discount {}
-
-                                .saleStatus {}
-
-                                .goToProducts {}
                             }
                         }
                     }
@@ -5173,12 +5150,6 @@ footer {
                                 position: absolute;
                                 top: 50%;
                                 left: 50%;
-
-                                .discount {}
-
-                                .saleStatus {}
-
-                                .goToProducts {}
                             }
                         }
                     }
@@ -5389,8 +5360,6 @@ footer {
             justify-content: center !important;
 
             .itemsTitle {
-                .bestSellerTitleRow {}
-
                 .imagesRow {
                     justify-content: center !important;
 

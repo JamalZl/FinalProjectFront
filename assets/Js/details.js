@@ -43,9 +43,6 @@ $(document).ready(function () {
         $(".sizeVal").children().first().html(sizeValue)
 
     })
-
-
-
     $('.related').owlCarousel({
         loop: true,
         margin: 10,
@@ -55,14 +52,20 @@ $(document).ready(function () {
             0: {
                 items: 1
             },
-            600: {
+            550: {
                 items: 2
             },
-            1000: {
+            820: {
+                items: 3
+            },
+            1200: {
                 items: 4
             }
         }
     })
+    if ($(".related .owl-item").hasClass("active")) {
+        $(".related .owl-item").siblings().addClass("d-flex justify-content-center")
+    }
     $('.recently').owlCarousel({
         loop: true,
         margin: 10,
@@ -72,14 +75,20 @@ $(document).ready(function () {
             0: {
                 items: 1
             },
-            600: {
+            550: {
                 items: 2
             },
-            1000: {
+            820: {
+                items: 3
+            },
+            1200: {
                 items: 4
             }
         }
     })
+    if ($(".recently .owl-item").hasClass("active")) {
+        $(".recently .owl-item").siblings().addClass("d-flex justify-content-center")
+    }
     $(".whishListIcon").click(function (e) {
         e.preventDefault()
         $(this).toggleClass("bi-heart-fill whishListBackground")
