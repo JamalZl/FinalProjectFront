@@ -32,12 +32,9 @@ $(document).ready(function () {
     })
     $(".sizeLi").click(function () {
 
-        if ($(this).hasClass("isSelectedSize")) {
-            $(this).removeClass("isSelectedSize")
-        } else {
+        if (!$(this).hasClass("isSelectedSize")) {
             $(this).toggleClass("isSelectedSize");
-        }
-
+        }    
         $(this).siblings().removeClass("isSelectedSize")
         let sizeValue = $(this).attr("data-value")
         $(".sizeVal").children().first().html(sizeValue)
@@ -120,9 +117,7 @@ $(document).ready(function () {
 
     $(".colorLi").click(function (e) {
         e.preventDefault()
-        if ($(this).hasClass("isSelectedColor")) {
-            $(this).removeClass("isSelectedColor")
-        } else {
+        if (!$(this).hasClass("isSelectedColor")) {
             $(this).toggleClass("isSelectedColor");
         }
 

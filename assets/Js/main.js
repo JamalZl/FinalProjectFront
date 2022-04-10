@@ -15,8 +15,6 @@ $(document).ready(function () {
         $(".menu").css("display", "block")
         $(".menu").addClass("animate__slideInLeft")
         $(".menu").removeClass("animate__slideOutLeft")
-        $(".login-register").addClass("animate__slideOutRight")
-        $(".login-register").removeClass("animate__slideInRight")
         $(".searchArea").addClass("animate__slideOutRight")
         $(".searchArea").removeClass("animate__slideInRight")
         $(".basketArea").addClass("animate__slideOutRight")
@@ -84,57 +82,8 @@ $(document).ready(function () {
         $(".searchArea").removeClass("animate__slideInRight")
         $(".menu").addClass("animate__slideOutLeft")
         $(".menu").removeClass("animate__slideInLeft")
-        $(".login-register").addClass("animate__slideOutRight")
-        $(".login-register").removeClass("animate__slideInRight")
         $(".basketArea").addClass("animate__slideOutRight")
         $(".basketArea").removeClass("animate__slideInRight")
-
-    })
-
-    $(".userIcon").click(function (e) {
-        e.preventDefault()
-        $(".login-register").css("display", "block")
-        $(".login-register").addClass("animate__slideInRight")
-        $(".login-register").removeClass("animate__slideOutRight")
-        $(".menu").addClass("animate__slideOutLeft")
-        $(".menu").removeClass("animate__slideInLeft")
-    })
-    $(".goRegister").click(function (e) {
-        e.preventDefault()
-
-        $(".register").css("display", "block")
-        $(".register").addClass("animate__slideInRight")
-        $(".register").removeClass("animate__slideOutRight")
-        $(".login").addClass("animate__slideOutRight")
-        $(".login").removeClass("animate__slideInRight")
-    })
-    $(".goRecoverPassword").click(function (e) {
-        e.preventDefault()
-
-        $(".recoverPassword").css("display", "block")
-        $(".recoverPassword").addClass("animate__slideInRight")
-        $(".recoverPassword").removeClass("animate__slideOutRight")
-        $(".login").addClass("animate__slideOutRight")
-        $(".login").removeClass("animate__slideInRight")
-    })
-
-
-    $(".login-register i").click(function () {
-        $(".login-register").addClass("animate__slideOutRight")
-        $(".login-register").removeClass("animate__slideInRight")
-    })
-
-    $(".goLogin").click(function (e) {
-        e.preventDefault()
-        $(".login").css("display", "block")
-        $(".login").addClass("animate__slideInRight")
-        $(".login").removeClass("animate__slideOutRight")
-
-        $(".recoverPassword").addClass("animate__slideOutRight")
-        $(".recoverPassword").removeClass("animate__slideInRight")
-
-        $(".register").addClass("animate__slideOutRight")
-        $(".register").removeClass("animate__slideInRight")
     })
 
     $(".basket").click(function (e) {

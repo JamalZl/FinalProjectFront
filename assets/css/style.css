@@ -347,38 +347,179 @@ ul {
           transform: translateX(5px);
 }
 
-.login-register {
-  height: 100vh;
-  width: 340px;
-  background-color: white;
-  padding: 0 !important;
-  position: fixed;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  right: 0;
-  top: 0;
-  z-index: 55555555555552225;
-  display: none;
-  overflow-y: scroll;
-  overflow-x: hidden;
+#loginSection .loginRow {
+  margin: 5% 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.login-register::-webkit-scrollbar {
+#loginSection .loginRow #loginPage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 500px;
+}
+
+#loginSection .loginRow #loginPage .loginForm {
+  width: 100%;
+  background-color: white;
+  padding: 0 !important;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#loginSection .loginRow #loginPage .loginForm .loginTxt-closeIcon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 20px;
+}
+
+#loginSection .loginRow #loginPage .loginForm .loginTxt-closeIcon .loginTxt {
+  font-family: JostMedium;
+  letter-spacing: 1.3px;
+  color: black;
+}
+
+#loginSection .loginRow #loginPage .loginForm .loginInputArea {
+  padding: 30px 20px;
+  border-top: 1px solid #eee9e9;
+}
+
+#loginSection .loginRow #loginPage .loginForm .loginInputArea input {
+  width: 100%;
+  height: 40px;
+  padding: 7px;
+  font-family: JostRegular;
+  font-size: 13px;
+  color: #767676;
+  font-family: JostRegular;
+  border: 1px solid #cecaca;
+}
+
+#loginSection .loginRow #loginPage .loginForm .loginInputArea input:focus {
+  outline: 1px solid white;
+  border: 1px solid black;
+}
+
+#loginSection .loginRow #loginPage .loginForm .loginInputArea label {
+  font-size: 14px;
+  color: #767676;
+  font-family: JostRegular;
+  margin-bottom: 8px;
+}
+
+#loginSection .loginRow #loginPage .loginForm .loginInputArea label span {
+  color: #ba0e1c;
+}
+
+#loginSection .loginRow #loginPage .loginForm .loginInputArea button {
+  width: 100%;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #cb031d;
+  border: 1px solid #cb031d;
+  font-family: JostMedium;
+  color: white;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-size: 14px;
+}
+
+#loginSection .loginRow #loginPage .loginForm .loginInputArea button:hover {
+  border: 1px solid #d5354a;
+  background-color: #d5354a;
+}
+
+#loginSection .loginRow #loginPage .loginForm .log-regP {
+  font-size: 14px;
+  font-family: JostRegular;
+  padding: 5px 20px;
+  color: #767676;
+}
+
+#loginSection .loginRow #loginPage .loginForm .log-regP a {
+  font-size: 14px;
+  color: black;
+  text-decoration: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+#loginSection .loginRow #loginPage .loginForm .log-regP a:hover {
+  color: #cb031d;
+}
+
+#registerSection .registerRow {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 5% 0;
+}
+
+#registerSection .registerRow #registerPage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 500px;
+}
+
+#registerSection .registerRow #registerPage .registerForm {
+  width: 100%;
+  background-color: white;
+  padding: 0 !important;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  max-height: 600px;
+}
+
+#registerSection .registerRow #registerPage .registerForm::-webkit-scrollbar {
   width: 2px;
   border-radius: 50%;
 }
 
-.login-register::-webkit-scrollbar-thumb {
+#registerSection .registerRow #registerPage .registerForm::-webkit-scrollbar-thumb {
   border-radius: 7px;
   background-color: #c5c0c0;
   outline: 1px solid #c5c0c0;
 }
 
-.login-register .login {
-  position: absolute;
-}
-
-.login-register .login .loginTxt-closeIcon {
+#registerSection .registerRow #registerPage .registerForm .registerTxt-closeIcon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -391,25 +532,19 @@ ul {
   padding: 15px 15px;
 }
 
-.login-register .login .loginTxt-closeIcon .loginTxt {
+#registerSection .registerRow #registerPage .registerForm .registerTxt-closeIcon .registerTxt {
   font-family: JostMedium;
   letter-spacing: 1.3px;
   color: black;
 }
 
-.login-register .login .loginTxt-closeIcon .login-reg-pwCloseIcon {
-  color: black;
-  font-size: 26px;
-  cursor: pointer;
-}
-
-.login-register .login .loginInputArea {
+#registerSection .registerRow #registerPage .registerForm .registerInputArea {
   padding: 30px 20px;
   border-top: 1px solid #eee9e9;
 }
 
-.login-register .login .loginInputArea input {
-  width: 300px;
+#registerSection .registerRow #registerPage .registerForm .registerInputArea #registerTypeForm input {
+  width: 100%;
   height: 40px;
   padding: 7px;
   font-family: JostRegular;
@@ -419,24 +554,24 @@ ul {
   border: 1px solid #cecaca;
 }
 
-.login-register .login .loginInputArea input:focus {
+#registerSection .registerRow #registerPage .registerForm .registerInputArea #registerTypeForm input:focus {
   outline: 1px solid white;
   border: 1px solid black;
 }
 
-.login-register .login .loginInputArea label {
+#registerSection .registerRow #registerPage .registerForm .registerInputArea #registerTypeForm label {
   font-size: 14px;
   color: #767676;
   font-family: JostRegular;
   margin-bottom: 8px;
 }
 
-.login-register .login .loginInputArea label span {
+#registerSection .registerRow #registerPage .registerForm .registerInputArea #registerTypeForm label span {
   color: #ba0e1c;
 }
 
-.login-register .login .loginInputArea button {
-  width: 300px;
+#registerSection .registerRow #registerPage .registerForm .registerInputArea #registerTypeForm button {
+  width: 100%;
   height: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -456,19 +591,19 @@ ul {
   font-size: 14px;
 }
 
-.login-register .login .loginInputArea button:hover {
+#registerSection .registerRow #registerPage .registerForm .registerInputArea #registerTypeForm button:hover {
   border: 1px solid #d5354a;
   background-color: #d5354a;
 }
 
-.login-register .login .log-regP {
+#registerSection .registerRow #registerPage .registerForm .logP {
   font-size: 14px;
   font-family: JostRegular;
   padding: 5px 20px;
   color: #767676;
 }
 
-.login-register .login .log-regP a {
+#registerSection .registerRow #registerPage .registerForm .logP a {
   font-size: 14px;
   color: black;
   text-decoration: none;
@@ -476,16 +611,42 @@ ul {
   transition: 0.4s;
 }
 
-.login-register .login .log-regP a:hover {
+#registerSection .registerRow #registerPage .registerForm .logP a:hover {
   color: #cb031d;
 }
 
-.login-register .register {
-  display: none;
-  position: absolute;
+#forgotPwSection .forgotPwRow {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10% 0;
 }
 
-.login-register .register .registerTxt-closeIcon {
+#forgotPwSection .forgotPwRow #forgotPwPage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+#forgotPwSection .forgotPwRow #forgotPwPage .forgotPwForm {
+  width: 100%;
+  background-color: white;
+  padding: 0 !important;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#forgotPwSection .forgotPwRow #forgotPwPage .forgotPwForm .recoverPwTxt-closeIcon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -498,25 +659,19 @@ ul {
   padding: 15px 15px;
 }
 
-.login-register .register .registerTxt-closeIcon .registerTxt {
+#forgotPwSection .forgotPwRow #forgotPwPage .forgotPwForm .recoverPwTxt-closeIcon .recoverPwTxt {
   font-family: JostMedium;
   letter-spacing: 1.3px;
   color: black;
 }
 
-.login-register .register .registerTxt-closeIcon .login-reg-pwCloseIcon {
-  color: black;
-  font-size: 26px;
-  cursor: pointer;
-}
-
-.login-register .register .registerInputArea {
+#forgotPwSection .forgotPwRow #forgotPwPage .forgotPwForm .recoverPwInputArea {
   padding: 30px 20px;
   border-top: 1px solid #eee9e9;
 }
 
-.login-register .register .registerInputArea input {
-  width: 300px;
+#forgotPwSection .forgotPwRow #forgotPwPage .forgotPwForm .recoverPwInputArea input {
+  width: 100%;
   height: 40px;
   padding: 7px;
   font-family: JostRegular;
@@ -526,24 +681,20 @@ ul {
   border: 1px solid #cecaca;
 }
 
-.login-register .register .registerInputArea input:focus {
+#forgotPwSection .forgotPwRow #forgotPwPage .forgotPwForm .recoverPwInputArea input:focus {
   outline: 1px solid white;
   border: 1px solid black;
 }
 
-.login-register .register .registerInputArea label {
+#forgotPwSection .forgotPwRow #forgotPwPage .forgotPwForm .recoverPwInputArea label {
   font-size: 14px;
   color: #767676;
   font-family: JostRegular;
   margin-bottom: 8px;
 }
 
-.login-register .register .registerInputArea label span {
-  color: #ba0e1c;
-}
-
-.login-register .register .registerInputArea button {
-  width: 300px;
+#forgotPwSection .forgotPwRow #forgotPwPage .forgotPwForm .recoverPwInputArea button {
+  width: 100%;
   height: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -563,19 +714,19 @@ ul {
   font-size: 14px;
 }
 
-.login-register .register .registerInputArea button:hover {
+#forgotPwSection .forgotPwRow #forgotPwPage .forgotPwForm .recoverPwInputArea button:hover {
   border: 1px solid #d5354a;
   background-color: #d5354a;
 }
 
-.login-register .register .logP {
+#forgotPwSection .forgotPwRow #forgotPwPage .forgotPwForm .recoverPwP {
   font-size: 14px;
   font-family: JostRegular;
   padding: 5px 20px;
   color: #767676;
 }
 
-.login-register .register .logP a {
+#forgotPwSection .forgotPwRow #forgotPwPage .forgotPwForm .recoverPwP a {
   font-size: 14px;
   color: black;
   text-decoration: none;
@@ -583,110 +734,7 @@ ul {
   transition: 0.4s;
 }
 
-.login-register .register .logP a:hover {
-  color: #cb031d;
-}
-
-.login-register .recoverPassword {
-  position: absolute;
-  display: none;
-}
-
-.login-register .recoverPassword .recoverPwTxt-closeIcon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 15px 15px;
-}
-
-.login-register .recoverPassword .recoverPwTxt-closeIcon .recoverPwTxt {
-  font-family: JostMedium;
-  letter-spacing: 1.3px;
-  color: black;
-}
-
-.login-register .recoverPassword .recoverPwTxt-closeIcon .login-reg-pwCloseIcon {
-  color: black;
-  font-size: 26px;
-  cursor: pointer;
-}
-
-.login-register .recoverPassword .recoverPwInputArea {
-  padding: 30px 20px;
-  border-top: 1px solid #eee9e9;
-}
-
-.login-register .recoverPassword .recoverPwInputArea input {
-  width: 300px;
-  height: 40px;
-  padding: 7px;
-  font-family: JostRegular;
-  font-size: 13px;
-  color: #767676;
-  font-family: JostRegular;
-  border: 1px solid #cecaca;
-}
-
-.login-register .recoverPassword .recoverPwInputArea input:focus {
-  outline: 1px solid white;
-  border: 1px solid black;
-}
-
-.login-register .recoverPassword .recoverPwInputArea label {
-  font-size: 14px;
-  color: #767676;
-  font-family: JostRegular;
-  margin-bottom: 8px;
-}
-
-.login-register .recoverPassword .recoverPwInputArea button {
-  width: 300px;
-  height: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #cb031d;
-  border: 1px solid #cb031d;
-  font-family: JostMedium;
-  color: white;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-  font-size: 14px;
-}
-
-.login-register .recoverPassword .recoverPwInputArea button:hover {
-  border: 1px solid #d5354a;
-  background-color: #d5354a;
-}
-
-.login-register .recoverPassword .recoverPwP {
-  font-size: 14px;
-  font-family: JostRegular;
-  padding: 5px 20px;
-  color: #767676;
-}
-
-.login-register .recoverPassword .recoverPwP a {
-  font-size: 14px;
-  color: black;
-  text-decoration: none;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-.login-register .recoverPassword .recoverPwP a:hover {
+#forgotPwSection .forgotPwRow #forgotPwPage .forgotPwForm .recoverPwP a:hover {
   color: #cb031d;
 }
 
@@ -951,6 +999,7 @@ ul {
   position: relative;
   top: 27px;
   display: none;
+  margin-left: 12px;
 }
 
 #homeNavBar .row .links-logo-icons .nav-links .navLinkElements {
@@ -1283,12 +1332,13 @@ ul {
 }
 
 #handpickedItems .handpickedRow .bigImageRow .bigImage .image {
-  background-position: center;
   width: 100%;
   height: auto;
 }
 
 #handpickedItems .handpickedRow .bigImageRow .bigImage .image img {
+  -o-object-position: center;
+     object-position: center;
   width: 100%;
   height: 100%;
 }
@@ -1605,12 +1655,15 @@ ul {
 }
 
 #newArrival .row .image-content .image {
-  background-position: center;
   width: 100%;
   height: auto;
 }
 
 #newArrival .row .image-content .image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   width: 100%;
   height: 930px;
 }
@@ -1990,12 +2043,15 @@ ul {
 }
 
 #exploreMore .row .image-content .image {
-  background-position: center;
   width: 100%;
   height: auto;
 }
 
 #exploreMore .row .image-content .image img {
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
   height: 930px;
 }
@@ -2111,6 +2167,8 @@ ul {
 }
 
 #bestSeller .bigImageRow .bigImage .image img {
+  -o-object-position: center;
+     object-position: center;
   width: 100%;
   height: 100%;
 }
@@ -2434,6 +2492,10 @@ ul {
 }
 
 #subscribe .row .image-content .image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: left center;
+     object-position: left center;
   width: 100%;
   height: 850px;
 }
@@ -2550,52 +2612,52 @@ footer #topFooter .info-links .info .socials {
   color: white;
 }
 
-footer #topFooter .info-links .info .socials .fb i {
+footer #topFooter .info-links .info .socials .fb {
   color: white;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-footer #topFooter .info-links .info .socials .fb i:hover {
+footer #topFooter .info-links .info .socials .fb:hover {
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
   color: #0e8ef2;
 }
 
-footer #topFooter .info-links .info .socials .tw i {
+footer #topFooter .info-links .info .socials .tw {
   color: white;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   margin-left: 22px;
 }
 
-footer #topFooter .info-links .info .socials .tw i:hover {
+footer #topFooter .info-links .info .socials .tw:hover {
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
   color: #1d9bf0;
 }
 
-footer #topFooter .info-links .info .socials .ig i {
+footer #topFooter .info-links .info .socials .ig {
   color: white;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   margin-left: 22px;
 }
 
-footer #topFooter .info-links .info .socials .ig i:hover {
+footer #topFooter .info-links .info .socials .ig:hover {
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
   color: blueviolet;
 }
 
-footer #topFooter .info-links .info .socials .yt i {
+footer #topFooter .info-links .info .socials .yt {
   color: white;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   margin-left: 22px;
 }
 
-footer #topFooter .info-links .info .socials .yt i:hover {
+footer #topFooter .info-links .info .socials .yt:hover {
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
   color: red;
@@ -3563,6 +3625,7 @@ footer #bottomFooter .row .payment {
   display: -ms-flexbox;
   display: flex;
   margin-top: 2%;
+  margin-left: 1.2%;
 }
 
 #details .images .detailsRowSmallImage .smallImages .image {
@@ -3570,7 +3633,7 @@ footer #bottomFooter .row .payment {
   height: 100%;
   background-size: contain;
   background-repeat: no-repeat;
-  margin-left: 2.65%;
+  margin-left: 2.73%;
   overflow: hidden;
   opacity: 0.4;
   cursor: pointer;
@@ -3592,10 +3655,6 @@ footer #bottomFooter .row .payment {
 #details .images .detailsRowSmallImage .smallImages .image:hover img {
   -webkit-transform: translateY(-10px);
           transform: translateY(-10px);
-}
-
-#details .images .detailsRowSmallImage .smallImages .img1 {
-  margin-left: 4%;
 }
 
 #details .info {
@@ -3686,6 +3745,7 @@ footer #bottomFooter .row .payment {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-left: -1.3%;
 }
 
 #details .info .colorRow .color li {
@@ -3722,10 +3782,6 @@ footer #bottomFooter .row .payment {
   border-radius: 50%;
 }
 
-#details .info .colorRow .color #firstColorLi {
-  margin-left: 0;
-}
-
 #details .info .sizeRow {
   margin-top: 3%;
 }
@@ -3741,6 +3797,7 @@ footer #bottomFooter .row .payment {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-left: -1.3%;
 }
 
 #details .info .sizeRow .size li {
@@ -3768,10 +3825,6 @@ footer #bottomFooter .row .payment {
 
 #details .info .sizeRow .size li:hover {
   color: black;
-}
-
-#details .info .sizeRow .size #firstSizeLi {
-  margin-left: 0;
 }
 
 #details .info .addToCardRow {
@@ -5068,10 +5121,9 @@ footer #bottomFooter .row .payment {
   .container {
     max-width: 980px;
   }
-  #newArrival .row .image-content .image {
-    background-size: cover;
-  }
   #newArrival .row .image-content .image img {
+    -o-object-fit: cover;
+       object-fit: cover;
     height: 700px;
   }
   #NavBar nav .links-logo-icons {
@@ -5187,11 +5239,12 @@ footer #bottomFooter .row .payment {
   }
   #bestSeller .bestSellerRow .itemsTitle .imagesRow .bigImageRow .bigImage .image {
     height: 500px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
   }
   #bestSeller .bestSellerRow .itemsTitle .imagesRow .bigImageRow .bigImage .image img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
     height: 100%;
   }
   #bestSeller .bestSellerRow .itemsTitle .imagesRow .bigImageRow .bigImage .content .discount {
@@ -5240,11 +5293,12 @@ footer #bottomFooter .row .payment {
   }
   #handpickedItems .handpickedRow .itemsTitle .imagesRow .bigImageRow .bigImage .image {
     height: 500px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
   }
   #handpickedItems .handpickedRow .itemsTitle .imagesRow .bigImageRow .bigImage .image img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
     height: 100%;
   }
   #handpickedItems .handpickedRow .itemsTitle .imagesRow .bigImageRow .bigImage .content .discount {
@@ -5271,13 +5325,14 @@ footer #bottomFooter .row .payment {
             justify-content: center;
     width: 50%;
   }
-  #exploreMore .row .image-content .image {
-    background-size: cover;
-  }
   #exploreMore .row .image-content .image img {
+    -o-object-fit: cover;
+       object-fit: cover;
     height: 700px;
   }
   #subscribe .image-content .image img {
+    -o-object-fit: cover;
+       object-fit: cover;
     height: 821px !important;
   }
   #contactUs .contactInfoRow {
@@ -5401,10 +5456,9 @@ footer #bottomFooter .row .payment {
     height: 30px;
     font-size: 11px;
   }
-  #newArrival .image-content .image {
-    background-size: cover;
-  }
   #newArrival .image-content .image img {
+    -o-object-fit: cover;
+       object-fit: cover;
     height: 460px !important;
   }
   #newArrival .image-content .content {
@@ -5459,11 +5513,12 @@ footer #bottomFooter .row .payment {
   }
   #bestSeller .bestSellerRow .itemsTitle .imagesRow .bigImageRow .bigImage .image {
     height: 350px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
   }
   #bestSeller .bestSellerRow .itemsTitle .imagesRow .bigImageRow .bigImage .image img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
     height: 100%;
   }
   #bestSeller .bestSellerRow .itemsTitle .imagesRow .bigImageRow .bigImage .content {
@@ -5508,11 +5563,12 @@ footer #bottomFooter .row .payment {
   }
   #handpickedItems .handpickedRow .itemsTitle .imagesRow .bigImageRow .bigImage .image {
     height: 350px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
   }
   #handpickedItems .handpickedRow .itemsTitle .imagesRow .bigImageRow .bigImage .image img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
     height: 100%;
   }
   #handpickedItems .handpickedRow .itemsTitle .imagesRow .bigImageRow .bigImage .content {
@@ -5528,10 +5584,9 @@ footer #bottomFooter .row .payment {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  #exploreMore .image-content .image {
-    background-size: cover;
-  }
   #exploreMore .image-content .image img {
+    -o-object-fit: cover;
+       object-fit: cover;
     height: 460px !important;
   }
   #exploreMore .image-content .content {
@@ -5549,10 +5604,9 @@ footer #bottomFooter .row .payment {
     height: 35px !important;
     font-size: 13px !important;
   }
-  #subscribe .image-content .image {
-    background-size: cover;
-  }
   #subscribe .image-content .image img {
+    -o-object-fit: cover;
+       object-fit: cover;
     height: 521px !important;
   }
   #subscribe .image-content .content .text p {
@@ -5769,11 +5823,12 @@ footer #bottomFooter .row .payment {
   }
   #handpickedItems .handpickedRow .itemsTitle .imagesRow .bigImageRow .bigImage .image {
     height: 500px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
   }
   #handpickedItems .handpickedRow .itemsTitle .imagesRow .bigImageRow .bigImage .image img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
     height: 100%;
   }
   #handpickedItems .handpickedRow .itemsTitle .imagesRow .bigImageRow .bigImage .content .discount {
@@ -5924,11 +5979,12 @@ footer #bottomFooter .row .payment {
   }
   #handpickedItems .handpickedRow .itemsTitle .imagesRow .bigImageRow .bigImage .image {
     height: 500px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
   }
   #handpickedItems .handpickedRow .itemsTitle .imagesRow .bigImageRow .bigImage .image img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
     height: 100%;
   }
   #handpickedItems .handpickedRow .itemsTitle .imagesRow .bigImageRow .bigImage .content .discount {
