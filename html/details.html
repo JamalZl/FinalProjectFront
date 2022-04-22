@@ -66,10 +66,20 @@
                                 <span>Search</span>
                             </a>
                         </li>
-                        <li><a class="userIcon" href="#">
+                        <li class="userIconLi">
+                            <div class="userIcon">
                                 <i class="bi bi-person nav-user"></i>
-                                <span>Login/Register</span>
-                            </a>
+                                <span>  
+                                    User
+                                </span>
+                                <div class="userIconMenuLoginStatus">
+                                       <ul class="userIconMenuLoginStatusUl">
+                                           <li><a href="">Username</a></li>
+                                           <li><a href="">Edit your profile</a></li>
+                                           <li><a href="">Logout</a></li>
+                                       </ul>
+                                </div>
+                            </div>
                         </li>
                         <li><a href="#" class="wishlist">
                                 <i class="bi bi-heart nav-wishlist"></i>
@@ -510,30 +520,86 @@
                                         alt="">
                                     <div class="icons">
                                         <a href="" class="whishlist"><i class="bi bi-heart"></i></a>
-                                        <a href="" class="view"><i class="bi bi-eye"></i></a>
                                     </div>
-
                                 </a>
                                 <a class="secondImage" href="">
                                     <img src="https://cdn.shopify.com/s/files/1/1385/4931/products/3_f793aa93-354e-4b50-8b86-d2ebe46e30a5_360x.jpg?v=1605080943"
                                         alt="">
                                 </a>
                                 <div class="addToCard">
-                                    <div class="increase-number-decrease">
-                                        <a class="minus" href="">
-                                            <i class="fa-solid fa-minus"></i>
-                                        </a>
-                                        <span id="inputNumber">1</span>
-                                        <a class="plus" href="">
-                                            <i class="fa-solid fa-plus"></i>
-                                        </a>
-                                    </div>
-                                    <a href="" class="toCard">ADD TO CART</a>
+                                    <a href="" class="toCard modalShowerAddToCard">ADD TO CART</a>
                                 </div>
                             </div>
                             <div class="name-price">
                                 <div class="name"><a href="">Nike Zoom Pegasus</a></div>
                                 <div class="price">£270.00</div>
+                            </div>
+                            <div class="bg-modal d-none">
+                                <div class="productModal animate__animated d-none">
+                                    <div class="image-name-price">
+                                        <div class="modalImage">
+                                            <img src="https://cdn.shopify.com/s/files/1/1385/4931/products/2_e195f63f-79e4-436a-a065-ee9fb5895c9d_360x.jpg?v=1604995044" alt="">
+                                        </div>
+                                        <div class="modalname-price">
+                                            <div class="modalName">
+                                                <a href="">Nike Zoom Pegasus</a>
+                                            </div>
+                                            <div class="modalPrice">
+                                                $350.00
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="modalcolor-text">
+                                        <div class="modalText">
+                                            <span class="modalColorVal">Color : <span>Grey</span> </span>
+                                        </div>
+                                        <div class="modalColor">
+                                            <ul class="modalColorUl">
+                                                <li class="modalColorLi" data-value="Blue"><a
+                                                        style="background-color: rgb(74,165,199);" href=""></a></li>
+                                                <li class="modalColorLi" data-value="Orange"><a style="background-color: rgb(255,122,1)"
+                                                        href=""></a></li>
+                                                <li class="modalColorLi" data-value="Yellow"><a style="background-color: rgb(225,235,121);"
+                                                        href=""></a></li>
+                                                <li class="modalColorLi" data-value="Grey"><a style="background-color: rgb(130,130,130)"
+                                                        href=""></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="modalsize-text">
+                                        <div class="modalText">
+                                            <span class="modalSizeVal">Size: <span>40</span> </span>
+                                        </div>
+                                        <div class="modalSize">
+                                            <ul class="modalSizeUl">
+                                                <li class="modalSizeLi" data-value="40"><span>40</span></li>
+                                                <li class="modalSizeLi" data-value="41"><span>41</span></li>
+                                                <li class="modalSizeLi" data-value="42"><span>42</span></li>
+                                                <li class="modalSizeLi" data-value="43"><span>43</span></li>
+                                                <li class="modalSizeLi" data-value="44"><span>44</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="modalcounter-button">
+                                        <div class="modalCounter">
+                                            <button class="modalMinus"><i class="fa-solid fa-minus"></i></button>
+                                            <span class="modalProductCounter" >1</span>
+                                            <button class="modalPlus"><i class="fa-solid fa-plus"></i></button>
+                                        </div>
+                                        <div class="modalButton">
+                                            <button class="modalAddCard col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                                                ADD TO CARD
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="modalViewFullDetails">
+                                        <a href="">View full details <i class="las la-long-arrow-alt-right"></i></a>
+                                    </div>
+                                    <div class="modalClose">
+                                        <i class="las la-times"></i>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="smallImage">
@@ -653,7 +719,6 @@
                                         alt="">
                                     <div class="icons">
                                         <a href="" class="whishlist"><i class="bi bi-heart"></i></a>
-                                        <a href="" class="view"><i class="bi bi-eye"></i></a>
                                     </div>
 
                                 </a>
@@ -662,21 +727,79 @@
                                         alt="">
                                 </a>
                                 <div class="addToCard">
-                                    <div class="increase-number-decrease">
-                                        <a class="minus" href="">
-                                            <i class="fa-solid fa-minus"></i>
-                                        </a>
-                                        <span id="inputNumber">1</span>
-                                        <a class="plus" href="">
-                                            <i class="fa-solid fa-plus"></i>
-                                        </a>
-                                    </div>
-                                    <a href="" class="toCard">ADD TO CART</a>
+                                    <a href="" class="toCard modalShowerAddToCard">ADD TO CART</a>
                                 </div>
                             </div>
                             <div class="name-price">
                                 <div class="name"><a href="">Nike Zoom Pegasus</a></div>
                                 <div class="price">£270.00</div>
+                            </div>
+                            <div class="bg-modal d-none">
+                                <div class="productModal animate__animated d-none">
+                                    <div class="image-name-price">
+                                        <div class="modalImage">
+                                            <img src="https://cdn.shopify.com/s/files/1/1385/4931/products/2_e195f63f-79e4-436a-a065-ee9fb5895c9d_360x.jpg?v=1604995044" alt="">
+                                        </div>
+                                        <div class="modalname-price">
+                                            <div class="modalName">
+                                                <a href="">Nike Zoom Pegasus</a>
+                                            </div>
+                                            <div class="modalPrice">
+                                                $350.00
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="modalcolor-text">
+                                        <div class="modalText">
+                                            <span class="modalColorVal">Color : <span>Grey</span> </span>
+                                        </div>
+                                        <div class="modalColor">
+                                            <ul class="modalColorUl">
+                                                <li class="modalColorLi" data-value="Blue"><a
+                                                        style="background-color: rgb(74,165,199);" href=""></a></li>
+                                                <li class="modalColorLi" data-value="Orange"><a style="background-color: rgb(255,122,1)"
+                                                        href=""></a></li>
+                                                <li class="modalColorLi" data-value="Yellow"><a style="background-color: rgb(225,235,121);"
+                                                        href=""></a></li>
+                                                <li class="modalColorLi" data-value="Grey"><a style="background-color: rgb(130,130,130)"
+                                                        href=""></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="modalsize-text">
+                                        <div class="modalText">
+                                            <span class="modalSizeVal">Size: <span>40</span> </span>
+                                        </div>
+                                        <div class="modalSize">
+                                            <ul class="modalSizeUl">
+                                                <li class="modalSizeLi" data-value="40"><span>40</span></li>
+                                                <li class="modalSizeLi" data-value="41"><span>41</span></li>
+                                                <li class="modalSizeLi" data-value="42"><span>42</span></li>
+                                                <li class="modalSizeLi" data-value="43"><span>43</span></li>
+                                                <li class="modalSizeLi" data-value="44"><span>44</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="modalcounter-button">
+                                        <div class="modalCounter">
+                                            <button class="modalMinus"><i class="fa-solid fa-minus"></i></button>
+                                            <span class="modalProductCounter" >1</span>
+                                            <button class="modalPlus"><i class="fa-solid fa-plus"></i></button>
+                                        </div>
+                                        <div class="modalButton">
+                                            <button class="modalAddCard col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                                                ADD TO CARD
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="modalViewFullDetails">
+                                        <a href="">View full details <i class="las la-long-arrow-alt-right"></i></a>
+                                    </div>
+                                    <div class="modalClose">
+                                        <i class="las la-times"></i>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="smallImage">

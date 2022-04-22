@@ -21,15 +21,6 @@ $(document).ready(function () {
             tab.classList.remove("d-none")
         }
     })
-
-    let sizes = document.querySelectorAll(".sizeLi")
-    sizes.forEach(size => {
-        size.onclick = function () {
-            let dataValue = size.getAttribute("data-value")
-
-            // console.log(dataValue);
-        }
-    })
     $(".sizeLi").click(function () {
 
         if (!$(this).hasClass("isSelectedSize")) {
@@ -96,7 +87,6 @@ $(document).ready(function () {
     let plPlus = document.querySelector(".plus")
     let plproductCount = document.querySelector("#productCounter")
     plPlus.addEventListener("click", () => {
-        console.log("sd");
         plproductCount.value = Number(plproductCount.value) + 1;
     })
     plMinus.addEventListener("click", () => {

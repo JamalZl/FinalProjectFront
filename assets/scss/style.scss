@@ -39,11 +39,13 @@ ul {
     margin: 0;
     padding: 0;
 }
-#StickyNavBar{
+
+#StickyNavBar {
     display: none;
 }
+
 .menu {
-    height: 100vh;
+    height: 100%;
     overflow-y: scroll;
     width: 340px;
     background-color: white;
@@ -113,6 +115,39 @@ ul {
             }
         }
 
+        .userIconLi {
+            width: 100%;
+
+            .userIcon {
+                span {
+                    font-family: JostRegular;
+                }
+
+                .userIconMenuLoginStatus {
+                    .userIconMenuLoginStatusUl {
+                        display: none;
+                        margin-bottom: 5px;
+                        width: 100%;
+
+                        li {
+                            margin-left: 10px;
+                            margin-bottom: 0;
+                            padding-left: 10px;
+                            display: block !important;
+                            width: 50%;
+                            min-height: 5px !important;
+                            border-bottom: none !important;
+
+                            a {
+                                font-size: 12px;
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+
         .menuShopLi {
             width: 100%;
             display: block !important;
@@ -162,9 +197,12 @@ ul {
                 }
             }
         }
+
+
     }
 }
-.searchArea{
+
+.searchArea {
     height: 100vh;
     overflow-y: scroll;
     width: 340px;
@@ -176,39 +214,44 @@ ul {
     top: 0;
     z-index: 55555555555555;
     display: none;
+
     &::-webkit-scrollbar {
         width: 2px;
         border-radius: 50%;
-      }
-       
-      &::-webkit-scrollbar-thumb {
+    }
+
+    &::-webkit-scrollbar-thumb {
         border-radius: 7px;
         background-color: rgb(197, 192, 192);
         outline: 1px solid rgb(197, 192, 192);
-      }
-    .searchTxt-closeIcon{
+    }
+
+    .searchTxt-closeIcon {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding:15px 15px;
-        .searchTxt{
+        padding: 15px 15px;
+
+        .searchTxt {
             font-family: JostRegular;
             letter-spacing: 1.2px;
             color: black;
         }
-        .searchCloseIcon{
+
+        .searchCloseIcon {
             color: black;
-                font-size: 26px;
-                cursor: pointer;
+            font-size: 26px;
+            cursor: pointer;
         }
     }
-    .searchInputArea{
-        padding:30px 20px;
-        border-bottom: 1px solid rgb(238, 233, 233);
-        border-top:1px solid rgb(238, 233, 233) ;  
 
-        
-        .searchInput{
+    .searchInputArea {
+        padding: 30px 20px;
+        border-bottom: 1px solid rgb(238, 233, 233);
+        border-top: 1px solid rgb(238, 233, 233);
+
+
+        .searchInput {
             width: 260px;
             height: 40px;
             padding: 7px;
@@ -218,43 +261,55 @@ ul {
             color: rgb(118, 118, 118);
             font-family: JostRegular;
             border: 1px solid rgb(206, 202, 202);
-            &::placeholder{
+
+            &::placeholder {
                 font-size: 13px;
                 color: rgb(118, 118, 118);
             }
         }
-            input[type="search"]::-webkit-search-decoration,
-            input[type="search"]::-webkit-search-cancel-button,
-            input[type="search"]::-webkit-search-results-button,
-            input[type="search"]::-webkit-search-results-decoration { display: none; }  
+
+        input[type="search"]::-webkit-search-decoration,
+        input[type="search"]::-webkit-search-cancel-button,
+        input[type="search"]::-webkit-search-results-button,
+        input[type="search"]::-webkit-search-results-decoration {
+            display: none;
+        }
     }
-    .searchResultArea{
+
+    .searchResultArea {
         padding: 20px;
-        .serachResult{
+
+        .serachResult {
             display: flex;
             margin-top: 7%;
-            .image{
-                img{
+
+            .image {
+                img {
                     width: 80px;
-                    height:80px;
+                    height: 80px;
                 }
             }
-            .name-price{
+
+            .name-price {
                 margin-left: 10px;
-                .name{
+
+                .name {
                     margin-bottom: 5px;
-                    a{
+
+                    a {
                         font-family: JostMedium;
                         font-size: 14px;
                         color: black;
                         transition: 0.3s;
                         text-decoration: none;
-                        &:hover{
+
+                        &:hover {
                             color: rgb(190, 16, 16);
                         }
                     }
                 }
-                .price{
+
+                .price {
                     font-family: JostRegular;
                     font-size: 14px;
                     color: rgb(118, 118, 118);
@@ -262,7 +317,8 @@ ul {
             }
         }
     }
-    .viewAll{
+
+    .viewAll {
         padding: 20px;
         font-size: 14px;
         font-family: JostMedium;
@@ -270,25 +326,29 @@ ul {
         color: black;
         transition: 0.3s;
         letter-spacing: 1.2px;
-        i{
+
+        i {
             transition: 0.3s;
         }
-        &:hover{
+
+        &:hover {
             color: rgb(190, 16, 16);
-            i{
-            color: rgb(190, 16, 16);
-            transform: translateX(5px);
+
+            i {
+                color: rgb(190, 16, 16);
+                transform: translateX(5px);
             }
         }
     }
 }
 
-#loginSection{
-    .loginRow{
+#loginSection {
+    .loginRow {
         // height: 100vh;
         margin: 5% 0;
         justify-content: center;
-        #loginPage{
+
+        #loginPage {
             display: flex;
             width: fit-content;
             align-items: center;
@@ -296,98 +356,112 @@ ul {
             width: 500px;
 
 
-            .loginForm{
+            .loginForm {
                 width: 100%;
                 background-color: white;
                 padding: 0 !important;
                 box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-                    .loginTxt-closeIcon{
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        padding:15px 20px;
-                        .loginTxt{
-                            font-family: JostMedium;
-                            letter-spacing: 1.3px;
-                            color: black;
-                        }
+
+                .loginTxt-closeIcon {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 15px 20px;
+
+                    .loginTxt {
+                        font-family: JostMedium;
+                        letter-spacing: 1.3px;
+                        color: black;
                     }
-                    .loginInputArea{
-                        padding:30px 20px;
-                        border-top:1px solid rgb(238, 233, 233);  
-                        input{
-                            width: 100%;
-                            height: 40px;
-                            padding: 7px;
-                            font-family: JostRegular;
-                            font-size: 13px;
-                            color: rgb(118, 118, 118);
-                            font-family: JostRegular;
-                            border: 1px solid rgb(206, 202, 202);
-                            &:focus{
-                                outline: 1px solid white;
-                                border: 1px solid black;
-                            }
-                        }
-                        label{
-                            font-size: 14px;
-                            color: rgb(118, 118, 118);
-                            font-family: JostRegular;
-                            margin-bottom: 8px;
-                            span{
-                                color: rgb(186, 14, 28);
-                            }
-                        }
-                        button{
-                            width: 100%;
-                            height: 40px;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            background-color: rgb(203,3,29);
-                            border: 1px solid rgb(203,3,29);
-                            font-family: JostMedium;
-                            color: white;
-                            transition: 0.2s;
-                            font-size: 14px;
-                            &:hover{
-                            border: 1px solid rgb(213,53,74);
-                            background-color: rgb(213,53,74);
-                            }
-                        }
-                    }
-                    .log-regP{
-                        font-size: 14px;
+                }
+
+                .loginInputArea {
+                    padding: 30px 20px;
+                    border-top: 1px solid rgb(238, 233, 233);
+
+                    input {
+                        width: 100%;
+                        height: 40px;
+                        padding: 7px;
                         font-family: JostRegular;
-                        padding:5px 20px;
+                        font-size: 13px;
                         color: rgb(118, 118, 118);
-                        a{
-                            font-size: 14px;
-                            color: black;
-                            text-decoration: none;
-                            transition: 0.4s;
-                            &:hover{
-                                color: rgb(203, 3, 29);
-                            }
+                        font-family: JostRegular;
+                        border: 1px solid rgb(206, 202, 202);
+
+                        &:focus {
+                            outline: 1px solid white;
+                            border: 1px solid black;
                         }
                     }
+
+                    label {
+                        font-size: 14px;
+                        color: rgb(118, 118, 118);
+                        font-family: JostRegular;
+                        margin-bottom: 8px;
+
+                        span {
+                            color: rgb(186, 14, 28);
+                        }
+                    }
+
+                    button {
+                        width: 100%;
+                        height: 40px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: rgb(203, 3, 29);
+                        border: 1px solid rgb(203, 3, 29);
+                        font-family: JostMedium;
+                        color: white;
+                        transition: 0.2s;
+                        font-size: 14px;
+
+                        &:hover {
+                            border: 1px solid rgb(213, 53, 74);
+                            background-color: rgb(213, 53, 74);
+                        }
+                    }
+                }
+
+                .log-regP {
+                    font-size: 14px;
+                    font-family: JostRegular;
+                    padding: 5px 20px;
+                    color: rgb(118, 118, 118);
+
+                    a {
+                        font-size: 14px;
+                        color: black;
+                        text-decoration: none;
+                        transition: 0.4s;
+
+                        &:hover {
+                            color: rgb(203, 3, 29);
+                        }
+                    }
+                }
             }
         }
     }
 }
 
-#registerSection{
-    .registerRow{
+#registerSection {
+    .registerRow {
         // height: 100vh;
         justify-content: center;
         margin: 5% 0;
-        #registerPage{
-                display: flex;
-                width: fit-content;
-                align-items: center;
-                justify-content: center;
-                width: 500px;
-            .registerForm{
+
+        #registerPage {
+            display: flex;
+            width: fit-content;
+            align-items: center;
+            justify-content: center;
+            width: 500px;
+
+            .registerForm {
                 width: 100%;
                 background-color: white;
                 padding: 0 !important;
@@ -395,125 +469,37 @@ ul {
                 overflow-y: scroll;
                 overflow-x: hidden;
                 max-height: 600px;
+
                 &::-webkit-scrollbar {
                     width: 2px;
                     border-radius: 50%;
-                  }
-                   
-                  &::-webkit-scrollbar-thumb {
+                }
+
+                &::-webkit-scrollbar-thumb {
                     border-radius: 7px;
                     background-color: rgb(197, 192, 192);
                     outline: 1px solid rgb(197, 192, 192);
-                  }
-                .registerTxt-closeIcon{
+                }
+
+                .registerTxt-closeIcon {
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
-                    padding:15px 15px;
-                    .registerTxt{
+                    padding: 15px 15px;
+
+                    .registerTxt {
                         font-family: JostMedium;
                         letter-spacing: 1.3px;
                         color: black;
                     }
                 }
-                .registerInputArea{
-                    padding:30px 20px;
-                    border-top:1px solid rgb(238, 233, 233) ;  
-                   #registerTypeForm{
-                    input{
-                        width: 100%;
-                        height: 40px;
-                        padding: 7px;
-                        font-family: JostRegular;
-                        font-size: 13px;
-                        color: rgb(118, 118, 118);
-                        font-family: JostRegular; 
-                        border: 1px solid rgb(206, 202, 202);
-                        &:focus{
-                            outline: 1px solid white;
-                            border: 1px solid black;
-                        }
-                    }
-                    label{
-                        font-size: 14px;
-                        color: rgb(118, 118, 118);
-                        font-family: JostRegular;
-                        margin-bottom: 8px;
-                        span{
-                            color: rgb(186, 14, 28);
-                        }
-                    }
-                    button{
-                        width: 100%;
-                        height: 40px;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        background-color: rgb(203,3,29);
-                        border: 1px solid rgb(203,3,29);
-                        font-family: JostMedium;
-                        color: white;
-                        transition: 0.2s;
-                        font-size: 14px;
-                        &:hover{
-                        border: 1px solid rgb(213,53,74);
-                        background-color: rgb(213,53,74);
-                        }
-                    }
-                   }
-                }
-                .logP{
-                    font-size: 14px;
-                    font-family: JostRegular;
-                    padding:5px 20px;
-                    color: rgb(118, 118, 118);
-                    a{
-                        font-size: 14px;
-                        color: black;
-                        text-decoration: none;
-                        transition: 0.4s;
-                        &:hover{
-                            color: rgb(203, 3, 29);
-                        }
-                    }
-                }
-            }
-        }
-        
-    }
-}
 
-#forgotPwSection{
-    .forgotPwRow{
-        // height: 100vh;
-        justify-content: center;
-        margin: 10% 0;
-        #forgotPwPage{
-                display: flex;
-                width: fit-content;
-                align-items: center;
-                justify-content: center;
-                width: 100%;
-            .forgotPwForm{
-                width: 100%;
-                background-color: white;
-                padding: 0 !important;
-                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-                    .recoverPwTxt-closeIcon{
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        padding:15px 15px;
-                        .recoverPwTxt{
-                            font-family: JostMedium;
-                            letter-spacing: 1.3px;
-                            color: black;
-                        }
-                    }
-                    .recoverPwInputArea{
-                        padding:30px 20px;
-                        border-top:1px solid rgb(238, 233, 233) ;  
-                        input{
+                .registerInputArea {
+                    padding: 30px 20px;
+                    border-top: 1px solid rgb(238, 233, 233);
+
+                    #registerTypeForm {
+                        input {
                             width: 100%;
                             height: 40px;
                             padding: 7px;
@@ -522,59 +508,172 @@ ul {
                             color: rgb(118, 118, 118);
                             font-family: JostRegular;
                             border: 1px solid rgb(206, 202, 202);
-                            &:focus{
+
+                            &:focus {
                                 outline: 1px solid white;
                                 border: 1px solid black;
                             }
                         }
-                        label{
+
+                        label {
                             font-size: 14px;
                             color: rgb(118, 118, 118);
                             font-family: JostRegular;
                             margin-bottom: 8px;
+
+                            span {
+                                color: rgb(186, 14, 28);
+                            }
                         }
-                        button{
+
+                        button {
                             width: 100%;
                             height: 40px;
                             display: flex;
                             justify-content: center;
                             align-items: center;
-                            background-color: rgb(203,3,29);
-                            border: 1px solid rgb(203,3,29);
+                            background-color: rgb(203, 3, 29);
+                            border: 1px solid rgb(203, 3, 29);
                             font-family: JostMedium;
                             color: white;
                             transition: 0.2s;
                             font-size: 14px;
-                            &:hover{
-                            border: 1px solid rgb(213,53,74);
-                            background-color: rgb(213,53,74);
+
+                            &:hover {
+                                border: 1px solid rgb(213, 53, 74);
+                                background-color: rgb(213, 53, 74);
                             }
                         }
                     }
-                    .recoverPwP{
+                }
+
+                .logP {
+                    font-size: 14px;
+                    font-family: JostRegular;
+                    padding: 5px 20px;
+                    color: rgb(118, 118, 118);
+
+                    a {
                         font-size: 14px;
-                        font-family: JostRegular;
-                        padding:5px 20px;
-                        color: rgb(118, 118, 118);
-                        a{
-                            font-size: 14px;
-                            color: black;
-                            text-decoration: none;
-                            transition: 0.4s;
-                            &:hover{
-                                color: rgb(203, 3, 29);
-                            }
+                        color: black;
+                        text-decoration: none;
+                        transition: 0.4s;
+
+                        &:hover {
+                            color: rgb(203, 3, 29);
                         }
                     }
+                }
+            }
+        }
+
+    }
+}
+
+#forgotPwSection {
+    .forgotPwRow {
+        // height: 100vh;
+        justify-content: center;
+        margin: 10% 0;
+
+        #forgotPwPage {
+            display: flex;
+            width: fit-content;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+
+            .forgotPwForm {
+                width: 100%;
+                background-color: white;
+                padding: 0 !important;
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+                .recoverPwTxt-closeIcon {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 15px 15px;
+
+                    .recoverPwTxt {
+                        font-family: JostMedium;
+                        letter-spacing: 1.3px;
+                        color: black;
+                    }
+                }
+
+                .recoverPwInputArea {
+                    padding: 30px 20px;
+                    border-top: 1px solid rgb(238, 233, 233);
+
+                    input {
+                        width: 100%;
+                        height: 40px;
+                        padding: 7px;
+                        font-family: JostRegular;
+                        font-size: 13px;
+                        color: rgb(118, 118, 118);
+                        font-family: JostRegular;
+                        border: 1px solid rgb(206, 202, 202);
+
+                        &:focus {
+                            outline: 1px solid white;
+                            border: 1px solid black;
+                        }
+                    }
+
+                    label {
+                        font-size: 14px;
+                        color: rgb(118, 118, 118);
+                        font-family: JostRegular;
+                        margin-bottom: 8px;
+                    }
+
+                    button {
+                        width: 100%;
+                        height: 40px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: rgb(203, 3, 29);
+                        border: 1px solid rgb(203, 3, 29);
+                        font-family: JostMedium;
+                        color: white;
+                        transition: 0.2s;
+                        font-size: 14px;
+
+                        &:hover {
+                            border: 1px solid rgb(213, 53, 74);
+                            background-color: rgb(213, 53, 74);
+                        }
+                    }
+                }
+
+                .recoverPwP {
+                    font-size: 14px;
+                    font-family: JostRegular;
+                    padding: 5px 20px;
+                    color: rgb(118, 118, 118);
+
+                    a {
+                        font-size: 14px;
+                        color: black;
+                        text-decoration: none;
+                        transition: 0.4s;
+
+                        &:hover {
+                            color: rgb(203, 3, 29);
+                        }
+                    }
+                }
             }
         }
     }
 }
 
 
-
-.basketArea{
-    height: 100vh;
+.basketArea {
+    height: 100%;
     width: 340px;
     background-color: white;
     padding: 0 !important;
@@ -584,178 +683,205 @@ ul {
     top: 0;
     z-index: 55555555555555;
     display: none;
-    .basketTxt-closeIcon{
+
+    .basketTxt-closeIcon {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding:15px 21px;
-        border-bottom:1px solid rgb(238, 233, 233);  
+        padding: 15px 21px;
+        border-bottom: 1px solid rgb(238, 233, 233);
 
-        .basketTxt{
+        .basketTxt {
             font-family: JostMedium;
             letter-spacing: 1.2px;
             color: black;
         }
-        .basketCloseIcon{
+
+        .basketCloseIcon {
             color: black;
-                font-size: 26px;
-                cursor: pointer;
+            font-size: 26px;
+            cursor: pointer;
         }
     }
-    .emptyBasket{
-        border-top:1px solid rgb(238, 233, 233);  
+
+    .emptyBasket {
+        border-top: 1px solid rgb(238, 233, 233);
+
         // padding:30px 20px;
-        .emptybasketIcon{
+        .emptybasketIcon {
             text-align: center;
             margin-top: 10px;
-            i{
+
+            i {
                 font-size: 55px;
                 color: rgb(118, 118, 118);
             }
         }
-        p{
+
+        p {
             text-align: center;
             margin-top: 10px;
-            color:rgb(118, 118, 118);
+            color: rgb(118, 118, 118);
             font-size: 14px;
         }
-        .returnBtn{
+
+        .returnBtn {
             display: flex;
             justify-content: center;
             margin-bottom: 10px;
-            .basketToShopBtn{
+
+            .basketToShopBtn {
                 text-decoration: none;
                 width: 180px;
                 height: 40px;
                 font-size: 14px;
                 color: white;
-                background-color: rgb(203,3,29);
+                background-color: rgb(203, 3, 29);
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 font-family: JostMedium;
                 transition: 0.3s;
-                &:hover{
-                    background-color: rgb(213,53,74);
+
+                &:hover {
+                    background-color: rgb(213, 53, 74);
                 }
             }
         }
-        
+
     }
-    
-    .basketProductsArea{
-            overflow-y: scroll;
-            max-height: 400px;
-        .products{      
-        .basketProduct{
-            display: flex;
-            padding: 21px;
-            border-bottom:1px solid rgb(238, 233, 233);  
-            .basketProductImage{
-                img{
-                    width: 120px;
-                    height: 120px;
+
+    .basketProductsArea {
+        overflow-y: scroll;
+        max-height: 450px;
+
+        .products {
+            .basketProduct {
+                display: flex;
+                padding: 21px;
+                border-bottom: 1px solid rgb(238, 233, 233);
+
+                .basketProductImage {
+                    img {
+                        width: 120px;
+                        height: 120px;
+                    }
                 }
-            }
-            .basketContent{
-                margin: 10px 0 10px 10px;
-                .productName{
-                    a{
-                        text-decoration: none;
-                        color: black;
-                        transition: 0.3s;
-                        font-family: JostRegular;   
+
+                .basketContent {
+                    margin: 10px 0 10px 10px;
+
+                    .productName {
+                        a {
+                            text-decoration: none;
+                            color: black;
+                            transition: 0.3s;
+                            font-family: JostRegular;
+                            font-size: 14px;
+
+                            &:hover {
+                                color: rgb(205, 11, 36);
+                            }
+                        }
+                    }
+
+                    .productPrice {
+                        color: rgb(205, 11, 36);
+                        font-family: JostRegular;
                         font-size: 14px;
-                        &:hover{
-                            color:rgb(205,11,36);
+                        margin-top: 7px;
+                        display: inline-block;
+                    }
+
+                    .removeItem {
+                        margin-top: 7px;
+                        font-size: 17px;
+                        transition: 0.3s;
+                        cursor: pointer;
+
+                        &:hover {
+                            color: rgb(205, 11, 36);
                         }
                     }
                 }
-                .productPrice{
-                    color:rgb(205,11,36);
-                    font-family: JostRegular;
-                    font-size: 14px;
-                    margin-top: 7px;
-                    display: inline-block;
-                }
-                .removeItem{
-                    margin-top: 7px;
-                    font-size: 17px;
-                    transition: 0.3s;
-                    cursor: pointer;
-                    &:hover{
-                        color:rgb(205,11,36) ;
-                    }
-                }
             }
         }
-        }
-        .subtotal{
+
+        .subtotal {
             background-color: white;
             position: fixed;
             bottom: 0;
-            .title{
+
+            .title {
                 display: flex;
                 justify-content: space-between;
                 margin: 0 21px;
                 margin-bottom: 10px;
-                .subtotalTitle{
+
+                .subtotalTitle {
                     font-size: 18px;
                     font-family: JostMedium;
                 }
-                .subtotalPrice{
+
+                .subtotalPrice {
                     font-family: JostRegular;
                     font-size: 18px;
                 }
             }
-            .desc{
+
+            .desc {
                 margin: 0 21px;
                 color: grey;
                 font-size: 13px;
                 font-family: JostRegular;
             }
-            .checkoutBtn{
+
+            .checkoutBtn {
                 display: flex;
                 justify-content: center;
-                margin-bottom:20px ;
-                .mycheckoutBtn{
+                margin-bottom: 20px;
+
+                .mycheckoutBtn {
                     width: 300px;
                     height: 40px;
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    background-color: rgb(203,3,29);
-                    border: 1px solid rgb(203,3,29);
+                    background-color: rgb(203, 3, 29);
+                    border: 1px solid rgb(203, 3, 29);
                     font-family: JostMedium;
                     color: white;
                     transition: 0.2s;
                     text-decoration: none;
                     font-size: 12px;
-                    letter-spacing:2px;
-                    &:hover{
-                    border: 1px solid rgb(213,53,74);
-                    background-color: rgb(213,53,74);
+                    letter-spacing: 2px;
+
+                    &:hover {
+                        border: 1px solid rgb(213, 53, 74);
+                        background-color: rgb(213, 53, 74);
                     }
                 }
             }
         }
+
         &::-webkit-scrollbar {
             width: 2px;
             border-radius: 50%;
-          }
-           
-          &::-webkit-scrollbar-thumb {
+        }
+
+        &::-webkit-scrollbar-thumb {
             border-radius: 7px;
             background-color: rgb(197, 192, 192);
             outline: 1px solid rgb(197, 192, 192);
-          }
+        }
     }
-    
+
 }
 
 #homeNavBar {
     .row {
         margin: 0 !important;
+
         .links-logo-icons {
             margin: 0 !important;
             padding: 0 !important;
@@ -820,14 +946,17 @@ ul {
                         }
 
                         &:hover .shop {
+                            overflow-y: scroll;
                             display: block;
                             width: 150px;
-                            max-height: 400px;
+                            max-height: 300px;
                             padding: 19px 0 19px 18px;
-                            background-color: white;
+                            border-radius: 6px;
+                            background-color: rgb(241, 237, 237);
                             position: absolute;
                             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
                             top: 50px;
+                            z-index: 10000000000000000000000000000000000000000000000;
 
                             .shopElements {
                                 li {
@@ -839,6 +968,17 @@ ul {
                                         color: black;
                                     }
                                 }
+                            }
+
+                            &::-webkit-scrollbar {
+                                width: 2px;
+                                border-radius: 50%;
+                            }
+
+                            &::-webkit-scrollbar-thumb {
+                                border-radius: 7px;
+                                background-color: rgb(197, 192, 192);
+                                outline: 1px solid rgb(197, 192, 192);
                             }
                         }
                     }
@@ -863,14 +1003,17 @@ ul {
                         }
 
                         &:hover .products {
+                            overflow-y: scroll;
                             display: block;
                             width: 150px;
-                            max-height: 400px;
+                            max-height: 300px;
+                            border-radius: 6px;
                             padding: 19px 0 19px 18px;
-                            background-color: white;
+                            background-color: rgb(241, 237, 237);
                             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
                             position: absolute;
                             top: 50px;
+                            z-index: 10000000000000000000000000000000000000000000000;
 
                             .productElements {
                                 li {
@@ -882,6 +1025,17 @@ ul {
                                         color: black;
                                     }
                                 }
+                            }
+
+                            &::-webkit-scrollbar {
+                                width: 2px;
+                                border-radius: 50%;
+                            }
+
+                            &::-webkit-scrollbar-thumb {
+                                border-radius: 7px;
+                                background-color: rgb(197, 192, 192);
+                                outline: 1px solid rgb(197, 192, 192);
                             }
                         }
                     }
@@ -904,6 +1058,7 @@ ul {
                 display: flex;
                 justify-content: end;
                 align-items: center;
+                height: 100%;
 
                 a {
                     text-decoration: none;
@@ -914,10 +1069,75 @@ ul {
                         color: white;
                     }
 
+
+                }
+
+
+                .userIcon {
+                    margin-right: 10px;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    color: white;
+                    cursor: pointer;
+
                     .nav-user {
                         font-size: 26px;
                     }
+
+                    .userLoginStatus {
+                        display: none;
+
+                        .userLoginStatusUl {
+                            list-style: none;
+
+                            li {
+                                a {
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+                    }
+
+                    &:hover {
+                        .userLoginStatus {
+                            display: block;
+                            width: 150px;
+                            padding: 15px 0 15px 15px;
+                            background-color: rgb(255, 255, 255);
+                            border-radius: 7px;
+                            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                            position: absolute;
+                            top: 80px;
+                            right: 120px;
+                            overflow-x: scroll;
+
+                            li {
+                                a {
+                                    color: grey;
+                                    transition: 0.3;
+                                }
+
+                                &:hover a {
+                                    color: rgb(169, 14, 27);
+                                }
+                            }
+
+                            &::-webkit-scrollbar {
+                                width: 2px;
+                                height: 4px;
+                                border-radius: 50%;
+                            }
+
+                            &::-webkit-scrollbar-thumb {
+                                border-radius: 7px;
+                                background-color: rgb(197, 192, 192);
+                                outline: 1px solid rgb(197, 192, 192);
+                            }
+                        }
+                    }
                 }
+
 
                 .wishlist {
                     .wishlistCount {
@@ -1167,6 +1387,7 @@ ul {
                 margin: 45px 0;
                 width: 46%;
                 height: 36%;
+                margin-bottom: 10%;
 
                 .image {
                     position: relative;
@@ -1180,23 +1401,21 @@ ul {
                         transition: 0.7s;
                         width: 100%;
                         height: 100%;
-
                         img {
                             position: relative;
                             top: 0;
-                            z-index: -1;
                             width: 100%;
+                            z-index: -2;
                             height: 100%;
                             transition: 0.9s;
                             transition-timing-function: cubic-bezier(.015, .013, .010, .005);
                         }
 
                     }
-
                     .icons {
                         width: 36px;
-                        height: 60px;
-                        background-color: white;
+                        height: 30px;
+                        // background-color: white;
                         position: absolute;
                         top: 10px;
                         right: 10px;
@@ -1205,26 +1424,27 @@ ul {
                         flex-direction: column;
                         opacity: 0;
                         transition: 0.3s;
-
+        
                         a {
                             color: black;
+                            font-size: 20px;
                             transition: 0.3s;
-
+        
                             &:hover {
                                 color: red;
                             }
                         }
-
+        
                         .view {
                             margin-top: 7px;
                         }
                     }
-
                     .mainImage {
                         transition: 0.7s;
                         position: absolute;
                         width: 100%;
                         height: 100%;
+                        z-index: -1;
 
                         img {
                             position: absolute;
@@ -1244,57 +1464,6 @@ ul {
                         overflow: hidden;
                         height: 0;
                         letter-spacing: 0.3px;
-
-                        .increase-number-decrease {
-                            width: 80px;
-                            height: 40px;
-                            background-color: rgb(206, 37, 60);
-
-                            display: flex;
-                            justify-content: space-between;
-                            align-items: center;
-                            transition: 0.8s;
-
-                            a {
-                                text-decoration: none;
-                            }
-
-                            .minus {
-                                border-right: 1px rgba(207, 117, 117, 0.781) solid;
-                                display: inline-block;
-                                height: 100%;
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
-                                width: 33%;
-                                text-align: center;
-                                color: white;
-                                font-size: 8px;
-
-                            }
-
-                            .plus {
-                                border-left: 1px rgba(207, 117, 117, 0.781) solid;
-                                border-right: 1px rgba(207, 117, 117, 0.781) solid;
-                                display: inline-block;
-                                height: 100%;
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
-                                width: 33%;
-                                text-align: center;
-                                font-size: 8px;
-                                color: white;
-                            }
-
-                            #inputNumber {
-                                width: 34%;
-                                text-align: center;
-                                color: white;
-                                font-size: 15px;
-                            }
-
-                        }
 
                         .toCard {
                             display: flex;
@@ -1322,11 +1491,44 @@ ul {
                         }
                     }
 
-
+                    &:hover {
+                        .mainImage {
+                            opacity: 0;
+                        }
+    
+                        .icons {
+                            opacity: 1;
+                        }
+    
+                        .addToCard {
+                            opacity: 1;
+                            transition-timing-function: cubic-bezier(.23, .68, .37, .87);
+                            height: 40px;
+                        }
+    
+                        .secondImage {
+    
+                            img {
+                                transform: scale(1.12);
+                            }
+                        }
+                    }
                 }
 
                 .name-price {
                     position: absolute;
+
+                    .icons {
+                        .whishlist {
+                            font-size: 20px;
+                            transition: 0.3s;
+                            color: black;
+
+                            &:hover {
+                                color: rgb(186, 5, 29);
+                            }
+                        }
+                    }
 
                     .name {
                         margin-top: 20px;
@@ -1351,29 +1553,275 @@ ul {
                         color: rgb(203, 3, 102);
                     }
                 }
-
-                &:hover {
-                    .mainImage {
-                        opacity: 0;
-                    }
-
-                    .icons {
-                        opacity: 1;
-                    }
-
-                    .addToCard {
-                        opacity: 1;
-                        transition-timing-function: cubic-bezier(.23, .68, .37, .87);
-                        height: 40px;
-                    }
-
-                    .secondImage {
-
-                        img {
-                            transform: scale(1.12);
+                .bg-modal {
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    z-index: 10;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(0, 0, 0, 0.6);
+        
+                    .productModal {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        z-index: 5;
+                        width: 20rem;
+                        height: 500px;
+                        background-color: white;
+                        padding: 25px;
+        
+                        .image-name-price {
+                            display: flex;
+                            width: 100%;
+                            .modalImage {
+                                img {
+                                    width: 90px;
+                                    height: 90px;
+                                }
+                            }
+        
+                            .modalname-price {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                margin-left: 15px;
+        
+                                .modalName {
+                                    a {
+                                        text-decoration: none;
+                                        color: black;
+                                        font-family: JostRegular;
+                                        transition: 0.3s;
+                                        letter-spacing: 1.3px;
+                                        font-size: 14px;
+        
+                                        &:hover {
+                                            color: rgb(186, 14, 28);
+        
+                                        }
+                                    }
+                                }
+        
+                                .modalPrice {
+                                    color: rgb(186, 14, 28);
+                                    font-family: JostRegular;
+                                }
+                            }
+        
                         }
+        
+                        .modalcolor-text {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            width: 100%;
+                            margin-top: 30px;
+        
+                            .modalText {
+                                .modalColorVal {
+                                    font-family: JostBold;
+                                    letter-spacing: 1.2px;
+                                    font-size: 14px;
+                                    text-transform: uppercase;
+                                }
+                            }
+        
+                            .modalColor {
+                                margin-top: 5px;
+        
+                                .modalColorUl {
+                                    list-style: none;
+                                    display: flex;
+        
+                                    .modalColorLi {
+                                        width: 32px;
+                                        height: 32px;
+                                        border-radius: 50%;
+                                        border: 2px solid rgb(218, 217, 217);
+                                        color: grey;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        transition: 0.3s;
+                                        margin-left: 1%;
+                                        cursor: pointer;
+                                        font-size: 14px;
+                                        font-family: JostRegular;
+                                        padding: 2px;
+        
+                                        &:hover {
+                                            color: black;
+                                        }
+        
+                                        a {
+                                            width: 100%;
+                                            height: 100%;
+                                            border-radius: 50%;
+                                        }
+        
+        
+                                    }
+        
+                                    .modalColorLi:nth-child(n-1) {
+                                        margin-left: 5px;
+                                    }
+                                }
+                            }
+        
+        
+                        }
+        
+                        .modalsize-text {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            margin-top: 30px;
+                            width: 100%;
+        
+                            .modalText {
+                                .modalSizeVal {
+                                    font-family: JostBold;
+                                    letter-spacing: 1.2px;
+                                    font-size: 14px;
+                                    text-transform: uppercase;
+                                }
+                            }
+        
+                            .modalSize {
+                                .modalSizeUl {
+                                    list-style: none;
+                                    display: flex;
+                                    margin-top: 8px;
+        
+                                    .modalSizeLi {
+                                        width: 30px;
+                                        height: 30px;
+                                        border-radius: 50%;
+                                        border: 1px solid rgb(189, 186, 186);
+                                        color: grey;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        transition: 0.3s;
+                                        margin-left: 1%;
+                                        cursor: pointer;
+                                        font-size: 14px;
+                                        font-family: JostRegular;
+        
+                                        &:hover {
+                                            color: black;
+                                        }
+                                    }
+        
+                                    .modalSizeLi:nth-child(n-1) {
+                                        margin-left: 4px;
+                                    }
+                                }
+                            }
+                        }
+        
+                        .modalcounter-button {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            width: 100%;
+                            margin-top: 30px;
+                            .modalCounter {
+                                width: 120px;
+                                height: 40px;
+                                display: flex;
+                                border: 1px solid black;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                
+                                .modalMinus {
+                                    border: none;
+                                    font-family: JostMedium;
+                                    background: none;
+                                }
+        
+                                .modalProductCounter {
+                                    width: 35px;
+                                    text-align: center;
+                                    border: none;
+                                    outline: 1px solid white;
+                                    outline-offset: -5px;
+                                    font-family: JostMedium;
+                                }
+        
+                                .modalPlus {
+                                    border: none;
+                                    background: none;
+                                    font-family: JostMedium;
+                                }
+                            }
+        
+                            .modalButton {
+                                margin-top: 20px;
+                                .modalAddCard {
+                                    width: 300px;
+                                    min-height: 40px;
+                                    display: flex;
+                                    border: 1px solid black;
+                                    background-color: black;
+                                    color: white;
+                                    font-family: JostMedium;
+                                    font-size: 14px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    transition: 0.4s;
+                                    transition-timing-function: ease-in-out;
+        
+                                    &:hover {
+                                        background-color: rgb(203, 3, 29);
+                                        border: 1px solid rgb(203, 3, 29);
+                                    }
+                                }
+                            }
+                            
+                        }
+                        .modalViewFullDetails{
+                            display: flex;
+                            justify-content: center;
+                            width: 100%;
+                            margin-top: 30px;
+                            a{
+                                text-decoration: none;
+                                transition: 0.3s;
+                                font-size: 14px;
+                                font-family: JostMedium;
+                                letter-spacing: 0.7px;
+                                color: black;
+                                i{
+                                    transition: 0.3s;
+                                }
+                                &:hover{  
+                                    color: rgb(186, 14, 28);
+                                    i{
+                                        color: rgb(186, 14, 28);
+                                        transform: translateX(5px);
+                                    }
+                                }
+                            }
+                        }
+        
+                        .modalClose {
+                            position: absolute;
+                            top: 8px;
+                            right: 10px;
+                            font-size: 30px;
+                            color: black;
+                            cursor: pointer;
+                        }
+        
                     }
                 }
+               
             }
         }
     }
@@ -1495,193 +1943,162 @@ ul {
         }
     }
 
-    .slider {
-        .featured {
-            .smallImage {
+    .featured {
+        .smallImage {
+            position: relative;
+            margin: 10px;
+            width: 261px;
+            height: 375px;
+
+            .image {
                 position: relative;
-                margin: 10px;
+                overflow: hidden;
+                transition: 0.3s;
                 width: 261px;
-                height: 375px;
+                height: 261px;
 
-                .image {
-                    position: relative;
+                .secondImage {
                     overflow: hidden;
-                    transition: 0.3s;
-                    width: 261px;
-                    height: 261px;
+                    transition: 0.7s;
 
-                    .secondImage {
-                        overflow: hidden;
-                        transition: 0.7s;
-
-                        img {
-                            position: relative;
-                            top: 0;
-                            z-index: -1;
-                            width: 261px;
-                            height: 261px;
-                            transition: 0.9s;
-                            transition-timing-function: cubic-bezier(.015, .013, .010, .005);
-                        }
-
-                    }
-
-                    .icons {
-                        width: 36px;
-                        height: 60px;
-                        background-color: white;
-                        position: absolute;
-                        top: 10px;
-                        right: 10px;
-                        text-align: center;
-                        display: flex;
-                        flex-direction: column;
-                        opacity: 0;
-                        transition: 0.3s;
-
-                        a {
-                            color: black;
-                            transition: 0.3s;
-
-                            &:hover {
-                                color: red;
-                            }
-                        }
-
-                        .view {
-                            margin-top: 7px;
-                        }
-                    }
-
-                    .mainImage {
-                        transition: 0.7s;
+                    img {
                         position: relative;
-
-                        img {
-                            position: absolute;
-                            width: 261px;
-                            height: 261px;
-                            opacity: 1;
-                        }
-
-
+                        top: 0;
+                        z-index: -1;
+                        width: 261px;
+                        height: 261px;
+                        transition: 0.9s;
+                        transition-timing-function: cubic-bezier(.015, .013, .010, .005);
                     }
 
-                    .addToCard {
-                        position: absolute;
-                        bottom: 0;
-                        display: flex;
-                        width: 100%;
-                        opacity: 0;
+                }
+
+                .icons {
+                    width: 36px;
+                    height: 30px;
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    opacity: 0;
+                    transition: 0.3s;
+                    font-size: 20px;
+
+                    a {
+                        color: black;
                         transition: 0.3s;
-                        overflow: hidden;
-                        height: 0;
-                        letter-spacing: 0.3px;
-
-                        .increase-number-decrease {
-                            width: 80px;
-                            height: 40px;
-                            background-color: rgb(206, 37, 60);
-
-                            display: flex;
-                            justify-content: space-between;
-                            align-items: center;
-                            transition: 0.8s;
-
-                            a {
-                                text-decoration: none;
-                            }
-
-                            .minus {
-                                border-right: 1px rgba(207, 117, 117, 0.781) solid;
-                                display: inline-block;
-                                height: 100%;
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
-                                width: 33%;
-                                text-align: center;
-                                color: white;
-                                font-size: 8px;
-
-                            }
-
-                            .plus {
-                                border-left: 1px rgba(207, 117, 117, 0.781) solid;
-                                border-right: 1px rgba(207, 117, 117, 0.781) solid;
-                                display: inline-block;
-                                height: 100%;
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
-                                width: 33%;
-                                text-align: center;
-                                font-size: 8px;
-                                color: white;
-                            }
-
-                            #inputNumber {
-                                width: 34%;
-                                text-align: center;
-                                color: white;
-                                font-size: 15px;
-                            }
-
-                        }
-
-                        .toCard {
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            width: 100%;
-                            background-color: rgb(206, 37, 59);
-                            color: white;
-                            font-size: 600;
-                            text-decoration: none;
-                            font-family: JostMedium;
-                            font-size: 14px;
-                        }
 
                         &:hover {
-                            .toCard {
-                                background-color: rgb(190, 16, 16);
-                            }
-
-                            .increase-number-decrease {
-                                background-color: rgb(190, 16, 16);
-                            }
-
-
+                            color: red;
                         }
+                    }
+
+                    .view {
+                        margin-top: 7px;
+                    }
+                }
+
+                .mainImage {
+                    transition: 0.7s;
+                    position: relative;
+
+                    img {
+                        position: absolute;
+                        width: 261px;
+                        height: 261px;
+                        opacity: 1;
                     }
 
 
                 }
 
-                .name-price {
+                .addToCard {
                     position: absolute;
+                    bottom: 0;
+                    display: flex;
+                    width: 100%;
+                    opacity: 0;
+                    transition: 0.3s;
+                    overflow: hidden;
+                    height: 0;
+                    letter-spacing: 0.3px;
 
-                    .name {
-                        margin-top: 20px;
+                    .increase-number-decrease {
+                        width: 80px;
+                        height: 40px;
+                        background-color: rgb(206, 37, 60);
+
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        transition: 0.8s;
 
                         a {
                             text-decoration: none;
-                            font-weight: 600;
-                            letter-spacing: 1.2px;
-                            color: black;
-                            transition: 0.3s;
+                        }
 
-                            &:hover {
-                                color: rgb(203, 3, 102);
-                            }
+                        .minus {
+                            border-right: 1px rgba(207, 117, 117, 0.781) solid;
+                            display: inline-block;
+                            height: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 33%;
+                            text-align: center;
+                            color: white;
+                            font-size: 8px;
+
+                        }
+
+                        .plus {
+                            border-left: 1px rgba(207, 117, 117, 0.781) solid;
+                            border-right: 1px rgba(207, 117, 117, 0.781) solid;
+                            display: inline-block;
+                            height: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 33%;
+                            text-align: center;
+                            font-size: 8px;
+                            color: white;
+                        }
+
+                        #inputNumber {
+                            width: 34%;
+                            text-align: center;
+                            color: white;
+                            font-size: 15px;
                         }
 
                     }
 
-                    .price {
-                        font-weight: 600;
-                        margin-top: 4px;
-                        color: rgb(203, 3, 102);
+                    .toCard {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 100%;
+                        background-color: rgb(206, 37, 59);
+                        color: white;
+                        font-size: 600;
+                        text-decoration: none;
+                        font-family: JostMedium;
+                        font-size: 14px;
+                    }
+
+                    &:hover {
+                        .toCard {
+                            background-color: rgb(190, 16, 16);
+                        }
+
+                        .increase-number-decrease {
+                            background-color: rgb(190, 16, 16);
+                        }
+
+
                     }
                 }
 
@@ -1689,26 +2106,326 @@ ul {
                     .mainImage {
                         opacity: 0;
                     }
-
+    
                     .icons {
                         opacity: 1;
                     }
-
+    
                     .addToCard {
                         opacity: 1;
                         transition-timing-function: cubic-bezier(.23, .68, .37, .87);
                         height: 40px;
                     }
-
+    
                     .secondImage {
-
+    
                         img {
                             transform: scale(1.12);
                         }
                     }
                 }
             }
+
+            .name-price {
+                position: absolute;
+
+                .name {
+                    margin-top: 20px;
+
+                    a {
+                        text-decoration: none;
+                        font-weight: 600;
+                        letter-spacing: 1.2px;
+                        color: black;
+                        transition: 0.3s;
+
+                        &:hover {
+                            color: rgb(203, 3, 102);
+                        }
+                    }
+
+                }
+
+                .price {
+                    font-weight: 600;
+                    margin-top: 4px;
+                    color: rgb(203, 3, 102);
+                }
+            }
+
+            .bg-modal {
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: 10;
+                width: 100%;
+                height: 100%;
+                // background-color: rgba(0, 0, 0, 0.6);
+    
+                .productModal {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    z-index: 5;
+                    width: 300px;
+                    height: 400px;
+                    background-color: white;
+                    padding: 25px;
+    
+                    .image-name-price {
+                        display: flex;
+                        width: 100%;
+                        .modalImage {
+                            img {
+                                width: 90px;
+                                height: 90px;
+                            }
+                        }
+    
+                        .modalname-price {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            margin-left: 15px;
+    
+                            .modalName {
+                                a {
+                                    text-decoration: none;
+                                    color: black;
+                                    font-family: JostRegular;
+                                    transition: 0.3s;
+                                    letter-spacing: 1.3px;
+                                    font-size: 14px;
+    
+                                    &:hover {
+                                        color: rgb(186, 14, 28);
+    
+                                    }
+                                }
+                            }
+    
+                            .modalPrice {
+                                color: rgb(186, 14, 28);
+                                    font-size: 14px;
+                                    font-family: JostRegular;
+                            }
+                        }
+    
+                    }
+    
+                    .modalcolor-text {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        width: 100%;
+                        margin-top: 10px;
+    
+                        .modalText {
+                            .modalColorVal {
+                                font-family: JostBold;
+                                letter-spacing: 1.2px;
+                                font-size: 14px;
+                                text-transform: uppercase;
+                            }
+                        }
+    
+                        .modalColor {
+                            margin-top: 5px;
+    
+                            .modalColorUl {
+                                list-style: none;
+                                display: flex;
+    
+                                .modalColorLi {
+                                    width: 30px;
+                                    height: 30px;
+                                    border-radius: 50%;
+                                    border: 2px solid rgb(218, 217, 217);
+                                    color: grey;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    transition: 0.3s;
+                                    margin-left: 1%;
+                                    cursor: pointer;
+                                    font-size: 12px;
+                                    font-family: JostRegular;
+                                    padding: 2px;
+    
+                                    &:hover {
+                                        color: black;
+                                    }
+    
+                                    a {
+                                        width: 100%;
+                                        height: 100%;
+                                        border-radius: 50%;
+                                    }
+    
+    
+                                }
+    
+                                .modalColorLi:nth-child(n-1) {
+                                    margin-left: 5px;
+                                }
+                            }
+                        }
+    
+    
+                    }
+    
+                    .modalsize-text {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        margin-top: 14px;
+                        font-size: 10px;
+                        width: 100%;
+    
+                        .modalText {
+                            .modalSizeVal {
+                                font-family: JostBold;
+                                letter-spacing: 1.2px;
+                                font-size: 14px;
+                                text-transform: uppercase;
+                            }
+                        }
+    
+                        .modalSize {
+                            .modalSizeUl {
+                                list-style: none;
+                                display: flex;
+                                margin-top: 8px;
+    
+                                .modalSizeLi {
+                                    width: 30px;
+                                    height: 30px;
+                                    border-radius: 50%;
+                                    border: 1px solid rgb(189, 186, 186);
+                                    color: grey;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    transition: 0.3s;
+                                    margin-left: 1%;
+                                    cursor: pointer;
+                                    font-size: 14px;
+                                    font-family: JostRegular;
+    
+                                    &:hover {
+                                        color: black;
+                                    }
+                                }
+    
+                                .modalSizeLi:nth-child(n-1) {
+                                    margin-left: 4px;
+                                }
+                            }
+                        }
+                    }
+    
+                    .modalcounter-button {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        width: 100%;
+                        margin-top: 10px;
+                        .modalCounter {
+                            width: 110px;
+                            height: 35px;
+                            display: flex;
+                            border: 1px solid black;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            
+                            .modalMinus {
+                                border: none;
+                                font-family: JostMedium;
+                                background: none;
+                            }
+    
+                            .modalProductCounter {
+                                width: 35px;
+                                text-align: center;
+                                border: none;
+                                outline: 1px solid white;
+                                font-size: 12px;
+                                outline-offset: -5px;
+                                font-family: JostMedium;
+                            }
+    
+                            .modalPlus {
+                                border: none;
+                                background: none;
+                                font-family: JostMedium;
+                            }
+                        }
+    
+                        .modalButton {
+                            margin-top: 20px;
+                            .modalAddCard {
+                                width: 200px;
+                                min-height: 35px;
+                                display: flex;
+                                border: 1px solid black;
+                                background-color: black;
+                                color: white;
+                                font-family: JostMedium;
+                                font-size: 12px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                transition: 0.4s;
+                                transition-timing-function: ease-in-out;
+    
+                                &:hover {
+                                    background-color: rgb(203, 3, 29);
+                                    border: 1px solid rgb(203, 3, 29);
+                                }
+                            }
+                        }
+                        
+                    }
+                    .modalViewFullDetails{
+                        display: flex;
+                        justify-content: center;
+                        width: 100%;
+                        margin-top: 12px;
+                        a{
+                            text-decoration: none;
+                            transition: 0.3s;
+                            font-size: 14px;
+                            font-family: JostMedium;
+                            letter-spacing: 0.7px;
+                            color: black;
+                            i{
+                                transition: 0.3s;
+                            }
+                            &:hover{  
+                                color: rgb(186, 14, 28);
+                                i{
+                                    color: rgb(186, 14, 28);
+                                    transform: translateX(5px);
+                                }
+                            }
+                        }
+                    }
+    
+                    .modalClose {
+                        position: absolute;
+                        top: 8px;
+                        right: 10px;
+                        font-size: 20px;
+                        color: black;
+                        cursor: pointer;
+                    }
+    
+                }
+            } 
         }
+        
     }
 }
 
@@ -1951,7 +2668,7 @@ ul {
                     img {
                         position: relative;
                         top: 0;
-                        z-index: -1;
+                        z-index: -2;
                         width: 100%;
                         height: 100%;
                         transition: 0.9s;
@@ -1960,38 +2677,14 @@ ul {
 
                 }
 
-                .icons {
-                    width: 36px;
-                    height: 60px;
-                    background-color: white;
-                    position: absolute;
-                    top: 10px;
-                    right: 10px;
-                    text-align: center;
-                    display: flex;
-                    flex-direction: column;
-                    opacity: 0;
-                    transition: 0.3s;
 
-                    a {
-                        color: black;
-                        transition: 0.3s;
-
-                        &:hover {
-                            color: red;
-                        }
-                    }
-
-                    .view {
-                        margin-top: 7px;
-                    }
-                }
 
                 .mainImage {
                     transition: 0.7s;
                     position: absolute;
                     width: 100%;
                     height: 100%;
+                    z-index: -1;
 
                     img {
                         position: absolute;
@@ -1999,6 +2692,34 @@ ul {
                         width: 100%;
                         height: 100%;
                     }
+                    .icons {
+                        width: 36px;
+                        height: 30px;
+                        // background-color: white;
+                        position: absolute;
+                        top: 10px;
+                        right: 10px;
+                        text-align: center;
+                        display: flex;
+                        flex-direction: column;
+                        opacity: 0;
+                        transition: 0.3s;
+        
+                        a {
+                            color: black;
+                            font-size: 20px;
+                            transition: 0.3s;
+        
+                            &:hover {
+                                color: red;
+                            }
+                        }
+        
+                        .view {
+                            margin-top: 7px;
+                        }
+                    }
+        
                 }
 
                 .addToCard {
@@ -2012,56 +2733,7 @@ ul {
                     height: 0;
                     letter-spacing: 0.3px;
 
-                    .increase-number-decrease {
-                        width: 80px;
-                        height: 40px;
-                        background-color: rgb(206, 37, 60);
 
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        transition: 0.8s;
-
-                        a {
-                            text-decoration: none;
-                        }
-
-                        .minus {
-                            border-right: 1px rgba(207, 117, 117, 0.781) solid;
-                            display: inline-block;
-                            height: 100%;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            width: 33%;
-                            text-align: center;
-                            color: white;
-                            font-size: 8px;
-
-                        }
-
-                        .plus {
-                            border-left: 1px rgba(207, 117, 117, 0.781) solid;
-                            border-right: 1px rgba(207, 117, 117, 0.781) solid;
-                            display: inline-block;
-                            height: 100%;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            width: 33%;
-                            text-align: center;
-                            font-size: 8px;
-                            color: white;
-                        }
-
-                        #inputNumber {
-                            width: 34%;
-                            text-align: center;
-                            color: white;
-                            font-size: 15px;
-                        }
-
-                    }
 
                     .toCard {
                         display: flex;
@@ -2088,7 +2760,28 @@ ul {
 
                     }
                 }
-
+                &:hover {
+                    .mainImage {
+                        opacity: 0;
+                    }
+    
+                    .icons {
+                        opacity: 1;
+                    }
+    
+                    .addToCard {
+                        opacity: 1;
+                        transition-timing-function: cubic-bezier(.23, .68, .37, .87);
+                        height: 40px;
+                    }
+    
+                    .secondImage {
+    
+                        img {
+                            transform: scale(1.12);
+                        }
+                    }
+                }
 
             }
 
@@ -2119,26 +2812,454 @@ ul {
                 }
             }
 
-            &:hover {
-                .mainImage {
-                    opacity: 0;
-                }
+            
+        }
 
-                .icons {
-                    opacity: 1;
-                }
-
-                .addToCard {
-                    opacity: 1;
-                    transition-timing-function: cubic-bezier(.23, .68, .37, .87);
-                    height: 40px;
-                }
-
+        .smallImage {
+            position: relative;
+            margin: 45px 0;
+            margin-bottom: 8%;
+    
+            .image {
+                position: relative;
+                overflow: hidden;
+                transition: 0.3s;
+    
                 .secondImage {
-
+                    overflow: hidden;
+                    transition: 0.7s;
+    
                     img {
-                        transform: scale(1.12);
+                        position: relative;
+                        top: 0;
+                        z-index: -2;
+                        width: 100%;
+                        height: 100%;
+                        transition: 0.9s;
+                        transition-timing-function: cubic-bezier(.015, .013, .010, .005);
                     }
+    
+                }
+    
+                .icons {
+                    width: 36px;
+                    height: 30px;
+                    // background-color: white;
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    opacity: 0;
+                    transition: 0.3s;
+    
+                    a {
+                        color: black;
+                        font-size: 20px;
+                        transition: 0.3s;
+    
+                        &:hover {
+                            color: red;
+                        }
+                    }
+    
+                    .view {
+                        margin-top: 7px;
+                    }
+                }
+    
+                .mainImage {
+                    transition: 0.7s;
+                    position: absolute;
+                    width: 100%;
+                    z-index: 10;
+                    height: 100%;
+                    z-index: -1;
+    
+                    img {
+                        position: absolute;
+                        opacity: 1;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+    
+                .addToCard {
+                    position: absolute;
+                    bottom: 0;
+                    display: flex;
+                    width: 100%;
+                    opacity: 0;
+                    transition: 0.3s;
+                    overflow: hidden;
+                    height: 0;
+                    letter-spacing: 0.3px;
+    
+    
+    
+                    .toCard {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 100%;
+                        background-color: rgb(206, 37, 59);
+                        color: white;
+                        font-size: 600;
+                        text-decoration: none;
+                        font-family: JostMedium;
+                        font-size: 14px;
+                    }
+    
+                    &:hover {
+                        .icons {
+                            opacity: 1;
+                        }
+    
+                        .toCard {
+                            background-color: rgb(190, 16, 16);
+                        }
+    
+                        .increase-number-decrease {
+                            background-color: rgb(190, 16, 16);
+                        }
+    
+    
+                    }
+                }
+                &:hover {
+                    .mainImage {
+                        opacity: 0;
+                        transition: 0.5s;
+                    }
+        
+                    .icons {
+                        opacity: 1;
+                    }
+        
+                    .addToCard {
+                        opacity: 1;
+                        transition-timing-function: cubic-bezier(.23, .68, .37, .87);
+                        height: 40px;
+                    }
+        
+                    .secondImage {
+                        img {
+                            transform: scale(1.12);
+                        }
+                    }
+                }
+    
+            }
+    
+            .name-price {
+                position: absolute;
+    
+                .icons {
+                    .whishlist {
+                        font-size: 20px;
+                        transition: 0.3s;
+                        color: black;
+    
+                        &:hover {
+                            color: rgb(186, 5, 29);
+                        }
+                    }
+                }
+    
+                .name {
+                    margin-top: 20px;
+    
+                    a {
+                        text-decoration: none;
+                        font-weight: 600;
+                        letter-spacing: 1.2px;
+                        color: black;
+                        transition: 0.3s;
+    
+                        &:hover {
+                            color: rgb(203, 3, 102);
+                        }
+                    }
+    
+                }
+    
+                .price {
+                    font-weight: 600;
+                    margin-top: 4px;
+                    color: rgb(203, 3, 102);
+                }
+            }
+    
+            
+    
+            
+            .bg-modal {
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: 10;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.6);
+    
+                .productModal {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    z-index: 5;
+                    width: 20rem;
+                    height: 500px;
+                    background-color: white;
+                    padding: 25px;
+    
+                    .image-name-price {
+                        display: flex;
+                        width: 100%;
+                        .modalImage {
+                            img {
+                                width: 90px;
+                                height: 90px;
+                            }
+                        }
+    
+                        .modalname-price {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            margin-left: 15px;
+    
+                            .modalName {
+                                a {
+                                    text-decoration: none;
+                                    color: black;
+                                    font-family: JostRegular;
+                                    transition: 0.3s;
+                                    letter-spacing: 1.3px;
+                                    font-size: 14px;
+    
+                                    &:hover {
+                                        color: rgb(186, 14, 28);
+    
+                                    }
+                                }
+                            }
+    
+                            .modalPrice {
+                                color: rgb(186, 14, 28);
+                                font-family: JostRegular;
+                            }
+                        }
+    
+                    }
+    
+                    .modalcolor-text {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        width: 100%;
+                        margin-top: 30px;
+    
+                        .modalText {
+                            .modalColorVal {
+                                font-family: JostBold;
+                                letter-spacing: 1.2px;
+                                font-size: 14px;
+                                text-transform: uppercase;
+                            }
+                        }
+    
+                        .modalColor {
+                            margin-top: 5px;
+    
+                            .modalColorUl {
+                                list-style: none;
+                                display: flex;
+    
+                                .modalColorLi {
+                                    width: 32px;
+                                    height: 32px;
+                                    border-radius: 50%;
+                                    border: 2px solid rgb(218, 217, 217);
+                                    color: grey;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    transition: 0.3s;
+                                    margin-left: 1%;
+                                    cursor: pointer;
+                                    font-size: 14px;
+                                    font-family: JostRegular;
+                                    padding: 2px;
+    
+                                    &:hover {
+                                        color: black;
+                                    }
+    
+                                    a {
+                                        width: 100%;
+                                        height: 100%;
+                                        border-radius: 50%;
+                                    }
+    
+    
+                                }
+    
+                                .modalColorLi:nth-child(n-1) {
+                                    margin-left: 5px;
+                                }
+                            }
+                        }
+    
+    
+                    }
+    
+                    .modalsize-text {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        margin-top: 30px;
+                        width: 100%;
+    
+                        .modalText {
+                            .modalSizeVal {
+                                font-family: JostBold;
+                                letter-spacing: 1.2px;
+                                font-size: 14px;
+                                text-transform: uppercase;
+                            }
+                        }
+    
+                        .modalSize {
+                            .modalSizeUl {
+                                list-style: none;
+                                display: flex;
+                                margin-top: 8px;
+    
+                                .modalSizeLi {
+                                    width: 30px;
+                                    height: 30px;
+                                    border-radius: 50%;
+                                    border: 1px solid rgb(189, 186, 186);
+                                    color: grey;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    transition: 0.3s;
+                                    margin-left: 1%;
+                                    cursor: pointer;
+                                    font-size: 14px;
+                                    font-family: JostRegular;
+    
+                                    &:hover {
+                                        color: black;
+                                    }
+                                }
+    
+                                .modalSizeLi:nth-child(n-1) {
+                                    margin-left: 4px;
+                                }
+                            }
+                        }
+                    }
+    
+                    .modalcounter-button {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        width: 100%;
+                        margin-top: 30px;
+                        .modalCounter {
+                            width: 120px;
+                            height: 40px;
+                            display: flex;
+                            border: 1px solid black;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            
+                            .modalMinus {
+                                border: none;
+                                font-family: JostMedium;
+                                background: none;
+                            }
+    
+                            .modalProductCounter {
+                                width: 35px;
+                                text-align: center;
+                                border: none;
+                                outline: 1px solid white;
+                                outline-offset: -5px;
+                                font-family: JostMedium;
+                            }
+    
+                            .modalPlus {
+                                border: none;
+                                background: none;
+                                font-family: JostMedium;
+                            }
+                        }
+    
+                        .modalButton {
+                            margin-top: 20px;
+                            .modalAddCard {
+                                width: 300px;
+                                min-height: 40px;
+                                display: flex;
+                                border: 1px solid black;
+                                background-color: black;
+                                color: white;
+                                font-family: JostMedium;
+                                font-size: 14px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                transition: 0.4s;
+                                transition-timing-function: ease-in-out;
+    
+                                &:hover {
+                                    background-color: rgb(203, 3, 29);
+                                    border: 1px solid rgb(203, 3, 29);
+                                }
+                            }
+                        }
+                        
+                    }
+                    .modalViewFullDetails{
+                        display: flex;
+                        justify-content: center;
+                        width: 100%;
+                        margin-top: 30px;
+                        a{
+                            text-decoration: none;
+                            transition: 0.3s;
+                            font-size: 14px;
+                            font-family: JostMedium;
+                            letter-spacing: 0.7px;
+                            color: black;
+                            i{
+                                transition: 0.3s;
+                            }
+                            &:hover{  
+                                color: rgb(186, 14, 28);
+                                i{
+                                    color: rgb(186, 14, 28);
+                                    transform: translateX(5px);
+                                }
+                            }
+                        }
+                    }
+    
+                    .modalClose {
+                        position: absolute;
+                        top: 8px;
+                        right: 10px;
+                        font-size: 30px;
+                        color: black;
+                        cursor: pointer;
+                    }
+    
                 }
             }
         }
@@ -2163,7 +3284,7 @@ ul {
                 height: auto;
 
                 img {
-                    object-fit:cover;
+                    object-fit: cover;
                     object-position: left center;
                     width: 100%;
                     height: 850px;
@@ -2217,6 +3338,7 @@ ul {
 footer {
     #topFooter {
         background-color: rgb(203, 3, 29);
+        display: none;
 
         .getInTouch {
             display: none;
@@ -2224,7 +3346,7 @@ footer {
 
         .info-links {
             margin-top: 60px;
-            display: flex;
+            display: flex !important;
 
             .info {
                 display: block;
@@ -2279,53 +3401,53 @@ footer {
 
 
                     .fb {
-                            color: white;
-                            transition: 0.3s;
+                        color: white;
+                        transition: 0.3s;
 
-                            &:hover {
-                                transform: translateY(-5px);
-                                color: rgb(14, 142, 242);
-                            }
+                        &:hover {
+                            transform: translateY(-5px);
+                            color: rgb(14, 142, 242);
+                        }
 
                     }
 
                     .tw {
-                            color: white;
-                            transition: 0.3s;
-                            margin-left: 22px;
+                        color: white;
+                        transition: 0.3s;
+                        margin-left: 22px;
 
 
-                            &:hover {
-                                transform: translateY(-5px);
-                                color: rgb(29, 155, 240);
-                            }
+                        &:hover {
+                            transform: translateY(-5px);
+                            color: rgb(29, 155, 240);
+                        }
 
                     }
 
                     .ig {
-                            color: white;
-                            transition: 0.3s;
-                            margin-left: 22px;
+                        color: white;
+                        transition: 0.3s;
+                        margin-left: 22px;
 
 
 
-                            &:hover {
-                                transform: translateY(-5px);
-                                color: blueviolet;
-                            }
+                        &:hover {
+                            transform: translateY(-5px);
+                            color: blueviolet;
+                        }
 
                     }
 
                     .yt {
-                            color: white;
-                            transition: 0.3s;
-                            margin-left: 22px;
+                        color: white;
+                        transition: 0.3s;
+                        margin-left: 22px;
 
 
-                            &:hover {
-                                transform: translateY(-5px);
-                                color: rgb(255, 0, 0);
-                            }
+                        &:hover {
+                            transform: translateY(-5px);
+                            color: rgb(255, 0, 0);
+                        }
 
                     }
 
@@ -2421,6 +3543,273 @@ footer {
                                 &:hover a {
                                     color: rgb(29, 155, 240);
                                 }
+                            }
+                        }
+                    }
+
+                    .footerInformaton {
+                        display: block;
+
+                        p {
+                            font-family: JostMedium;
+                            color: white;
+                            letter-spacing: 1.2px;
+                            font-size: 16px;
+                        }
+
+                        ul {
+                            list-style: none;
+                            margin-top: 25px;
+
+                            li {
+                                margin-bottom: 7px;
+
+                                a {
+
+                                    font-size: 14px;
+                                    font-family: JostRegular;
+                                    color: white;
+                                    text-decoration: none;
+                                    transition: 0.5s;
+
+                                }
+
+                                &:hover a {
+                                    color: rgb(29, 155, 240);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #topFooterFullWidth {
+        background-color: rgb(203, 3, 29);
+
+        // display: none;
+
+        .info-links {
+            margin-top: 60px;
+            display: flex;
+
+            .info {
+                display: block;
+
+                .logo {
+                    margin: 20px 0;
+                    color: white;
+                }
+
+                .location {
+                    display: flex;
+                    margin: 28px 0 15px 0;
+                    color: white;
+
+                    i {
+                        color: white;
+                        font-size: 16px;
+                    }
+
+                    span {
+                        margin-left: 15px;
+
+                    }
+
+                }
+
+                .mail {
+                    margin: 15px 0;
+                    color: white;
+
+                    a {
+                        color: white;
+                        text-decoration: none;
+                        margin-left: 8px;
+
+                    }
+                }
+
+                .number {
+                    margin: 15px 0;
+                    color: white;
+
+                    span {
+                        margin-left: 8px;
+
+                    }
+                }
+
+                .socials {
+                    margin: 30px 0 0 0;
+                    color: white;
+
+
+                    .fb {
+                        color: white;
+                        transition: 0.3s;
+
+                        &:hover {
+                            transform: translateY(-5px);
+                            color: rgb(14, 142, 242);
+                        }
+
+                    }
+
+                    .tw {
+                        color: white;
+                        transition: 0.3s;
+                        margin-left: 22px;
+
+
+                        &:hover {
+                            transform: translateY(-5px);
+                            color: rgb(29, 155, 240);
+                        }
+
+                    }
+
+                    .ig {
+                        color: white;
+                        transition: 0.3s;
+                        margin-left: 22px;
+
+
+
+                        &:hover {
+                            transform: translateY(-5px);
+                            color: blueviolet;
+                        }
+
+                    }
+
+                    .yt {
+                        color: white;
+                        transition: 0.3s;
+                        margin-left: 22px;
+
+
+                        &:hover {
+                            transform: translateY(-5px);
+                            color: rgb(255, 0, 0);
+                        }
+
+                    }
+
+
+                }
+            }
+
+            .links {
+                margin-top: 20px;
+
+                .linkUl {
+                    display: flex;
+                    justify-content: space-evenly;
+                    list-style: none;
+
+                    .footerBrands {
+                        margin-bottom: 20px;
+                        display: block;
+
+                        p {
+                            text-decoration: none;
+                            font-family: JostMedium;
+                            color: white;
+                            font-size: 16px;
+                            letter-spacing: 1.2px;
+                        }
+
+                        ul {
+                            margin-top: 25px;
+                            list-style: none;
+
+                            li {
+                                list-style: none;
+                                transition: 0.3s;
+                                margin-bottom: 7px;
+
+                                a {
+                                    font-family: JostRegular;
+                                    font-size: 14px;
+                                    color: white;
+                                    transition: 0.5s;
+                                    text-decoration: none;
+                                }
+
+                                &:hover a {
+                                    color: rgb(29, 155, 240);
+                                }
+                            }
+                        }
+
+                        .footerBrandScroll {
+                            overflow-y: scroll;
+                            height: 200px;
+                            width: 100px;
+
+                            &::-webkit-scrollbar {
+                                width: 2px;
+                                border-radius: 50%;
+                            }
+
+                            &::-webkit-scrollbar-thumb {
+                                border-radius: 7px;
+                                background-color: rgb(197, 192, 192);
+                                outline: 1px solid rgb(197, 192, 192);
+                            }
+                        }
+
+
+                    }
+
+                    .footerProducts {
+                        display: block;
+
+                        p {
+                            text-decoration: none;
+                            color: white;
+                            font-size: 16px;
+                            letter-spacing: 1.2px;
+                            font-family: JostMedium;
+                        }
+
+                        ul {
+                            list-style: none;
+                            margin-top: 25px;
+
+                            li {
+                                margin-bottom: 7px;
+
+                                a {
+                                    font-family: JostRegular;
+                                    font-size: 14px;
+                                    color: white;
+                                    transition: 0.5s;
+                                    text-decoration: none;
+                                }
+
+                                &:hover a {
+                                    color: rgb(29, 155, 240);
+                                }
+                            }
+                        }
+
+                        .footerProductsScroll {
+                            overflow-y: scroll;
+                            height: 200px;
+                            width: 100px;
+
+                            &::-webkit-scrollbar {
+                                width: 2px;
+                                border-radius: 50%;
+                            }
+
+                            &::-webkit-scrollbar-thumb {
+                                border-radius: 7px;
+                                background-color: rgb(197, 192, 192);
+                                outline: 1px solid rgb(197, 192, 192);
                             }
                         }
                     }
@@ -2610,14 +3999,17 @@ footer {
                     }
 
                     &:hover .shop {
+                        overflow-y: scroll;
                         display: block;
                         width: 150px;
-                        max-height: 400px;
+                        max-height: 300px;
                         padding: 19px 0 19px 18px;
-                        background-color: white;
+                        border-radius: 6px;
+                        background-color: rgb(241, 237, 237);
                         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
                         position: absolute;
                         top: 50px;
+                        z-index: 10000000000000000000000000000000000000000000000;
 
                         .shopElements {
                             li {
@@ -2629,6 +4021,17 @@ footer {
                                     color: black;
                                 }
                             }
+                        }
+
+                        &::-webkit-scrollbar {
+                            width: 2px;
+                            border-radius: 50%;
+                        }
+
+                        &::-webkit-scrollbar-thumb {
+                            border-radius: 7px;
+                            background-color: rgb(197, 192, 192);
+                            outline: 1px solid rgb(197, 192, 192);
                         }
                     }
                 }
@@ -2653,14 +4056,17 @@ footer {
                     }
 
                     &:hover .products {
+                        overflow-y: scroll;
                         display: block;
                         width: 150px;
-                        max-height: 400px;
+                        max-height: 300px;
                         padding: 19px 0 19px 18px;
-                        background-color: white;
+                        border-radius: 6px;
+                        background-color: rgb(241, 237, 237);
                         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
                         position: absolute;
                         top: 50px;
+                        z-index: 10000000000000000000000000000000000000000000000;
 
                         .productElements {
                             li {
@@ -2672,6 +4078,17 @@ footer {
                                     color: black;
                                 }
                             }
+                        }
+
+                        &::-webkit-scrollbar {
+                            width: 2px;
+                            border-radius: 50%;
+                        }
+
+                        &::-webkit-scrollbar-thumb {
+                            border-radius: 7px;
+                            background-color: rgb(197, 192, 192);
+                            outline: 1px solid rgb(197, 192, 192);
                         }
                     }
                 }
@@ -2694,9 +4111,9 @@ footer {
             display: flex;
             justify-content: end;
             align-items: center;
+            height: 100%;
 
             a {
-                // margin-right: 20px;
                 text-decoration: none;
                 margin-right: 10px;
 
@@ -2705,10 +4122,75 @@ footer {
                     color: white;
                 }
 
+
+            }
+
+
+            .userIcon {
+                margin-right: 10px;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                color: white;
+                cursor: pointer;
+
                 .nav-user {
                     font-size: 26px;
                 }
+
+                .userLoginStatus {
+                    display: none;
+
+                    .userLoginStatusUl {
+                        list-style: none;
+
+                        li {
+                            a {
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+
+                &:hover {
+                    .userLoginStatus {
+                        display: block;
+                        width: 150px;
+                        padding: 15px 0 15px 15px;
+                        background-color: rgb(255, 255, 255);
+                        border-radius: 7px;
+                        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                        position: absolute;
+                        top: 80px;
+                        right: 120px;
+                        overflow-x: scroll;
+
+                        li {
+                            a {
+                                color: grey;
+                                transition: 0.3;
+                            }
+
+                            &:hover a {
+                                color: rgb(169, 14, 27);
+                            }
+                        }
+
+                        &::-webkit-scrollbar {
+                            width: 2px;
+                            height: 4px;
+                            border-radius: 50%;
+                        }
+
+                        &::-webkit-scrollbar-thumb {
+                            border-radius: 7px;
+                            background-color: rgb(197, 192, 192);
+                            outline: 1px solid rgb(197, 192, 192);
+                        }
+                    }
+                }
             }
+
 
             .wishlist {
                 .wishlistCount {
@@ -2718,6 +4200,7 @@ footer {
                     border-radius: 50%;
                     background-color: white;
                     font-size: 12px;
+                    color: black;
                     text-align: center;
                 }
             }
@@ -2729,6 +4212,7 @@ footer {
                     height: 18px;
                     border-radius: 50%;
                     background-color: white;
+                    color: black;
                     font-size: 12px;
                     text-align: center;
                 }
@@ -2736,6 +4220,7 @@ footer {
         }
     }
 }
+
 //NavBarEnd
 
 //ProductsStart
@@ -2759,217 +4244,194 @@ footer {
 
     .myRow {
         display: none;
-        height: 470px;
-        overflow-y: scroll;
-        justify-content: space-between;
+        height: 350px;
+        width: 50%;
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
         border-radius: 5px;
         padding-top: 20px;
         margin-top: 30px;
 
-        .byTitle {
-            display: block;
-
-            .title {
-                span {
-                    font-family: JostMedium;
-                    border-bottom: 2px solid black;
-                    display: inline-block;
-                }
-            }
-
-            display: block;
-
-            .search {
-                border-radius: 3px;
-                width: 254px;
-                height: 40px;
-                font-size: 12px;
-                padding: 5px 10px;
-                margin-top: 20px;
-                font-family: JostRegular;
-
-                &::placeholder {
-                    color: black;
-
-                }
-            }
-
-            .searchSubmitBtn {
-                width: 100px;
-                height: 40px;
-                border: solid 1px black;
-                background-color: white;
-                padding: 12px;
-                color: black;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-size: 13px;
-                font-family: JostMedium;
-                transition: 0.3s;
-                letter-spacing: 0.9px;
-
-                &:hover {
-                    background-color: rgb(203, 3, 29);
-                    color: white;
-                    border: rgb(203, 3, 29) 1px solid;
-                }
-            }
-
-        }
-
-        .byPrice {
+        #filterForm {
             display: flex;
-            flex-direction: column;
+            padding: 8%;
 
-            .title {
-                span {
-                    font-family: JostMedium;
-                    border-bottom: 2px solid black;
-                    display: inline-block;
+            .byPrice {
+                display: flex;
+                flex-direction: column;
+
+                .title {
+                    span {
+                        font-family: JostMedium;
+                        border-bottom: 2px solid black;
+                        display: inline-block;
+                    }
                 }
-            }
 
-            .wrapper {
-                position: relative;
-                width: 70%;
-                background-color: white;
-                border-radius: 10px;
-            }
-
-            .rangeDiv {
-                position: relative;
-                width: 100%;
-                height: 100px;
-
-                .priceSubmitBtn {
-                    width: 100px;
-                    height: 40px;
-                    border: solid 1px black;
+                .wrapper {
+                    position: relative;
+                    width: 100%;
                     background-color: white;
-                    padding: 12px;
-                    color: black;
+                    border-radius: 10px;
                     display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    font-size: 13px;
-                    font-family: JostMedium;
-                    transition: 0.3s;
-                    letter-spacing: 0.9px;
-                    margin-top: 158px;
-
-                    &:hover {
-                        background-color: rgb(203, 3, 29);
-                        color: white;
-                        border: rgb(203, 3, 29) 1px solid;
-                    }
                 }
-            }
 
-            input[type="range"] {
-                -webkit-appearance: none;
-                -moz-appearance: none;
-                appearance: none;
-                width: 100%;
-                outline: none;
-                position: absolute;
-                margin: auto;
-                top: 0;
-                bottom: 0;
-                background-color: transparent;
-                pointer-events: none;
-            }
+                .rangeDiv {
+                    // position: relative;
+                    width: 100%;
+                    height: 100px;
 
-            .slider-track {
-                width: 100%;
-                height: 3px;
-                position: absolute;
-                margin: auto;
-                top: 0;
-                bottom: 0;
-                border-radius: 5px;
-            }
-
-            input[type="range"]::-webkit-slider-runnable-track {
-                -webkit-appearance: none;
-                height: 5px;
-            }
-
-            input[type="range"]::-moz-range-track {
-                -moz-appearance: none;
-                height: 5px;
-            }
-
-            input[type="range"]::-ms-track {
-                appearance: none;
-                height: 5px;
-            }
-
-            input[type="range"]::-webkit-slider-thumb {
-                -webkit-appearance: none;
-                height: 0.9em;
-                width: .2em;
-                background-color: rgb(203, 3, 29);
-                cursor: pointer;
-                margin-top: -4px;
-                pointer-events: auto;
-            }
-
-            input[type="range"]:active::-webkit-slider-thumb {
-                background-color: rgb(203, 3, 29);
-                border: 3px solid rgb(203, 3, 29);
-            }
-
-            .values {
-                // 
-
-                font-family: JostMedium;
-
-                .priceTxt {
-                    color: grey;
-                    font-family: JostRegular;
-                }
-            }
-        }
-
-        .bySize {
-            text-align: start;
-
-            .titleSize {
-                span {
-                    font-family: JostMedium;
-                    border-bottom: 2px solid black;
-                    display: inline-block;
-                }
-            }
-
-            .sizeUl {
-                margin: 0;
-                padding: 0;
-                list-style: none;
-
-
-
-                li {
-                    margin: 8px;
-
-                    a {
-                        text-decoration: none;
+                    .priceSubmitBtn {
+                        width: 100px;
+                        height: 40px;
+                        border: solid 1px black;
+                        background-color: white;
+                        padding: 12px;
                         color: black;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 13px;
+                        font-family: JostMedium;
                         transition: 0.3s;
-                    }
+                        letter-spacing: 0.9px;
+                        margin-top: 158px;
 
-                    &:hover a {
-                        color: red;
+                        &:hover {
+                            background-color: rgb(203, 3, 29);
+                            color: white;
+                            border: rgb(203, 3, 29) 1px solid;
+                        }
                     }
                 }
 
-                li:nth-child(1) {
-                    margin-top: 20px;
+                input[type="range"] {
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    appearance: none;
+                    width: 100%;
+                    outline: none;
+                    position: absolute;
+                    margin: auto;
+                    top: 0;
+                    bottom: 0;
+                    background-color: transparent;
+                    pointer-events: none;
+                }
+
+                .slider-track {
+                    width: 100%;
+                    height: 3px;
+                    position: absolute;
+                    margin: auto;
+                    top: 0;
+                    bottom: 0;
+                    border-radius: 5px;
+                }
+
+                input[type="range"]::-webkit-slider-runnable-track {
+                    -webkit-appearance: none;
+                    height: 5px;
+                }
+
+                input[type="range"]::-moz-range-track {
+                    -moz-appearance: none;
+                    height: 5px;
+                }
+
+                input[type="range"]::-ms-track {
+                    appearance: none;
+                    height: 5px;
+                }
+
+                input[type="range"]::-webkit-slider-thumb {
+                    -webkit-appearance: none;
+                    height: 0.9em;
+                    width: .2em;
+                    background-color: rgb(203, 3, 29);
+                    cursor: pointer;
+                    margin-top: -4px;
+                    pointer-events: auto;
+                }
+
+                input[type="range"]:active::-webkit-slider-thumb {
+                    background-color: rgb(203, 3, 29);
+                    border: 3px solid rgb(203, 3, 29);
+                }
+
+                .values {
+                    // 
+
+                    font-family: JostMedium;
+                    position: absolute;
+                    bottom: -20%;
+
+                    .priceTxt {
+                        color: grey;
+                        font-family: JostRegular;
+                    }
                 }
             }
+
+            .bySize {
+
+                text-align: start;
+                max-height: 300px;
+                overflow-y: scroll;
+
+                .titleSize {
+                    span {
+                        font-family: JostMedium;
+                        border-bottom: 2px solid black;
+                        display: inline-block;
+                    }
+                }
+
+                .sizeDiv {
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+
+                    input {
+                        margin-top: 4%;
+                        accent-color: rgb(203, 3, 29);
+
+                        &:nth-child(1) {
+                            margin-top: 7%;
+                        }
+                    }
+
+                    label {
+                        font-family: JostRegular;
+                    }
+                }
+
+                &::-webkit-scrollbar {
+                    width: 2px;
+                    height: 4px;
+                    border-radius: 50%;
+                }
+
+                &::-webkit-scrollbar-thumb {
+                    border-radius: 7px;
+                    background-color: rgb(197, 192, 192);
+                    outline: 1px solid rgb(197, 192, 192);
+                }
+            }
+
+            &::-webkit-scrollbar {
+                width: 2px;
+                height: 4px;
+                border-radius: 50%;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                border-radius: 7px;
+                background-color: rgb(197, 192, 192);
+                outline: 1px solid rgb(197, 192, 192);
+            }
         }
+
+
 
     }
 
@@ -2977,29 +4439,64 @@ footer {
 
 
 #Entrance {
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    background-color: rgb(118, 118, 118);
-    border-top: white solid 1px;
+    .productEntranceRow {
+        margin: 0 !important;
 
-    h1 {
-        font-size: 20px;
-        padding: 48px 0;
-        margin-bottom: 5px;
-        font-family: JostMedium;
-        letter-spacing: 1.1px;
-        color: white;
+        .productImage-Content {
+            position: relative;
+            padding: 0;
+
+            .productImage {
+                // background-position: center;
+                // background-repeat: no-repeat;
+                // background-size: cover;
+
+                &::before {
+                    content: '';
+                    opacity: .5;
+                    position: absolute;
+                    background: #000;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    z-index: 1;
+                    pointer-events: none;
+                }
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                    height: 125px;
+                }
+            }
+
+            .productContent {
+                position: absolute;
+                z-index: 2;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+
+                span {
+                    font-size: 20px;
+                    color: white;
+                    font-family: JostMedium;
+                    letter-spacing: 3px;
+                }
+            }
+        }
     }
 }
 
 #products {
-    margin-bottom: 5%;
+    margin-bottom: 15%;
 
     .smallImage {
         position: relative;
         margin: 45px 0;
-
+        margin-bottom: 8%;
 
         .image {
             position: relative;
@@ -3013,7 +4510,7 @@ footer {
                 img {
                     position: relative;
                     top: 0;
-                    z-index: -1;
+                    z-index: -2;
                     width: 100%;
                     height: 100%;
                     transition: 0.9s;
@@ -3024,8 +4521,8 @@ footer {
 
             .icons {
                 width: 36px;
-                height: 60px;
-                background-color: white;
+                height: 30px;
+                // background-color: white;
                 position: absolute;
                 top: 10px;
                 right: 10px;
@@ -3037,6 +4534,7 @@ footer {
 
                 a {
                     color: black;
+                    font-size: 20px;
                     transition: 0.3s;
 
                     &:hover {
@@ -3053,7 +4551,9 @@ footer {
                 transition: 0.7s;
                 position: absolute;
                 width: 100%;
+                z-index: 10;
                 height: 100%;
+                z-index: -1;
 
                 img {
                     position: absolute;
@@ -3074,56 +4574,7 @@ footer {
                 height: 0;
                 letter-spacing: 0.3px;
 
-                .increase-number-decrease {
-                    width: 80px;
-                    height: 40px;
-                    background-color: rgb(206, 37, 60);
 
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    transition: 0.8s;
-
-                    a {
-                        text-decoration: none;
-                    }
-
-                    .minus {
-                        border-right: 1px rgba(207, 117, 117, 0.781) solid;
-                        display: inline-block;
-                        height: 100%;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        width: 33%;
-                        text-align: center;
-                        color: white;
-                        font-size: 8px;
-
-                    }
-
-                    .plus {
-                        border-left: 1px rgba(207, 117, 117, 0.781) solid;
-                        border-right: 1px rgba(207, 117, 117, 0.781) solid;
-                        display: inline-block;
-                        height: 100%;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        width: 33%;
-                        text-align: center;
-                        font-size: 8px;
-                        color: white;
-                    }
-
-                    #inputNumber {
-                        width: 34%;
-                        text-align: center;
-                        color: white;
-                        font-size: 15px;
-                    }
-
-                }
 
                 .toCard {
                     display: flex;
@@ -3139,6 +4590,10 @@ footer {
                 }
 
                 &:hover {
+                    .icons {
+                        opacity: 1;
+                    }
+
                     .toCard {
                         background-color: rgb(190, 16, 16);
                     }
@@ -3150,12 +4605,45 @@ footer {
 
                 }
             }
-
+            &:hover {
+                .mainImage {
+                    opacity: 0;
+                    transition: 0.5s;
+                }
+    
+                .icons {
+                    opacity: 1;
+                }
+    
+                .addToCard {
+                    opacity: 1;
+                    transition-timing-function: cubic-bezier(.23, .68, .37, .87);
+                    height: 40px;
+                }
+    
+                .secondImage {
+                    img {
+                        transform: scale(1.12);
+                    }
+                }
+            }
 
         }
 
         .name-price {
             position: absolute;
+
+            .icons {
+                .whishlist {
+                    font-size: 20px;
+                    transition: 0.3s;
+                    color: black;
+
+                    &:hover {
+                        color: rgb(186, 5, 29);
+                    }
+                }
+            }
 
             .name {
                 margin-top: 20px;
@@ -3181,26 +4669,275 @@ footer {
             }
         }
 
-        &:hover {
-            .mainImage {
-                opacity: 0;
-            }
+        
 
-            .icons {
-                opacity: 1;
-            }
+        
+        .bg-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 10;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
 
-            .addToCard {
-                opacity: 1;
-                transition-timing-function: cubic-bezier(.23, .68, .37, .87);
-                height: 40px;
-            }
+            .productModal {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 5;
+                width: 20rem;
+                height: 500px;
+                background-color: white;
+                padding: 25px;
 
-            .secondImage {
+                .image-name-price {
+                    display: flex;
+                    width: 100%;
+                    .modalImage {
+                        img {
+                            width: 90px;
+                            height: 90px;
+                        }
+                    }
 
-                img {
-                    transform: scale(1.12);
+                    .modalname-price {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        margin-left: 15px;
+
+                        .modalName {
+                            a {
+                                text-decoration: none;
+                                color: black;
+                                font-family: JostRegular;
+                                transition: 0.3s;
+                                letter-spacing: 1.3px;
+                                font-size: 14px;
+
+                                &:hover {
+                                    color: rgb(186, 14, 28);
+
+                                }
+                            }
+                        }
+
+                        .modalPrice {
+                            color: rgb(186, 14, 28);
+                            font-family: JostRegular;
+                        }
+                    }
+
                 }
+
+                .modalcolor-text {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 100%;
+                    margin-top: 30px;
+
+                    .modalText {
+                        .modalColorVal {
+                            font-family: JostBold;
+                            letter-spacing: 1.2px;
+                            font-size: 14px;
+                            text-transform: uppercase;
+                        }
+                    }
+
+                    .modalColor {
+                        margin-top: 5px;
+
+                        .modalColorUl {
+                            list-style: none;
+                            display: flex;
+
+                            .modalColorLi {
+                                width: 32px;
+                                height: 32px;
+                                border-radius: 50%;
+                                border: 2px solid rgb(218, 217, 217);
+                                color: grey;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                transition: 0.3s;
+                                margin-left: 1%;
+                                cursor: pointer;
+                                font-size: 14px;
+                                font-family: JostRegular;
+                                padding: 2px;
+
+                                &:hover {
+                                    color: black;
+                                }
+
+                                a {
+                                    width: 100%;
+                                    height: 100%;
+                                    border-radius: 50%;
+                                }
+
+
+                            }
+
+                            .modalColorLi:nth-child(n-1) {
+                                margin-left: 5px;
+                            }
+                        }
+                    }
+
+
+                }
+
+                .modalsize-text {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-top: 30px;
+                    width: 100%;
+
+                    .modalText {
+                        .modalSizeVal {
+                            font-family: JostBold;
+                            letter-spacing: 1.2px;
+                            font-size: 14px;
+                            text-transform: uppercase;
+                        }
+                    }
+
+                    .modalSize {
+                        .modalSizeUl {
+                            list-style: none;
+                            display: flex;
+                            margin-top: 8px;
+
+                            .modalSizeLi {
+                                width: 30px;
+                                height: 30px;
+                                border-radius: 50%;
+                                border: 1px solid rgb(189, 186, 186);
+                                color: grey;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                transition: 0.3s;
+                                margin-left: 1%;
+                                cursor: pointer;
+                                font-size: 14px;
+                                font-family: JostRegular;
+
+                                &:hover {
+                                    color: black;
+                                }
+                            }
+
+                            .modalSizeLi:nth-child(n-1) {
+                                margin-left: 4px;
+                            }
+                        }
+                    }
+                }
+
+                .modalcounter-button {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 100%;
+                    margin-top: 30px;
+                    .modalCounter {
+                        width: 120px;
+                        height: 40px;
+                        display: flex;
+                        border: 1px solid black;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        
+                        .modalMinus {
+                            border: none;
+                            font-family: JostMedium;
+                            background: none;
+                        }
+
+                        .modalProductCounter {
+                            width: 35px;
+                            text-align: center;
+                            border: none;
+                            outline: 1px solid white;
+                            outline-offset: -5px;
+                            font-family: JostMedium;
+                        }
+
+                        .modalPlus {
+                            border: none;
+                            background: none;
+                            font-family: JostMedium;
+                        }
+                    }
+
+                    .modalButton {
+                        margin-top: 20px;
+                        .modalAddCard {
+                            width: 300px;
+                            min-height: 40px;
+                            display: flex;
+                            border: 1px solid black;
+                            background-color: black;
+                            color: white;
+                            font-family: JostMedium;
+                            font-size: 14px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            transition: 0.4s;
+                            transition-timing-function: ease-in-out;
+
+                            &:hover {
+                                background-color: rgb(203, 3, 29);
+                                border: 1px solid rgb(203, 3, 29);
+                            }
+                        }
+                    }
+                    
+                }
+                .modalViewFullDetails{
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                    margin-top: 30px;
+                    a{
+                        text-decoration: none;
+                        transition: 0.3s;
+                        font-size: 14px;
+                        font-family: JostMedium;
+                        letter-spacing: 0.7px;
+                        color: black;
+                        i{
+                            transition: 0.3s;
+                        }
+                        &:hover{  
+                            color: rgb(186, 14, 28);
+                            i{
+                                color: rgb(186, 14, 28);
+                                transform: translateX(5px);
+                            }
+                        }
+                    }
+                }
+
+                .modalClose {
+                    position: absolute;
+                    top: 8px;
+                    right: 10px;
+                    font-size: 30px;
+                    color: black;
+                    cursor: pointer;
+                }
+
             }
         }
     }
@@ -3231,13 +4968,16 @@ footer {
         }
 
         .detailsRowSmallImage {
+            // width: 103%!important;
+            margin: 0 !important;
+
             .smallImages {
                 display: flex;
                 margin-top: 2%;
-                margin-left: 1.2%;
+                margin-left: 0.4%;
 
                 .image {
-                    width: 21%;
+                    width: 21.4%;
                     height: 100%;
                     background-size: contain;
                     background-repeat: no-repeat;
@@ -3893,8 +5633,7 @@ footer {
 
                 .icons {
                     width: 36px;
-                    height: 60px;
-                    background-color: white;
+                    height: 30px;
                     position: absolute;
                     top: 10px;
                     right: 10px;
@@ -3903,6 +5642,7 @@ footer {
                     flex-direction: column;
                     opacity: 0;
                     transition: 0.3s;
+                    font-size: 20px;
 
                     a {
                         color: black;
@@ -4019,7 +5759,28 @@ footer {
 
                     }
                 }
-
+                &:hover {
+                    .mainImage {
+                        opacity: 0;
+                    }
+    
+                    .icons {
+                        opacity: 1;
+                    }
+    
+                    .addToCard {
+                        opacity: 1;
+                        transition-timing-function: cubic-bezier(.23, .68, .37, .87);
+                        height: 40px;
+                    }
+    
+                    .secondImage {
+    
+                        img {
+                            transform: scale(1.12);
+                        }
+                    }
+                }
 
             }
 
@@ -4049,29 +5810,278 @@ footer {
                     color: rgb(203, 3, 102);
                 }
             }
-
-            &:hover {
-                .mainImage {
-                    opacity: 0;
-                }
-
-                .icons {
-                    opacity: 1;
-                }
-
-                .addToCard {
-                    opacity: 1;
-                    transition-timing-function: cubic-bezier(.23, .68, .37, .87);
-                    height: 40px;
-                }
-
-                .secondImage {
-
-                    img {
-                        transform: scale(1.12);
+            .bg-modal {
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: 10;
+                width: 100%;
+                height: 100%;
+                // background-color: rgba(0, 0, 0, 0.6);
+    
+                .productModal {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    z-index: 5;
+                    width: 300px;
+                    height: 400px;
+                    background-color: white;
+                    padding: 25px;
+    
+                    .image-name-price {
+                        display: flex;
+                        width: 100%;
+                        .modalImage {
+                            img {
+                                width: 90px;
+                                height: 90px;
+                            }
+                        }
+    
+                        .modalname-price {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            margin-left: 15px;
+    
+                            .modalName {
+                                a {
+                                    text-decoration: none;
+                                    color: black;
+                                    font-family: JostRegular;
+                                    transition: 0.3s;
+                                    letter-spacing: 1.3px;
+                                    font-size: 14px;
+    
+                                    &:hover {
+                                        color: rgb(186, 14, 28);
+    
+                                    }
+                                }
+                            }
+    
+                            .modalPrice {
+                                color: rgb(186, 14, 28);
+                                    font-size: 14px;
+                                    font-family: JostRegular;
+                            }
+                        }
+    
                     }
+    
+                    .modalcolor-text {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        width: 100%;
+                        margin-top: 10px;
+    
+                        .modalText {
+                            .modalColorVal {
+                                font-family: JostBold;
+                                letter-spacing: 1.2px;
+                                font-size: 14px;
+                                text-transform: uppercase;
+                            }
+                        }
+    
+                        .modalColor {
+                            margin-top: 5px;
+    
+                            .modalColorUl {
+                                list-style: none;
+                                display: flex;
+    
+                                .modalColorLi {
+                                    width: 30px;
+                                    height: 30px;
+                                    border-radius: 50%;
+                                    border: 2px solid rgb(218, 217, 217);
+                                    color: grey;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    transition: 0.3s;
+                                    margin-left: 1%;
+                                    cursor: pointer;
+                                    font-size: 12px;
+                                    font-family: JostRegular;
+                                    padding: 2px;
+    
+                                    &:hover {
+                                        color: black;
+                                    }
+    
+                                    a {
+                                        width: 100%;
+                                        height: 100%;
+                                        border-radius: 50%;
+                                    }
+    
+    
+                                }
+    
+                                .modalColorLi:nth-child(n-1) {
+                                    margin-left: 5px;
+                                }
+                            }
+                        }
+    
+    
+                    }
+    
+                    .modalsize-text {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        margin-top: 14px;
+                        font-size: 10px;
+                        width: 100%;
+    
+                        .modalText {
+                            .modalSizeVal {
+                                font-family: JostBold;
+                                letter-spacing: 1.2px;
+                                font-size: 14px;
+                                text-transform: uppercase;
+                            }
+                        }
+    
+                        .modalSize {
+                            .modalSizeUl {
+                                list-style: none;
+                                display: flex;
+                                margin-top: 8px;
+    
+                                .modalSizeLi {
+                                    width: 30px;
+                                    height: 30px;
+                                    border-radius: 50%;
+                                    border: 1px solid rgb(189, 186, 186);
+                                    color: grey;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    transition: 0.3s;
+                                    margin-left: 1%;
+                                    cursor: pointer;
+                                    font-size: 14px;
+                                    font-family: JostRegular;
+    
+                                    &:hover {
+                                        color: black;
+                                    }
+                                }
+    
+                                .modalSizeLi:nth-child(n-1) {
+                                    margin-left: 4px;
+                                }
+                            }
+                        }
+                    }
+    
+                    .modalcounter-button {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        width: 100%;
+                        margin-top: 10px;
+                        .modalCounter {
+                            width: 110px;
+                            height: 35px;
+                            display: flex;
+                            border: 1px solid black;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            
+                            .modalMinus {
+                                border: none;
+                                font-family: JostMedium;
+                                background: none;
+                            }
+    
+                            .modalProductCounter {
+                                width: 35px;
+                                text-align: center;
+                                border: none;
+                                outline: 1px solid white;
+                                font-size: 12px;
+                                outline-offset: -5px;
+                                font-family: JostMedium;
+                            }
+    
+                            .modalPlus {
+                                border: none;
+                                background: none;
+                                font-family: JostMedium;
+                            }
+                        }
+    
+                        .modalButton {
+                            margin-top: 20px;
+                            .modalAddCard {
+                                width: 200px;
+                                min-height: 35px;
+                                display: flex;
+                                border: 1px solid black;
+                                background-color: black;
+                                color: white;
+                                font-family: JostMedium;
+                                font-size: 12px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                transition: 0.4s;
+                                transition-timing-function: ease-in-out;
+    
+                                &:hover {
+                                    background-color: rgb(203, 3, 29);
+                                    border: 1px solid rgb(203, 3, 29);
+                                }
+                            }
+                        }
+                        
+                    }
+                    .modalViewFullDetails{
+                        display: flex;
+                        justify-content: center;
+                        width: 100%;
+                        margin-top: 12px;
+                        a{
+                            text-decoration: none;
+                            transition: 0.3s;
+                            font-size: 14px;
+                            font-family: JostMedium;
+                            letter-spacing: 0.7px;
+                            color: black;
+                            i{
+                                transition: 0.3s;
+                            }
+                            &:hover{  
+                                color: rgb(186, 14, 28);
+                                i{
+                                    color: rgb(186, 14, 28);
+                                    transform: translateX(5px);
+                                }
+                            }
+                        }
+                    }
+    
+                    .modalClose {
+                        position: absolute;
+                        top: 8px;
+                        right: 10px;
+                        font-size: 20px;
+                        color: black;
+                        cursor: pointer;
+                    }
+    
                 }
-            }
+            } 
+            
         }
     }
 }
@@ -4106,7 +6116,7 @@ footer {
                     img {
                         position: relative;
                         top: 0;
-                        z-index: -1;
+                        z-index: -2;
                         width: 261px;
                         height: 261px;
                         transition: 0.9s;
@@ -4117,8 +6127,7 @@ footer {
 
                 .icons {
                     width: 36px;
-                    height: 60px;
-                    background-color: white;
+                    height: 30px;
                     position: absolute;
                     top: 10px;
                     right: 10px;
@@ -4127,6 +6136,7 @@ footer {
                     flex-direction: column;
                     opacity: 0;
                     transition: 0.3s;
+                    font-size: 20px;
 
                     a {
                         color: black;
@@ -4141,10 +6151,10 @@ footer {
                         margin-top: 7px;
                     }
                 }
-
                 .mainImage {
                     transition: 0.7s;
                     position: relative;
+                    z-index: -1;
 
                     img {
                         position: absolute;
@@ -4167,56 +6177,6 @@ footer {
                     height: 0;
                     letter-spacing: 0.3px;
 
-                    .increase-number-decrease {
-                        width: 80px;
-                        height: 40px;
-                        background-color: rgb(206, 37, 60);
-
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        transition: 0.8s;
-
-                        a {
-                            text-decoration: none;
-                        }
-
-                        .minus {
-                            border-right: 1px rgba(207, 117, 117, 0.781) solid;
-                            display: inline-block;
-                            height: 100%;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            width: 33%;
-                            text-align: center;
-                            color: white;
-                            font-size: 8px;
-
-                        }
-
-                        .plus {
-                            border-left: 1px rgba(207, 117, 117, 0.781) solid;
-                            border-right: 1px rgba(207, 117, 117, 0.781) solid;
-                            display: inline-block;
-                            height: 100%;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            width: 33%;
-                            text-align: center;
-                            font-size: 8px;
-                            color: white;
-                        }
-
-                        #inputNumber {
-                            width: 34%;
-                            text-align: center;
-                            color: white;
-                            font-size: 15px;
-                        }
-
-                    }
 
                     .toCard {
                         display: flex;
@@ -4243,12 +6203,45 @@ footer {
 
                     }
                 }
-
+                &:hover {
+                    .mainImage {
+                        opacity: 0;
+                    }
+    
+                    .icons {
+                        opacity: 1;
+                    }
+    
+                    .addToCard {
+                        opacity: 1;
+                        transition-timing-function: cubic-bezier(.23, .68, .37, .87);
+                        height: 40px;
+                    }
+    
+                    .secondImage {
+    
+                        img {
+                            transform: scale(1.12);
+                        }
+                    }
+                }
 
             }
 
             .name-price {
                 position: absolute;
+
+                .icons {
+                    .whishlist {
+                        font-size: 20px;
+                        transition: 0.3s;
+                        color: black;
+
+                        &:hover {
+                            color: rgb(186, 5, 29);
+                        }
+                    }
+                }
 
                 .name {
                     margin-top: 20px;
@@ -4274,28 +6267,277 @@ footer {
                 }
             }
 
-            &:hover {
-                .mainImage {
-                    opacity: 0;
-                }
-
-                .icons {
-                    opacity: 1;
-                }
-
-                .addToCard {
-                    opacity: 1;
-                    transition-timing-function: cubic-bezier(.23, .68, .37, .87);
-                    height: 40px;
-                }
-
-                .secondImage {
-
-                    img {
-                        transform: scale(1.12);
+            .bg-modal {
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: 10;
+                width: 100%;
+                height: 100%;
+                // background-color: rgba(0, 0, 0, 0.6);
+    
+                .productModal {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    z-index: 5;
+                    width: 300px;
+                    height: 400px;
+                    background-color: white;
+                    padding: 25px;
+    
+                    .image-name-price {
+                        display: flex;
+                        width: 100%;
+                        .modalImage {
+                            img {
+                                width: 90px;
+                                height: 90px;
+                            }
+                        }
+    
+                        .modalname-price {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            margin-left: 15px;
+    
+                            .modalName {
+                                a {
+                                    text-decoration: none;
+                                    color: black;
+                                    font-family: JostRegular;
+                                    transition: 0.3s;
+                                    letter-spacing: 1.3px;
+                                    font-size: 14px;
+    
+                                    &:hover {
+                                        color: rgb(186, 14, 28);
+    
+                                    }
+                                }
+                            }
+    
+                            .modalPrice {
+                                color: rgb(186, 14, 28);
+                                    font-size: 14px;
+                                    font-family: JostRegular;
+                            }
+                        }
+    
                     }
+    
+                    .modalcolor-text {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        width: 100%;
+                        margin-top: 10px;
+    
+                        .modalText {
+                            .modalColorVal {
+                                font-family: JostBold;
+                                letter-spacing: 1.2px;
+                                font-size: 14px;
+                                text-transform: uppercase;
+                            }
+                        }
+    
+                        .modalColor {
+                            margin-top: 5px;
+    
+                            .modalColorUl {
+                                list-style: none;
+                                display: flex;
+    
+                                .modalColorLi {
+                                    width: 30px;
+                                    height: 30px;
+                                    border-radius: 50%;
+                                    border: 2px solid rgb(218, 217, 217);
+                                    color: grey;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    transition: 0.3s;
+                                    margin-left: 1%;
+                                    cursor: pointer;
+                                    font-size: 12px;
+                                    font-family: JostRegular;
+                                    padding: 2px;
+    
+                                    &:hover {
+                                        color: black;
+                                    }
+    
+                                    a {
+                                        width: 100%;
+                                        height: 100%;
+                                        border-radius: 50%;
+                                    }
+    
+    
+                                }
+    
+                                .modalColorLi:nth-child(n-1) {
+                                    margin-left: 5px;
+                                }
+                            }
+                        }
+    
+    
+                    }
+    
+                    .modalsize-text {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        margin-top: 14px;
+                        font-size: 10px;
+                        width: 100%;
+    
+                        .modalText {
+                            .modalSizeVal {
+                                font-family: JostBold;
+                                letter-spacing: 1.2px;
+                                font-size: 14px;
+                                text-transform: uppercase;
+                            }
+                        }
+    
+                        .modalSize {
+                            .modalSizeUl {
+                                list-style: none;
+                                display: flex;
+                                margin-top: 8px;
+    
+                                .modalSizeLi {
+                                    width: 30px;
+                                    height: 30px;
+                                    border-radius: 50%;
+                                    border: 1px solid rgb(189, 186, 186);
+                                    color: grey;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    transition: 0.3s;
+                                    margin-left: 1%;
+                                    cursor: pointer;
+                                    font-size: 14px;
+                                    font-family: JostRegular;
+    
+                                    &:hover {
+                                        color: black;
+                                    }
+                                }
+    
+                                .modalSizeLi:nth-child(n-1) {
+                                    margin-left: 4px;
+                                }
+                            }
+                        }
+                    }
+    
+                    .modalcounter-button {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        width: 100%;
+                        margin-top: 10px;
+                        .modalCounter {
+                            width: 110px;
+                            height: 35px;
+                            display: flex;
+                            border: 1px solid black;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            
+                            .modalMinus {
+                                border: none;
+                                font-family: JostMedium;
+                                background: none;
+                            }
+    
+                            .modalProductCounter {
+                                width: 35px;
+                                text-align: center;
+                                border: none;
+                                outline: 1px solid white;
+                                font-size: 12px;
+                                outline-offset: -5px;
+                                font-family: JostMedium;
+                            }
+    
+                            .modalPlus {
+                                border: none;
+                                background: none;
+                                font-family: JostMedium;
+                            }
+                        }
+    
+                        .modalButton {
+                            margin-top: 20px;
+                            .modalAddCard {
+                                width: 200px;
+                                min-height: 35px;
+                                display: flex;
+                                border: 1px solid black;
+                                background-color: black;
+                                color: white;
+                                font-family: JostMedium;
+                                font-size: 12px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                transition: 0.4s;
+                                transition-timing-function: ease-in-out;
+    
+                                &:hover {
+                                    background-color: rgb(203, 3, 29);
+                                    border: 1px solid rgb(203, 3, 29);
+                                }
+                            }
+                        }
+                        
+                    }
+                    .modalViewFullDetails{
+                        display: flex;
+                        justify-content: center;
+                        width: 100%;
+                        margin-top: 12px;
+                        a{
+                            text-decoration: none;
+                            transition: 0.3s;
+                            font-size: 14px;
+                            font-family: JostMedium;
+                            letter-spacing: 0.7px;
+                            color: black;
+                            i{
+                                transition: 0.3s;
+                            }
+                            &:hover{  
+                                color: rgb(186, 14, 28);
+                                i{
+                                    color: rgb(186, 14, 28);
+                                    transform: translateX(5px);
+                                }
+                            }
+                        }
+                    }
+    
+                    .modalClose {
+                        position: absolute;
+                        top: 8px;
+                        right: 10px;
+                        font-size: 20px;
+                        color: black;
+                        cursor: pointer;
+                    }
+    
                 }
-            }
+            } 
         }
     }
 }
@@ -4313,9 +6555,9 @@ footer {
             padding: 0;
 
             .contactImage {
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
+                // background-position: center;
+                // background-repeat: no-repeat;
+                // background-size: cover;
 
                 &::before {
                     content: '';
@@ -4331,6 +6573,9 @@ footer {
                 }
 
                 img {
+                    width: 100%;
+                    object-fit: cover;
+                    object-position: center;
                     height: 125px;
                 }
             }
@@ -4384,6 +6629,7 @@ footer {
                 input {
                     width: 100%;
                     height: 40px;
+                    border: 1px solid black;
 
                     &:focus {
                         outline: 0.5px solid black;
@@ -4459,6 +6705,7 @@ footer {
 #whishlistEntrance {
     .whishlistRow {
         margin: 0 !important;
+
         .whishlistTxt {
             padding: 0;
             background-color: rgb(118, 118, 118);
@@ -4466,6 +6713,7 @@ footer {
             display: flex;
             justify-content: center;
             align-items: center;
+
             span {
                 font-family: JostRegular;
                 font-size: 14px;
@@ -4474,63 +6722,74 @@ footer {
         }
     }
 }
-#whishlistEmpty{
+
+#whishlistEmpty {
     height: 650px;
-    .whishlistContainer{
+
+    .whishlistContainer {
         height: 100%;
-        .whishListEmptyRow{
+
+        .whishListEmptyRow {
             height: 100%;
+
             // justify-content: center;
             // align-items: center;
-            .whishlistInfo{
-                    margin-top: 10%;
-                    margin-bottom: 10%;
+            .whishlistInfo {
+                margin-top: 10%;
+                margin-bottom: 10%;
 
-                    width: 100%;
-                .whishlistHeartIcon{
+                width: 100%;
+
+                .whishlistHeartIcon {
                     text-align: center;
                     margin-bottom: 1%;
-                    i{
+
+                    i {
                         font-size: 90px;
-                        color: rgb(135,135,135);
+                        color: rgb(135, 135, 135);
                     }
                 }
-                .whishlistStatus{
+
+                .whishlistStatus {
                     text-align: center;
                     font-size: 30px;
                     font-family: JostRegular;
                     letter-spacing: 1.2px;
                     margin-bottom: 2%;
                 }
-                .whishlistDesc{
+
+                .whishlistDesc {
                     text-align: center;
                     font-size: 14px;
-                    color: rgb(135,135,135);
+                    color: rgb(135, 135, 135);
                     margin-bottom: 2%;
                 }
-                .returnToShop{
+
+                .returnToShop {
                     display: flex;
                     justify-content: center;
-                    .returnToShopBtn{
+
+                    .returnToShopBtn {
                         text-decoration: none;
                         width: 180px;
                         min-height: 42px;
                         color: white;
-                        background-color: rgb(203,3,29);
+                        background-color: rgb(203, 3, 29);
                         display: flex;
                         justify-content: center;
                         align-items: center;
                         font-family: JostMedium;
                         transition: 0.3s;
-                        &:hover{
-                            background-color: rgb(213,53,74);
+
+                        &:hover {
+                            background-color: rgb(213, 53, 74);
                         }
                     }
-                }     
+                }
             }
         }
     }
-    
+
 }
 
 
@@ -4552,6 +6811,63 @@ footer {
 
     100% {
         transform: scale(1);
+    }
+
+}
+
+@media screen and(max-width:1399px) {
+    #bestSeller {
+        margin-bottom: 20%;
+
+        .smallImageRow {
+            .smallImage:nth-child(1) {
+                margin-bottom: 80px !important;
+            }
+
+            .smallImage:nth-child(2) {
+                margin-bottom: 80px !important;
+            }
+        }
+    }
+
+    #handpickedItems {
+        margin-bottom: 20%;
+
+        .smallImageRow {
+            .smallImage:nth-child(1) {
+                margin-bottom: 80px !important;
+            }
+
+            .smallImage:nth-child(2) {
+                margin-bottom: 80px !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1199px) {
+    #handpickedItems {
+        margin-bottom: 15% !important;
+
+        .smallImageRow {
+            .smallImage {
+                margin-bottom: 13% !important;
+            }
+        }
+    }
+
+    #bestSeller {
+        margin-bottom: 20%;
+
+        .smallImageRow {
+            .smallImage:nth-child(1) {
+                margin-bottom: 100px !important;
+            }
+
+            .smallImage:nth-child(2) {
+                margin-bottom: 100px !important;
+            }
+        }
     }
 
 }
@@ -4594,7 +6910,8 @@ footer {
             }
         }
     }
-    #StickyNavBar{
+
+    #StickyNavBar {
         nav {
             .links-logo-icons {
                 width: 100%;
@@ -4683,13 +7000,16 @@ footer {
                 margin: 4% 0 6% 0;
             }
         }
-        .descContentRow{
-            justify-content: center!important;
-            .descImage{
-                justify-content: center!important;
+
+        .descContentRow {
+            justify-content: center !important;
+
+            .descImage {
+                justify-content: center !important;
             }
         }
     }
+
     #bestSeller {
         .bestSellerRow {
             justify-content: center !important;
@@ -4700,6 +7020,7 @@ footer {
 
                     .smallImageRow {
                         justify-content: center !important;
+                        margin-bottom: 70px !important;
 
                         .smallImage {
                             width: 25%;
@@ -4883,6 +7204,8 @@ footer {
 
     footer {
         #topFooter {
+            display: block !important;
+
             .getInTouch {
                 margin-bottom: -20px;
                 margin-top: 20px;
@@ -4951,6 +7274,10 @@ footer {
             }
         }
 
+        #topFooterFullWidth {
+            display: none !important;
+        }
+
         #bottomFooter {
             height: 120px;
 
@@ -4966,39 +7293,52 @@ footer {
     }
 
     #filter {
-        .byPrice {
-            margin-bottom: 75px;
+        #filterForm {
+            display: block !important;
 
-            .wrapper {
-                .rangeDiv {
-                    .priceSubmitBtn {
-                        margin-top: 141px !important;
+            .byPrice {
+                margin-bottom: 75px;
+
+                .wrapper {
+                    .rangeDiv {
+                        .priceSubmitBtn {
+                            margin-top: 141px !important;
+                        }
                     }
                 }
             }
+
+            .bySize {
+                margin-top: 20%;
+                margin-bottom: 15px;
+            }
         }
 
-        .byTitle {
-            margin-bottom: 30px;
-        }
+    }
 
-        .bySize {
-            margin-bottom: 15px;
+    #products {
+        .smallImage {
+            margin-bottom: 10%;
+
         }
     }
 
     #details {
         .info {
-            .addCard {
-                margin-top: 4%;
-                width: 95.7% !important;
+            .addToCardRow{
+                .addCard {
+                    margin-top: 4%;
+                    width: 95.7% !important;
+                }
+    
+                .whishList {
+                    width: 100px;
+                    position: relative;
+                    right: -2%;
+                }
             }
-
-            .whishList {
-                position: relative;
-                right: 18%;
             }
-        }
+            
     }
 
     #description {
@@ -5081,7 +7421,7 @@ footer {
 
                     .smallImageRow {
                         justify-content: center !important;
-                        margin-bottom: 5%;
+                        margin-bottom: 100px !important;
 
                         .smallImage {
                             width: 50%;
@@ -5316,6 +7656,14 @@ footer {
         }
     }
 
+    #products {
+        margin-bottom: 15% !important;
+
+        .smallImage {
+            margin-bottom: 12%;
+        }
+    }
+
     #NavBar {
         .links-logo-icons {
             display: flex;
@@ -5326,7 +7674,8 @@ footer {
             }
         }
     }
-    #StickyNavBar{
+
+    #StickyNavBar {
         .links-logo-icons {
             display: flex;
             justify-content: space-between;
@@ -5599,13 +7948,34 @@ footer {
             }
         }
     }
-
-    #products {
-        margin-bottom: 8% !important;
-    }
 }
 
 @media screen and (max-width:419px) {
+   
+   
+    .myOwl {
+        .image-text {
+            .textDiv {
+                .text {
+                    .discount {
+                        font-size: 10px;
+                    }
+
+                    .title {
+                        font-size: 15px!important;
+                    }
+
+                    .mybtnDiv {
+                        .myButton {
+                            width: 75px;
+                            height: 20px;
+                            font-size: 6px;
+                        }
+                    }
+                }
+            }
+        }
+    }
     #bestSeller {
         .bestSellerRow {
             justify-content: center !important;
@@ -5808,5 +8178,59 @@ footer {
 
     #products {
         margin-bottom: 10% !important;
+
+        .smallImage {
+            margin-bottom: 18%;
+        }
+    }
+
+    #filter {
+        #filterForm {
+            display: block !important;
+
+            .byPrice {
+                margin-bottom: 75px;
+            }
+
+            .bySize {
+                margin-top: 30% !important;
+                margin-bottom: 15px;
+            }
+        }
+
+    }
+
+    #products {
+        margin-bottom: 20% !important;
     }
 }
+
+@media screen and (max-width:321px) {
+    #handpickedItems {
+        .smallImageRow {
+            .smallImage {
+                margin-bottom: 20% !important;
+            }
+        }
+    }
+
+    #bestSeller {
+        .smallImageRow {
+            .smallImage {
+                margin-bottom: 20% !important;
+            }
+        }
+    }
+
+    #products {
+        margin-bottom: 16% !important;
+
+        .productsPageRow {
+            .smallImage {
+                margin-bottom: 100px;
+            }
+        }
+    }
+}
+
+//CheckoutStart

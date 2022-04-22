@@ -16,6 +16,8 @@ let sliderOne = document.getElementById("slider-1");
 let sliderTwo = document.getElementById("slider-2");
 let displayValOne = document.getElementById("range1");
 let displayValTwo = document.getElementById("range2");
+let displayValOneInput = document.getElementById("rangeInput1");
+let displayValTwoInput = document.getElementById("rangeInput2");
 let minGap = 0;
 let sliderTrack = document.querySelector(".slider-track");
 let sliderMaxValue = document.getElementById("slider-1").max;
@@ -25,6 +27,7 @@ function slideOne() {
         sliderOne.value = parseInt(sliderTwo.value) - minGap;
     }
     displayValOne.textContent = sliderOne.value;
+    displayValOneInput.textContent = sliderOne.value;
     fillColor();
 }
 
@@ -33,6 +36,7 @@ function slideTwo() {
         sliderTwo.value = parseInt(sliderOne.value) + minGap;
     }
     displayValTwo.textContent = sliderTwo.value;
+    displayValTwoInput.textContent = sliderTwo.value;
     fillColor();
 }
 
